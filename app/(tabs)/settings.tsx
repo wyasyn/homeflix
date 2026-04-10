@@ -1,4 +1,6 @@
 import {
+  Alert,
+  Image,
   Linking,
   Pressable,
   ScrollView,
@@ -14,15 +16,17 @@ import {
   ArrowRight01Icon,
   FavouriteIcon,
   InformationCircleIcon,
+  Logout01Icon,
+  Mail01Icon,
   Moon02Icon,
   Settings01Icon,
-  Sun03Icon,
   SmartPhone01Icon,
-  UserIcon,
   StarIcon,
-  Mail01Icon,
+  Sun03Icon,
+  UserIcon,
 } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react-native";
+import { useAuth, useUser } from "@clerk/expo";
 import { useTheme } from "@/lib/useTheme";
 import { useThemeStore, type ThemeMode } from "@/stores/useThemeStore";
 import { useFavouritesStore } from "@/stores/useFavouritesStore";
@@ -49,6 +53,38 @@ export default function SettingsScreen() {
   const setMode = useThemeStore((s) => s.setMode);
   const favouriteCount = useFavouritesStore((s) => s.ids.length);
   const router = useRouter();
+  const { signOut } = useAuth();
+  const { user } = useUser();
+
+  const primaryEmail = user?.primaryEmailAddress?.emailAddress ?? "";
+  const displayName =
+    user?.fullName ||
+    [user?.firstName, user?.lastName].filter(Boolean).join(" ") ||
+    primaryEmail ||
+    "Signed in";
+  const avatarUrl = user?.imageUrl;
+
+  const confirmSignOut = () => {
+    Alert.alert(
+      "Sign out",
+      "You'll need to sign in again to sync your favourites.",
+      [
+        { text: "Cancel", style: "cancel" },
+        {
+          text: "Sign out",
+          style: "destructive",
+          onPress: async () => {
+            try {
+              await signOut();
+              router.replace("/(auth)/sign-in" as never);
+            } catch {
+              // Clerk already surfaces errors; ignore here
+            }
+          },
+        },
+      ],
+    );
+  };
 
   const sectionTitleStyle: TextStyle = {
     color: colors.textSecondary,
@@ -208,37 +244,82 @@ export default function SettingsScreen() {
           </View>
         </View>
 
-        {/* Account (placeholder for Clerk) */}
+        {/* Account */}
         <View>
           <Text style={sectionTitleStyle}>Account</Text>
           <View style={cardStyle}>
             <View style={rowStyle}>
-              <HugeiconsIcon
-                icon={UserIcon}
-                size={22}
-                color={colors.textSecondary}
-              />
+              {avatarUrl ? (
+                <Image
+                  source={{ uri: avatarUrl }}
+                  style={{
+                    width: 44,
+                    height: 44,
+                    borderRadius: 22,
+                    backgroundColor: colors.surfaceLight,
+                  }}
+                />
+              ) : (
+                <View
+                  style={{
+                    width: 44,
+                    height: 44,
+                    borderRadius: 22,
+                    backgroundColor: colors.surfaceLight,
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <HugeiconsIcon
+                    icon={UserIcon}
+                    size={22}
+                    color={colors.textSecondary}
+                  />
+                </View>
+              )}
               <View style={{ flex: 1 }}>
                 <Text
+                  numberOfLines={1}
                   style={{
                     color: colors.textPrimary,
                     fontSize: 15,
                     fontWeight: "600",
                   }}
                 >
-                  Sign in
+                  {displayName}
                 </Text>
-                <Text
-                  style={{
-                    color: colors.textSecondary,
-                    fontSize: 12,
-                    marginTop: 2,
-                  }}
-                >
-                  Coming soon — sync favourites across devices
-                </Text>
+                {!!primaryEmail && (
+                  <Text
+                    numberOfLines={1}
+                    style={{
+                      color: colors.textSecondary,
+                      fontSize: 12,
+                      marginTop: 2,
+                    }}
+                  >
+                    {primaryEmail}
+                  </Text>
+                )}
               </View>
             </View>
+            <View style={dividerStyle} />
+            <Pressable style={rowStyle} onPress={confirmSignOut}>
+              <HugeiconsIcon
+                icon={Logout01Icon}
+                size={22}
+                color="#ef4444"
+              />
+              <Text
+                style={{
+                  color: "#ef4444",
+                  fontSize: 15,
+                  fontWeight: "600",
+                  flex: 1,
+                }}
+              >
+                Sign out
+              </Text>
+            </Pressable>
           </View>
         </View>
 

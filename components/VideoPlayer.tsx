@@ -53,6 +53,7 @@ export function VideoPlayer({ streamUrl, onError, onReady, borderless = false }:
   const [isBuffering, setIsBuffering] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
   const [hasError, setHasError] = useState(false);
+  const [reloadKey, setReloadKey] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [volume, setVolume] = useState(1);
   const [showVolumeSlider, setShowVolumeSlider] = useState(false);
@@ -139,8 +140,8 @@ export function VideoPlayer({ streamUrl, onError, onReady, borderless = false }:
   const handleRetry = useCallback(() => {
     setHasError(false);
     setIsLoading(true);
-    setIsPaused(true);
-    setTimeout(() => setIsPaused(false), 100);
+    setIsPaused(false);
+    setReloadKey((k) => k + 1);
   }, []);
 
   const toggleFullscreen = useCallback(async () => {
@@ -361,6 +362,7 @@ export function VideoPlayer({ streamUrl, onError, onReady, borderless = false }:
 
   const videoElement = (
     <Video
+      key={reloadKey}
       ref={videoRef}
       source={{ uri: streamUrl }}
       style={{ width: "100%", height: "100%" }}

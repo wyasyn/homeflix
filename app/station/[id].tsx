@@ -20,7 +20,7 @@ export default function StationScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
   const { colors } = useTheme();
-  const station = useStationStore((s) => s.getStationById)(id);
+  const station = useStationStore((s) => s.stations.find((st) => st.id === id));
   const isFavourite = useFavouritesStore((s) => s.ids.includes(id));
   const toggle = useFavouritesStore((s) => s.toggle);
 
@@ -65,7 +65,6 @@ export default function StationScreen() {
             icon={FavouriteIcon}
             size={22}
             color={isFavourite ? colors.primary : colors.textSecondary}
-            fill={isFavourite ? colors.primary : "none"}
           />
         </Pressable>
       </View>

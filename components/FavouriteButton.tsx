@@ -47,7 +47,6 @@ export function FavouriteButton({ stationId, size = 20 }: FavouriteButtonProps) 
         icon={FavouriteIcon}
         size={size}
         color={isFavourite ? colors.primary : colors.textSecondary}
-        fill={isFavourite ? colors.primary : "none"}
       />
     </AnimatedPressable>
   );

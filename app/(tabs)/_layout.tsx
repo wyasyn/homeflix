@@ -1,4 +1,5 @@
 import { useTheme } from "@/lib/useTheme";
+import { useAuth } from "@clerk/expo";
 import {
   Home01Icon,
   Radio01Icon,
@@ -6,12 +7,16 @@ import {
   Tv01Icon,
 } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react-native";
-import { Tabs } from "expo-router";
+import { Redirect, Tabs } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function TabLayout() {
   const insets = useSafeAreaInsets();
   const { colors } = useTheme();
+  const { isSignedIn, isLoaded } = useAuth();
+
+  if (!isLoaded) return null;
+  if (!isSignedIn) return <Redirect href={"/(auth)/sign-in" as never} />;
 
   return (
     <Tabs
