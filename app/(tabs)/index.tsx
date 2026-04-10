@@ -1,98 +1,163 @@
-import { Image } from 'expo-image';
-import { Platform, StyleSheet } from 'react-native';
-
-import { HelloWave } from '@/components/hello-wave';
-import ParallaxScrollView from '@/components/parallax-scroll-view';
-import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
-import { Link } from 'expo-router';
+import { ScrollView, View, Text, Pressable } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { useRouter } from "expo-router";
+import { FavouriteIcon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react-native";
+import { useStationStore } from "@/stores/useStationStore";
+import { useFavouritesStore } from "@/stores/useFavouritesStore";
+import { HeroSection } from "@/components/HeroSection";
+import { CategoryRow } from "@/components/CategoryRow";
+import { SkeletonCard } from "@/components/SkeletonCard";
+import { useTheme } from "@/lib/useTheme";
 
 export default function HomeScreen() {
-  return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
-      headerImage={
-        <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
-        />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12',
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <Link href="/modal">
-          <Link.Trigger>
-            <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-          </Link.Trigger>
-          <Link.Preview />
-          <Link.Menu>
-            <Link.MenuAction title="Action" icon="cube" onPress={() => alert('Action pressed')} />
-            <Link.MenuAction
-              title="Share"
-              icon="square.and.arrow.up"
-              onPress={() => alert('Share pressed')}
-            />
-            <Link.Menu title="More" icon="ellipsis">
-              <Link.MenuAction
-                title="Delete"
-                icon="trash"
-                destructive
-                onPress={() => alert('Delete pressed')}
-              />
-            </Link.Menu>
-          </Link.Menu>
-        </Link>
+  const { colors } = useTheme();
+  const router = useRouter();
+  const favouriteCount = useFavouritesStore((s) => s.ids.length);
+  const stations = useStationStore((s) => s.stations);
+  const isLoading = useStationStore((s) => s.isLoading);
+  const tvStations = useStationStore((s) => s.tvStations);
+  const radioStations = useStationStore((s) => s.radioStations);
+  const internationalStations = useStationStore((s) => s.internationalStations);
+  const featuredStations = useStationStore((s) => s.featuredStations);
 
-        <ThemedText>
-          {`Tap the Explore tab to learn more about what's included in this starter app.`}
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          {`When you're ready, run `}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
-    </ParallaxScrollView>
+  const heroStation = featuredStations[0];
+
+  if (isLoading && stations.length === 0) {
+    return (
+      <SafeAreaView
+        style={{ flex: 1, backgroundColor: colors.background }}
+        edges={["top"]}
+      >
+        <View className="px-4 pt-6">
+          <View
+            style={{
+              marginBottom: 24,
+              height: 32,
+              width: 128,
+              borderRadius: 4,
+              backgroundColor: colors.surfaceLight,
+            }}
+          />
+          <View
+            style={{
+              height: 208,
+              borderRadius: 16,
+              backgroundColor: colors.surfaceLight,
+            }}
+          />
+          <View className="mt-6 flex-row gap-3">
+            {Array.from({ length: 3 }).map((_, i) => (
+              <View key={i} style={{ width: 160 }}>
+                <SkeletonCard />
+              </View>
+            ))}
+          </View>
+        </View>
+      </SafeAreaView>
+    );
+  }
+
+  return (
+    <SafeAreaView
+      style={{ flex: 1, backgroundColor: colors.background }}
+      edges={["top"]}
+    >
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{ paddingBottom: 20 }}
+      >
+        {/* Header */}
+        <View
+          className="flex-row items-center justify-between px-4 pb-4 pt-6"
+        >
+          <View style={{ flex: 1 }}>
+            <Text
+              style={{
+                color: colors.textPrimary,
+                fontSize: 30,
+                fontWeight: "700",
+              }}
+            >
+              Homeflix
+            </Text>
+            <Text
+              style={{
+                color: colors.textSecondary,
+                fontSize: 14,
+                marginTop: 4,
+              }}
+            >
+              Live Uganda TV & Radio
+            </Text>
+          </View>
+          <Pressable
+            onPress={() => router.push("/favourites")}
+            hitSlop={8}
+            accessibilityRole="button"
+            accessibilityLabel="Open favourites"
+            style={({ pressed }) => ({
+              opacity: pressed ? 0.7 : 1,
+              backgroundColor: colors.surface,
+              borderWidth: 1,
+              borderColor: colors.border,
+              padding: 10,
+              borderRadius: 999,
+              position: "relative",
+            })}
+          >
+            <HugeiconsIcon
+              icon={FavouriteIcon}
+              size={22}
+              color={colors.textPrimary}
+            />
+            {favouriteCount > 0 && (
+              <View
+                style={{
+                  position: "absolute",
+                  top: -2,
+                  right: -2,
+                  minWidth: 18,
+                  height: 18,
+                  paddingHorizontal: 4,
+                  borderRadius: 999,
+                  backgroundColor: colors.primary,
+                  alignItems: "center",
+                  justifyContent: "center",
+                  borderWidth: 2,
+                  borderColor: colors.background,
+                }}
+              >
+                <Text
+                  style={{
+                    color: "#FFFFFF",
+                    fontSize: 10,
+                    fontWeight: "700",
+                  }}
+                >
+                  {favouriteCount > 99 ? "99+" : favouriteCount}
+                </Text>
+              </View>
+            )}
+          </Pressable>
+        </View>
+
+        {/* Hero */}
+        {heroStation && <HeroSection station={heroStation} />}
+
+        {/* Category rows */}
+        <CategoryRow title="Popular TV" stations={tvStations.slice(0, 10)} />
+        <CategoryRow
+          title="Radio Stations"
+          stations={radioStations.slice(0, 10)}
+        />
+        {internationalStations.length > 0 && (
+          <CategoryRow
+            title="International"
+            stations={internationalStations}
+          />
+        )}
+      </ScrollView>
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-  },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
-  },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
-  },
-});

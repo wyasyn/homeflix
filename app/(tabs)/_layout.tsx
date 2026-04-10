@@ -1,33 +1,68 @@
-import { Tabs } from 'expo-router';
-import React from 'react';
-
-import { HapticTab } from '@/components/haptic-tab';
-import { IconSymbol } from '@/components/ui/icon-symbol';
-import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
+import { useTheme } from "@/lib/useTheme";
+import {
+  Home01Icon,
+  Radio01Icon,
+  Settings01Icon,
+  Tv01Icon,
+} from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react-native";
+import { Tabs } from "expo-router";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
+  const insets = useSafeAreaInsets();
+  const { colors } = useTheme();
 
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
-        tabBarButton: HapticTab,
-      }}>
+        tabBarActiveTintColor: colors.primary,
+        tabBarInactiveTintColor: colors.textSecondary,
+        tabBarStyle: {
+          backgroundColor: colors.surface,
+          borderTopColor: colors.border,
+          borderTopWidth: 0.5,
+          height: 60 + insets.bottom,
+          paddingBottom: 4 + insets.bottom,
+          paddingTop: 4,
+        },
+      }}
+    >
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          title: "Home",
+          tabBarIcon: ({ color, size }) => (
+            <HugeiconsIcon icon={Home01Icon} size={size} color={color} />
+          ),
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="tv"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: "TV",
+          tabBarIcon: ({ color, size }) => (
+            <HugeiconsIcon icon={Tv01Icon} size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="radio"
+        options={{
+          title: "Radio",
+          tabBarIcon: ({ color, size }) => (
+            <HugeiconsIcon icon={Radio01Icon} size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="settings"
+        options={{
+          title: "Settings",
+          tabBarIcon: ({ color, size }) => (
+            <HugeiconsIcon icon={Settings01Icon} size={size} color={color} />
+          ),
         }}
       />
     </Tabs>

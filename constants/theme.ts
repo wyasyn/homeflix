@@ -1,53 +1,29 @@
-/**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
- */
+export const darkColors = {
+  background: "#0A0A0F",
+  surface: "#16161E",
+  surfaceLight: "#1E1E2A",
+  primary: "#E50914",
+  primaryLight: "#FF2D38",
+  textPrimary: "#FFFFFF",
+  textSecondary: "#A0A0B0",
+  border: "#2A2A3A",
+  success: "#22C55E",
+  warning: "#F59E0B",
+  error: "#EF4444",
+} as const;
 
-import { Platform } from 'react-native';
+export const lightColors = {
+  background: "#F2F2F5",
+  surface: "#FFFFFF",
+  surfaceLight: "#F7F7FA",
+  primary: "#E50914",
+  primaryLight: "#FF2D38",
+  textPrimary: "#0A0A0F",
+  textSecondary: "#6B6B7B",
+  border: "#E0E0E6",
+  success: "#16A34A",
+  warning: "#D97706",
+  error: "#DC2626",
+} as const;
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
-
-export const Colors = {
-  light: {
-    text: '#11181C',
-    background: '#fff',
-    tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
-  },
-  dark: {
-    text: '#ECEDEE',
-    background: '#151718',
-    tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
-    tabIconSelected: tintColorDark,
-  },
-};
-
-export const Fonts = Platform.select({
-  ios: {
-    /** iOS `UIFontDescriptorSystemDesignDefault` */
-    sans: 'system-ui',
-    /** iOS `UIFontDescriptorSystemDesignSerif` */
-    serif: 'ui-serif',
-    /** iOS `UIFontDescriptorSystemDesignRounded` */
-    rounded: 'ui-rounded',
-    /** iOS `UIFontDescriptorSystemDesignMonospaced` */
-    mono: 'ui-monospace',
-  },
-  default: {
-    sans: 'normal',
-    serif: 'serif',
-    rounded: 'normal',
-    mono: 'monospace',
-  },
-  web: {
-    sans: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
-    serif: "Georgia, 'Times New Roman', serif",
-    rounded: "'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif",
-    mono: "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
-  },
-});
+export type ThemePalette = { [K in keyof typeof darkColors]: string };
