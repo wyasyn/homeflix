@@ -19,13 +19,7 @@ import {
 import { HugeiconsIcon } from "@hugeicons/react-native";
 import Constants from "expo-constants";
 import { useRouter } from "expo-router";
-import {
-  Linking,
-  Pressable,
-  ScrollView,
-  Text,
-  View,
-} from "react-native";
+import { Linking, Pressable, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const APP_VERSION = Constants.expoConfig?.version ?? "1.0.0";
@@ -35,11 +29,13 @@ const RUNTIME_VERSION =
   Constants.expoConfig?.sdkVersion ??
   "—";
 
-const THEME_OPTIONS: Array<{
+type ThemeOption = {
   mode: ThemeMode;
   label: string;
   icon: typeof Sun03Icon;
-}> = [
+};
+
+const THEME_OPTIONS: ThemeOption[] = [
   { mode: "light", label: "Light", icon: Sun03Icon },
   { mode: "dark", label: "Dark", icon: Moon02Icon },
   { mode: "system", label: "System", icon: SmartPhone01Icon },

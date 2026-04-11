@@ -49,9 +49,7 @@ export default function HomeScreen() {
         {/* Header */}
         <View className="flex-row items-center justify-between px-4 pb-4 pt-6">
           <View className="flex-1">
-            <Text className="text-3xl font-bold text-foreground">
-              Homeflix
-            </Text>
+            <Text className="text-3xl font-bold text-foreground">Homeflix</Text>
             <Text className="mt-1 text-sm text-text-secondary">
               Live Uganda TV & Radio
             </Text>
@@ -79,7 +77,7 @@ export default function HomeScreen() {
         </View>
 
         {/* Hero */}
-        {heroStation && <HeroSection station={heroStation} />}
+        {heroStation && <HeroSection />}
 
         {/* Category rows */}
         <CategoryRow title="Popular TV" stations={tvStations.slice(0, 10)} />
@@ -88,10 +86,7 @@ export default function HomeScreen() {
           stations={radioStations.slice(0, 10)}
         />
         {internationalStations.length > 0 && (
-          <CategoryRow
-            title="International"
-            stations={internationalStations}
-          />
+          <CategoryRow title="International" stations={internationalStations} />
         )}
       </ScrollView>
     </SafeAreaView>
