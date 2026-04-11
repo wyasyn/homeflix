@@ -966,20 +966,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-cgtn-radio-ug",
-    "name": "CGTN Radio",
-    "type": "radio",
-    "streamUrl": "http://sk.cri.cn/am846.m3u8",
-    "description": "news",
-    "language": "english uk",
-    "country": "UG",
-    "categories": [
-      "news"
-    ],
-    "website": "http://chinaplus.cri.cn/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-chennai-live-ug",
     "name": "CHENNAI LIVE",
     "type": "radio",
@@ -1557,6 +1543,20 @@
       "music"
     ],
     "website": "https://stream.jewishmusicstream.com:8000/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-joy-hits-ug",
+    "name": "JOY HITS",
+    "type": "radio",
+    "streamUrl": "http://joyhits.online/joyhitshq.mp3",
+    "description": "variety",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "variety"
+    ],
+    "website": "https://joyhits.online/",
     "isFeatured": true
   },
   {
@@ -3618,23 +3618,6 @@
     "isFeatured": false
   },
   {
-    "id": "radio-zbs-zodiak-fm-mw",
-    "name": "ZBS Zodiak FM",
-    "type": "radio",
-    "streamUrl": "https://ice31.securenetsystems.net/0079",
-    "description": "entertainment, local music, news, sport",
-    "language": "english",
-    "country": "MW",
-    "categories": [
-      "entertainment",
-      "local music",
-      "news",
-      "sport"
-    ],
-    "website": "https://zodiakmalawi.com/live-radio",
-    "isFeatured": false
-  },
-  {
     "id": "radio-abc-newsradio-mp3-au",
     "name": "ABC NewsRadio MP3",
     "type": "radio",
@@ -3993,6 +3976,21 @@
       "rock"
     ],
     "website": "http://www.metalrock.fm/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-trance-is-star-radio-ua",
+    "name": "TRANCE IS STAR RADIO",
+    "type": "radio",
+    "streamUrl": "https://myradio24.org/tisradio",
+    "logo": "https://abs.twimg.com/favicons/twitter.2.ico",
+    "description": "best music for you",
+    "language": "english,russian,ukrainian",
+    "country": "UA",
+    "categories": [
+      "best music for you"
+    ],
+    "website": "https://twitter.com/tranceisstar",
     "isFeatured": false
   },
   {
