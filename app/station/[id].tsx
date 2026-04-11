@@ -1,5 +1,6 @@
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { VideoPlayer } from "@/components/VideoPlayer";
+import { YouTubePlayer } from "@/components/YouTubePlayer";
 import { useTheme } from "@/lib/useTheme";
 import { useFavouritesStore } from "@/stores/useFavouritesStore";
 import { useStationStore } from "@/stores/useStationStore";
@@ -69,11 +70,15 @@ export default function StationScreen() {
       >
         {/* Player */}
         {station.type === "tv" ? (
-          <VideoPlayer streamUrl={station.streamUrl} borderless />
+          station.youtubeChannelId ? (
+            <YouTubePlayer channelId={station.youtubeChannelId} borderless />
+          ) : (
+            <VideoPlayer streamUrl={station.streamUrl!} borderless />
+          )
         ) : (
           <View className="px-4">
             <AudioPlayer
-              streamUrl={station.streamUrl}
+              streamUrl={station.streamUrl!}
               stationName={station.name}
               logo={station.logo}
             />

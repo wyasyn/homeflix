@@ -8,7 +8,10 @@ export const stationSchema = z.object({
   name: z.string(),
   type: stationTypeSchema,
   logo: z.string().optional(),
-  streamUrl: z.string().url(),
+  // streamUrl is optional only for YouTube-based channels that use youtubeChannelId
+  streamUrl: z.string().url().optional(),
+  // Present only for channels that stream via YouTube Live (e.g. NBS TV, NTV Uganda)
+  youtubeChannelId: z.string().optional(),
   description: z.string().default(""),
   language: z.string().default("English"),
   country: z.string().default("UG"),

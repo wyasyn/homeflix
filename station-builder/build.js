@@ -41,15 +41,6 @@ const WANTED_TV_CATEGORIES = new Set([
   "business", "documentary", "science", "education",
 ]);
 
-// Countries where English is an official or dominant language.
-// Used to filter international channels more reliably than trusting
-// the "languages" field in iptv-org (which is sometimes incorrect).
-const ENGLISH_SPEAKING_COUNTRIES = new Set([
-  "US", "GB", "CA", "AU", "NZ", "IE", "ZA", "NG", "KE", "GH",
-  "JM", "TT", "BB", "SG", "PH", "IN", "PK", "MT", "ZW", "ZM",
-  "BW", "NA", "LS", "SZ", "RW", "UG", // UG already handled separately
-]);
-
 // Known Ugandan channel names for M3U matching (exact / close match only)
 const UGANDA_CHANNEL_NAMES = [
   "NBS TV", "NTV Uganda", "UBC TV", "Sanyuka TV", "Spark TV",
@@ -64,6 +55,131 @@ const UGANDA_CHANNEL_NAMES = [
 ];
 
 const UGANDA_NAMES_LOWER = UGANDA_CHANNEL_NAMES.map((n) => n.toLowerCase());
+
+// ─── Hardcoded supplement stations ───────────────────────────────────────────
+// Major channels whose streams often fail validation on GitHub Actions servers
+// (YouTube proxies, etc.) but are known to work on devices. These are always
+// merged into the final output — they supplement rather than replace API results.
+
+// NOTE: NBS TV, NTV Uganda, UBC TV, Sanyuka TV, Spark TV, Urban TV, Pearl Magic,
+// and BBS TV stream exclusively via YouTube. There are no public direct HLS CDN
+// URLs for these channels. They are NOT listed here to avoid broken entries.
+// See station-builder/README.md for options to support YouTube-based channels.
+
+const SUPPLEMENT_TV_STATIONS = [
+  // ── Uganda channels (YouTube Live) ──────────────────────────────────────────
+  // These channels stream exclusively via YouTube. The app uses YouTubePlayer
+  // for any station that has a youtubeChannelId field.
+  {
+    id: "nbs-tv", name: "NBS TV", type: "tv",
+    logo: "https://i.imgur.com/DmM8jH6.png",
+    youtubeChannelId: "UCmp-YJRNIHCCNmFJOgJGMwA",
+    description: "Next Broadcasting Services - Uganda's leading entertainment and news channel",
+    language: "English", country: "UG", categories: ["news", "entertainment"],
+    website: "https://www.nbs.ug", isFeatured: true,
+  },
+  {
+    id: "ntv-uganda", name: "NTV Uganda", type: "tv",
+    logo: "https://i.imgur.com/NTV.png",
+    youtubeChannelId: "UCzIwTMsmMSGIdZPYShYbnPQ",
+    description: "Nation Television Uganda - Premier news and current affairs",
+    language: "English", country: "UG", categories: ["news", "general"],
+    website: "https://www.ntv.co.ug", isFeatured: true,
+  },
+  {
+    id: "ubc-tv", name: "UBC TV", type: "tv",
+    youtubeChannelId: "UCa7s2SKcRQDpMEB-yPbXkvA",
+    description: "Uganda Broadcasting Corporation - National public broadcaster",
+    language: "English", country: "UG", categories: ["general", "news"],
+    website: "https://www.ubc.go.ug", isFeatured: true,
+  },
+  {
+    id: "sanyuka-tv", name: "Sanyuka TV", type: "tv",
+    youtubeChannelId: "UC1YJ4mMOExwmnOYgiAWbKtQ",
+    description: "Entertainment and lifestyle television",
+    language: "Luganda", country: "UG", categories: ["entertainment"],
+    isFeatured: true,
+  },
+  {
+    id: "spark-tv", name: "Spark TV", type: "tv",
+    youtubeChannelId: "UCF-5JhTmMFJwTEygqBPfQLg",
+    description: "Youth-oriented entertainment and music channel",
+    language: "English", country: "UG", categories: ["entertainment", "music"],
+    isFeatured: true,
+  },
+  {
+    id: "urban-tv", name: "Urban TV", type: "tv",
+    youtubeChannelId: "UCJrvFPaz4DF96mWbiOSGXkA",
+    description: "Urban entertainment and lifestyle",
+    language: "English", country: "UG", categories: ["entertainment"],
+    isFeatured: false,
+  },
+  {
+    id: "pearl-magic", name: "Pearl Magic", type: "tv",
+    youtubeChannelId: "UCp-RVKH9VwArl8cD7XtZiqQ",
+    description: "Local drama and entertainment",
+    language: "English", country: "UG", categories: ["entertainment", "drama"],
+    isFeatured: false,
+  },
+  {
+    id: "bbs-tv", name: "BBS TV", type: "tv",
+    youtubeChannelId: "UCp90V7fUBeBGAa5jc_v2b0g",
+    description: "Buganda Broadcasting Service Television",
+    language: "Luganda", country: "UG", categories: ["general", "cultural"],
+    isFeatured: false,
+  },
+  {
+    id: "record-tv-uganda", name: "Record TV Uganda", type: "tv",
+    youtubeChannelId: "UCfwhx3cp2bLnkxMjRmPgiHQ",
+    description: "News and entertainment from Record TV",
+    language: "English", country: "UG", categories: ["news", "entertainment"],
+    isFeatured: false,
+  },
+  // ── International channels (direct HLS CDN) ──────────────────────────────────
+  // These have official CDN-hosted HLS streams and broadcast in English.
+  {
+    id: "al-jazeera-english", name: "Al Jazeera English", type: "tv",
+    streamUrl: "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8",
+    description: "International news from Al Jazeera",
+    language: "English", country: "QA", categories: ["news"],
+    website: "https://www.aljazeera.com", isFeatured: true,
+  },
+  {
+    id: "france-24-english", name: "France 24 English", type: "tv",
+    streamUrl: "https://live.france24.com/hls/live/2037218/F24_EN_HI_HLS/master_2300.m3u8",
+    description: "International news in English from France 24",
+    language: "English", country: "FR", categories: ["news"],
+    website: "https://www.france24.com", isFeatured: false,
+  },
+  {
+    id: "dw-english", name: "DW English", type: "tv",
+    streamUrl: "https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/master.m3u8",
+    description: "Deutsche Welle English - International news",
+    language: "English", country: "DE", categories: ["news"],
+    website: "https://www.dw.com", isFeatured: false,
+  },
+  {
+    id: "bbc-news", name: "BBC News", type: "tv",
+    streamUrl: "https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/mobile_wifi_main_hd_abr_v2.m3u8",
+    description: "BBC News - International breaking news and analysis",
+    language: "English", country: "GB", categories: ["news"],
+    website: "https://www.bbc.com/news", isFeatured: true,
+  },
+  {
+    id: "euronews-english", name: "Euronews English", type: "tv",
+    streamUrl: "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/euronews/euronews-en.m3u8",
+    description: "European news and current affairs in English",
+    language: "English", country: "FR", categories: ["news"],
+    website: "https://www.euronews.com", isFeatured: false,
+  },
+  {
+    id: "nhk-world-japan", name: "NHK World Japan", type: "tv",
+    streamUrl: "https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8",
+    description: "Japan's international public broadcaster - news and culture",
+    language: "English", country: "JP", categories: ["news", "general"],
+    website: "https://www3.nhk.or.jp/nhkworld/", isFeatured: false,
+  },
+];
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -304,13 +420,13 @@ async function fetchTvStations() {
 
         const isUganda = c.country === "UG";
 
-        // International: must speak English AND be from an English-speaking
-        // country AND have a relevant category. This avoids picking up channels
-        // that incorrectly claim "eng" language in iptv-org's data.
+        // International: must claim English language AND have a relevant category.
+        // We do NOT restrict by country — channels like Al Jazeera (QA),
+        // France 24 (FR), DW (DE), and NHK World (JP) all broadcast in English
+        // but their countries are not English-speaking.
         const isIntlEnglish =
           !isUganda &&
           langs.includes("eng") &&
-          ENGLISH_SPEAKING_COUNTRIES.has(c.country) &&
           cats.some((cat) => WANTED_TV_CATEGORIES.has(cat.toLowerCase())) &&
           internationalCount < INTERNATIONAL_ENGLISH_CAP;
 
@@ -452,7 +568,7 @@ async function fetchRadioStations() {
         name,
         type: "radio",
         streamUrl,
-        logo: item.favicon || undefined,
+        logo: (item.favicon && item.favicon !== "null") ? item.favicon : undefined,
         description: categories.join(", ") || "Radio station",
         language: item.language || "English",
         country: countryCode || "UG",
@@ -497,7 +613,19 @@ async function main() {
     `  Radio: ${validRadio.length}/${rawRadio.length} streams working\n`
   );
 
-  const all = [...validTv, ...validRadio];
+  // Merge supplement stations — these always appear regardless of validation.
+  // They supplement the API results: if a station was already found via iptv-org
+  // or M3U (and passed validation), we keep that version and skip the supplement.
+  const validatedIds = new Set([...validTv, ...validRadio].map((s) => s.id));
+  const validatedUrls = new Set([...validTv, ...validRadio].map((s) => s.streamUrl));
+  const supplemented = SUPPLEMENT_TV_STATIONS.filter(
+    (s) => !validatedIds.has(s.id) && (!s.streamUrl || !validatedUrls.has(s.streamUrl))
+  );
+  if (supplemented.length > 0) {
+    console.log(`  Supplement: adding ${supplemented.length} hardcoded stations not found via API`);
+  }
+
+  const all = [...validTv, ...supplemented, ...validRadio];
   const ugTv = all.filter((s) => s.type === "tv" && s.country === "UG");
   const intlTv = all.filter((s) => s.type === "tv" && s.country !== "UG");
   const ugRadio = all.filter((s) => s.type === "radio" && s.country === "UG");
