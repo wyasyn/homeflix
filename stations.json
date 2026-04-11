@@ -140,11 +140,224 @@
     "isFeatured": true
   },
   {
+    "id": "nbs-tv",
+    "name": "NBS TV",
+    "type": "tv",
+    "logo": "https://i.imgur.com/DmM8jH6.png",
+    "youtubeChannelId": "UCmp-YJRNIHCCNmFJOgJGMwA",
+    "description": "Next Broadcasting Services - Uganda's leading entertainment and news channel",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "news",
+      "entertainment"
+    ],
+    "website": "https://www.nbs.ug",
+    "isFeatured": true
+  },
+  {
+    "id": "ntv-uganda",
+    "name": "NTV Uganda",
+    "type": "tv",
+    "logo": "https://i.imgur.com/NTV.png",
+    "youtubeChannelId": "UCzIwTMsmMSGIdZPYShYbnPQ",
+    "description": "Nation Television Uganda - Premier news and current affairs",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "news",
+      "general"
+    ],
+    "website": "https://www.ntv.co.ug",
+    "isFeatured": true
+  },
+  {
+    "id": "ubc-tv",
+    "name": "UBC TV",
+    "type": "tv",
+    "youtubeChannelId": "UCa7s2SKcRQDpMEB-yPbXkvA",
+    "description": "Uganda Broadcasting Corporation - National public broadcaster",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "general",
+      "news"
+    ],
+    "website": "https://www.ubc.go.ug",
+    "isFeatured": true
+  },
+  {
+    "id": "sanyuka-tv",
+    "name": "Sanyuka TV",
+    "type": "tv",
+    "youtubeChannelId": "UC1YJ4mMOExwmnOYgiAWbKtQ",
+    "description": "Entertainment and lifestyle television",
+    "language": "Luganda",
+    "country": "UG",
+    "categories": [
+      "entertainment"
+    ],
+    "isFeatured": true
+  },
+  {
+    "id": "spark-tv",
+    "name": "Spark TV",
+    "type": "tv",
+    "youtubeChannelId": "UCF-5JhTmMFJwTEygqBPfQLg",
+    "description": "Youth-oriented entertainment and music channel",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "entertainment",
+      "music"
+    ],
+    "isFeatured": true
+  },
+  {
+    "id": "urban-tv",
+    "name": "Urban TV",
+    "type": "tv",
+    "youtubeChannelId": "UCJrvFPaz4DF96mWbiOSGXkA",
+    "description": "Urban entertainment and lifestyle",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "entertainment"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "pearl-magic",
+    "name": "Pearl Magic",
+    "type": "tv",
+    "youtubeChannelId": "UCp-RVKH9VwArl8cD7XtZiqQ",
+    "description": "Local drama and entertainment",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "entertainment",
+      "drama"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "bbs-tv",
+    "name": "BBS TV",
+    "type": "tv",
+    "youtubeChannelId": "UCp90V7fUBeBGAa5jc_v2b0g",
+    "description": "Buganda Broadcasting Service Television",
+    "language": "Luganda",
+    "country": "UG",
+    "categories": [
+      "general",
+      "cultural"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "record-tv-uganda",
+    "name": "Record TV Uganda",
+    "type": "tv",
+    "youtubeChannelId": "UCfwhx3cp2bLnkxMjRmPgiHQ",
+    "description": "News and entertainment from Record TV",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "news",
+      "entertainment"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "al-jazeera-english",
+    "name": "Al Jazeera English",
+    "type": "tv",
+    "streamUrl": "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8",
+    "description": "International news from Al Jazeera",
+    "language": "English",
+    "country": "QA",
+    "categories": [
+      "news"
+    ],
+    "website": "https://www.aljazeera.com",
+    "isFeatured": true
+  },
+  {
+    "id": "france-24-english",
+    "name": "France 24 English",
+    "type": "tv",
+    "streamUrl": "https://live.france24.com/hls/live/2037218/F24_EN_HI_HLS/master_2300.m3u8",
+    "description": "International news in English from France 24",
+    "language": "English",
+    "country": "FR",
+    "categories": [
+      "news"
+    ],
+    "website": "https://www.france24.com",
+    "isFeatured": false
+  },
+  {
+    "id": "dw-english",
+    "name": "DW English",
+    "type": "tv",
+    "streamUrl": "https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/master.m3u8",
+    "description": "Deutsche Welle English - International news",
+    "language": "English",
+    "country": "DE",
+    "categories": [
+      "news"
+    ],
+    "website": "https://www.dw.com",
+    "isFeatured": false
+  },
+  {
+    "id": "bbc-news",
+    "name": "BBC News",
+    "type": "tv",
+    "streamUrl": "https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/mobile_wifi_main_hd_abr_v2.m3u8",
+    "description": "BBC News - International breaking news and analysis",
+    "language": "English",
+    "country": "GB",
+    "categories": [
+      "news"
+    ],
+    "website": "https://www.bbc.com/news",
+    "isFeatured": true
+  },
+  {
+    "id": "euronews-english",
+    "name": "Euronews English",
+    "type": "tv",
+    "streamUrl": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/euronews/euronews-en.m3u8",
+    "description": "European news and current affairs in English",
+    "language": "English",
+    "country": "FR",
+    "categories": [
+      "news"
+    ],
+    "website": "https://www.euronews.com",
+    "isFeatured": false
+  },
+  {
+    "id": "nhk-world-japan",
+    "name": "NHK World Japan",
+    "type": "tv",
+    "streamUrl": "https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8",
+    "description": "Japan's international public broadcaster - news and culture",
+    "language": "English",
+    "country": "JP",
+    "categories": [
+      "news",
+      "general"
+    ],
+    "website": "https://www3.nhk.or.jp/nhkworld/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-abdulbasit-abdulsamad-ug",
     "name": ". Abdulbasit Abdulsamad",
     "type": "radio",
     "streamUrl": "https://radio.mp3islam.com/listen/abdulbasit/radio.mp3",
-    "logo": "null",
     "description": "Radio station",
     "language": "arabic",
     "country": "UG",
@@ -189,7 +402,6 @@
     "name": "104.4 Kaboozi Fm",
     "type": "radio",
     "streamUrl": "http://162.244.80.52:8732/;stream.mp3",
-    "logo": "null",
     "description": "rock",
     "language": "luganda",
     "country": "UG",
@@ -449,7 +661,6 @@
     "name": "95.1 Kiss FM Jakarta",
     "type": "radio",
     "streamUrl": "http://103.246.184.62:1935/noice_kisfm/kisfm/chunklist.m3u8",
-    "logo": "null",
     "description": "rock",
     "language": "bahasa indonesia",
     "country": "UG",
@@ -759,7 +970,6 @@
     "name": "CGTN Radio",
     "type": "radio",
     "streamUrl": "http://sk.cri.cn/am846.m3u8",
-    "logo": "null",
     "description": "news",
     "language": "english uk",
     "country": "UG",
@@ -774,7 +984,6 @@
     "name": "CHENNAI LIVE",
     "type": "radio",
     "streamUrl": "http://216.55.178.11:8008/",
-    "logo": "null",
     "description": "music",
     "language": "indian",
     "country": "UG",
@@ -983,7 +1192,6 @@
     "name": "crooze fm",
     "type": "radio",
     "streamUrl": "https://stream-159.zeno.fm/vyxwdk08apxtv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ2eXh3ZGswOGFweHR2IiwiaG9zdCI6InN0cmVhbS0xNTkuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6Imt4VUtoZGRnU0dLRGdSc0NkOE1CRHciLCJpYXQiOjE",
-    "logo": "null",
     "description": "Radio station",
     "language": "english",
     "country": "UG",
@@ -1011,7 +1219,6 @@
     "name": "Dove Fm",
     "type": "radio",
     "streamUrl": "https://ice64.securenetsystems.net/DOVEMAIN",
-    "logo": "null",
     "description": "christian",
     "language": "english",
     "country": "UG",
@@ -1314,7 +1521,6 @@
     "name": "ISLANDS FM",
     "type": "radio",
     "streamUrl": "http://radio.canstream.co.uk:8040/live.mp3",
-    "logo": "null",
     "description": "rock",
     "language": "english",
     "country": "UG",
@@ -1511,7 +1717,6 @@
     "name": "Prayer Alter Radio",
     "type": "radio",
     "streamUrl": "https://node-33.zeno.fm/1gfmyttkephvv",
-    "logo": "null",
     "description": "rock",
     "language": "luganda",
     "country": "UG",
@@ -1752,7 +1957,6 @@
     "name": "SANCTUARY FM",
     "type": "radio",
     "streamUrl": "http://stream.zeno.fm/vyx334hsbphvv",
-    "logo": "null",
     "description": "religious",
     "language": "luganda",
     "country": "UG",
@@ -1804,6 +2008,23 @@
       "variety"
     ],
     "website": "https://sdamissionug.com/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-shalom-radio-jinja-mp3-ug",
+    "name": "Shalom Radio Jinja (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/rvnov6bmdhsvv",
+    "description": "christian, gospel, religious, talk",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious",
+      "talk"
+    ],
+    "website": "https://shalomradio.co.ug/",
     "isFeatured": true
   },
   {
@@ -1897,7 +2118,6 @@
     "name": "Sonlife Broadcasting Network",
     "type": "radio",
     "streamUrl": "https://storage.sardius.media/archives/Ea867F3e1F56B06/events/site_5F46D0A41C/playlist-eng.m3u8",
-    "logo": "null",
     "description": "religious",
     "language": "english",
     "country": "UG",
@@ -2001,7 +2221,6 @@
     "name": "talkSPORT 2",
     "type": "radio",
     "streamUrl": "http://radio.talksport.com/stream2?ref=rf",
-    "logo": "null",
     "description": "sports",
     "language": "english",
     "country": "UG",
@@ -2130,7 +2349,6 @@
     "name": "US Local News",
     "type": "radio",
     "streamUrl": "http://usa8.fastcast4u.com:5168/1/",
-    "logo": "null",
     "description": "rock",
     "language": "luganda",
     "country": "UG",
@@ -3775,21 +3993,6 @@
       "rock"
     ],
     "website": "http://www.metalrock.fm/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-trance-is-star-radio-ua",
-    "name": "TRANCE IS STAR RADIO",
-    "type": "radio",
-    "streamUrl": "https://myradio24.org/tisradio",
-    "logo": "https://abs.twimg.com/favicons/twitter.2.ico",
-    "description": "best music for you",
-    "language": "english,russian,ukrainian",
-    "country": "UA",
-    "categories": [
-      "best music for you"
-    ],
-    "website": "https://twitter.com/tranceisstar",
     "isFeatured": false
   },
   {
