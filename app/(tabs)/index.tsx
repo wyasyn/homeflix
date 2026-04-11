@@ -20,8 +20,6 @@ export default function HomeScreen() {
   const internationalStations = useStationStore((s) => s.internationalStations);
   const featuredStations = useStationStore((s) => s.featuredStations);
 
-  const heroStation = featuredStations[0];
-
   if (isLoading && stations.length === 0) {
     return (
       <SafeAreaView className="flex-1 bg-background" edges={["top"]}>
@@ -77,7 +75,9 @@ export default function HomeScreen() {
         </View>
 
         {/* Hero */}
-        {heroStation && <HeroSection />}
+        {featuredStations.length > 0 && (
+          <HeroSection featuredStations={featuredStations} />
+        )}
 
         {/* Category rows */}
         <CategoryRow title="Popular TV" stations={tvStations.slice(0, 10)} />

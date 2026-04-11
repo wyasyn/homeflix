@@ -1,7 +1,9 @@
 import { WARMUP_SOURCE, WARMUP_STYLE } from "@/constants/contants";
+import { clsx, type ClassValue } from "clsx";
 import { useEffect, useState } from "react";
 import { InteractionManager, View } from "react-native";
 import Video from "react-native-video";
+import { twMerge } from "tailwind-merge";
 
 export function VideoWarmup({ onReady }: { onReady: () => void }) {
   const [mounted, setMounted] = useState(false);
@@ -30,4 +32,8 @@ export function VideoWarmup({ onReady }: { onReady: () => void }) {
       />
     </View>
   );
+}
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
 }
