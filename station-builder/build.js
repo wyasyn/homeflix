@@ -29,61 +29,41 @@ const RADIO_UGANDA =
 const RADIO_INTERNATIONAL =
   "https://de1.api.radio-browser.info/json/stations/search?limit=150&order=votes&reverse=true&hidebroken=true";
 
+// User-Agent required by radio-browser.info to avoid being blocked
+const RADIO_USER_AGENT = "Homeflix/1.0 (github.com/wyasyn/homeflix)";
+
 // ─── Filtering constants ──────────────────────────────────────────────────────
 
-const INTERNATIONAL_ENGLISH_CAP = 300;
+const INTERNATIONAL_ENGLISH_CAP = 200;
 
 const WANTED_TV_CATEGORIES = new Set([
-  "news",
-  "general",
-  "entertainment",
-  "sports",
-  "kids",
-  "business",
-  "documentary",
-  "music",
-  "science",
-  "education",
+  "news", "general", "entertainment", "sports", "kids",
+  "business", "documentary", "science", "education",
 ]);
 
-// Known Uganda channel names (for matching channels that may not have UG country code)
+// Countries where English is an official or dominant language.
+// Used to filter international channels more reliably than trusting
+// the "languages" field in iptv-org (which is sometimes incorrect).
+const ENGLISH_SPEAKING_COUNTRIES = new Set([
+  "US", "GB", "CA", "AU", "NZ", "IE", "ZA", "NG", "KE", "GH",
+  "JM", "TT", "BB", "SG", "PH", "IN", "PK", "MT", "ZW", "ZM",
+  "BW", "NA", "LS", "SZ", "RW", "UG", // UG already handled separately
+]);
+
+// Known Ugandan channel names for M3U matching (exact / close match only)
 const UGANDA_CHANNEL_NAMES = [
-  "NBS TV",
-  "NTV Uganda",
-  "UBC TV",
-  "Sanyuka TV",
-  "Spark TV",
-  "Urban TV",
-  "Pearl Magic",
-  "Pearl Magic Prime",
-  "BBS TV",
-  "Record TV Uganda",
-  "Bukedde TV",
-  "Bukedde TV 1",
-  "Bukedde TV 2",
-  "3ABN TV Uganda",
-  "ACW UG TV",
-  "Alpha Digital",
-  "Ark TV",
-  "BTM TV",
-  "BTV",
-  "Dream TV",
-  "Faraja Television",
-  "FORT TV",
-  "Galaxy TV",
-  "Gugudde TV",
-  "Praise Jesus Tower TV",
-  "Salt TV",
-  "TV West",
-  "Wan Luo TV",
-  "Hope Channel Uganda",
-  "Nile Broadcasting Services",
-  "Star TV Uganda",
-  "Top TV",
-  "Agape TV",
-  "Canary TV",
-  "KBC Uganda",
+  "NBS TV", "NTV Uganda", "UBC TV", "Sanyuka TV", "Spark TV",
+  "Urban TV", "Pearl Magic", "Pearl Magic Prime", "BBS TV Buganda",
+  "Record TV Uganda", "Bukedde TV", "Bukedde TV 1", "Bukedde TV 2",
+  "3ABN TV Uganda", "ACW UG TV", "Alpha Digital", "Ark TV", "BTM TV",
+  "BTV Uganda", "Dream TV Uganda", "Faraja Television", "FORT TV",
+  "Galaxy TV Uganda", "Gugudde TV", "Praise Jesus Tower TV", "Salt TV Uganda",
+  "TV West", "Wan Luo TV", "Hope Channel Uganda",
+  "Nile Broadcasting Services", "Star TV Uganda", "Agape TV Uganda",
+  "Canary TV Uganda", "KBC Uganda",
 ];
+
+const UGANDA_NAMES_LOWER = UGANDA_CHANNEL_NAMES.map((n) => n.toLowerCase());
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -94,17 +74,23 @@ function slugify(name) {
     .replace(/^-|-$/g, "");
 }
 
-function isUgandaChannel(name, altNames = []) {
-  const all = [name, ...altNames].map((n) => n.toLowerCase());
-  const wanted = UGANDA_CHANNEL_NAMES.map((n) => n.toLowerCase());
-  return all.some((n) =>
-    wanted.some((w) => n === w || n.includes(w) || w.includes(n))
+/**
+ * Strict Uganda channel check — used for orphan M3U streams only.
+ * Requires a close name match (exact or one contains the other at word level).
+ */
+function isUgandaChannelName(name) {
+  const n = name.toLowerCase().trim();
+  return UGANDA_NAMES_LOWER.some(
+    (w) => n === w || n.startsWith(w) || w.startsWith(n)
   );
 }
 
 function inferType(categories) {
   if (
-    categories.some((c) => typeof c === "string" && c.toLowerCase().includes("radio"))
+    Array.isArray(categories) &&
+    categories.some(
+      (c) => typeof c === "string" && c.toLowerCase().includes("radio")
+    )
   )
     return "radio";
   return "tv";
@@ -113,15 +99,8 @@ function inferType(categories) {
 // ─── Stream URL validation ────────────────────────────────────────────────────
 
 const STREAM_CONTENT_TYPES = [
-  "audio",
-  "video",
-  "mpegurl",
-  "ogg",
-  "mpeg",
-  "opus",
-  "aac",
-  "mp2t",
-  "mp4",
+  "audio", "video", "mpegurl", "ogg", "mpeg",
+  "opus", "aac", "mp2t", "mp4",
 ];
 
 async function checkUrl(url, timeoutMs) {
@@ -212,7 +191,7 @@ function mergeChannelsAndStreams(channels, streams) {
       id,
       name: channel.name,
       type: inferType(channel.categories ?? []),
-      logo: undefined,
+      logo: channel.logo ?? undefined,
       streamUrl: bestStream.url,
       description: (channel.categories ?? []).join(", ") || "Live channel",
       language: channel.languages?.[0] ?? "English",
@@ -223,8 +202,9 @@ function mergeChannelsAndStreams(channels, streams) {
     });
   }
 
+  // Orphan streams (no channel ID) — only add well-known Uganda names
   for (const stream of unmatchedStreams) {
-    if (!isUgandaChannel(stream.title)) continue;
+    if (!isUgandaChannelName(stream.title)) continue;
     const id = slugify(stream.title);
     if (seen.has(id)) continue;
     seen.add(id);
@@ -261,6 +241,12 @@ function parseM3U(content) {
     const groupMatch = infoLine.match(/group-title="([^"]*)"/);
 
     const name = nameMatch?.[1]?.trim() || "Unknown";
+
+    // Only include M3U entries that are known Ugandan channels.
+    // The Uganda M3U from iptv-org also contains non-Ugandan channels
+    // (Pluto TV, WBTV, etc.) — exclude those.
+    if (!isUgandaChannelName(name)) continue;
+
     const id = slugify(name);
     if (seen.has(id)) continue;
     seen.add(id);
@@ -288,6 +274,7 @@ async function fetchTvStations() {
   console.log("  Fetching iptv-org channels + streams...");
   const stations = [];
   const seenIds = new Set();
+  const seenUrls = new Set();
 
   try {
     const [channelsRes, streamsRes] = await Promise.all([
@@ -308,9 +295,6 @@ async function fetchTvStations() {
         if (c.closed || c.is_nsfw) continue;
         if (typeof c.name !== "string" || typeof c.id !== "string") continue;
 
-        const altNames = Array.isArray(c.alt_names)
-          ? c.alt_names.filter((n) => typeof n === "string")
-          : [];
         const langs = Array.isArray(c.languages)
           ? c.languages.filter((l) => typeof l === "string")
           : [];
@@ -319,18 +303,19 @@ async function fetchTvStations() {
           : [];
 
         const isUganda = c.country === "UG";
-        const isKnownUganda = isUgandaChannel(c.name, altNames);
-        const isEnglish = langs.includes("eng");
-        const hasWantedCategory = cats.some((cat) =>
-          WANTED_TV_CATEGORIES.has(cat.toLowerCase())
-        );
+
+        // International: must speak English AND be from an English-speaking
+        // country AND have a relevant category. This avoids picking up channels
+        // that incorrectly claim "eng" language in iptv-org's data.
         const isIntlEnglish =
-          isEnglish &&
-          hasWantedCategory &&
+          !isUganda &&
+          langs.includes("eng") &&
+          ENGLISH_SPEAKING_COUNTRIES.has(c.country) &&
+          cats.some((cat) => WANTED_TV_CATEGORIES.has(cat.toLowerCase())) &&
           internationalCount < INTERNATIONAL_ENGLISH_CAP;
 
-        if (!isUganda && !isKnownUganda && !isIntlEnglish) continue;
-        if (!isUganda && !isKnownUganda) internationalCount++;
+        if (!isUganda && !isIntlEnglish) continue;
+        if (!isUganda) internationalCount++;
 
         wantedChannelIds.add(c.id);
         candidateChannels.push(c);
@@ -342,9 +327,8 @@ async function fetchTvStations() {
         if (typeof s.url !== "string") continue;
         if (s.channel && wantedChannelIds.has(s.channel)) {
           candidateStreams.push(s);
-        } else if (!s.channel && typeof s.title === "string" && isUgandaChannel(s.title)) {
-          candidateStreams.push(s);
         }
+        // Orphan streams without a channel ID are handled via M3U below
       }
 
       console.log(
@@ -353,8 +337,9 @@ async function fetchTvStations() {
 
       const merged = mergeChannelsAndStreams(candidateChannels, candidateStreams);
       for (const s of merged) {
-        if (!seenIds.has(s.id)) {
+        if (!seenIds.has(s.id) && !seenUrls.has(s.streamUrl)) {
           seenIds.add(s.id);
+          seenUrls.add(s.streamUrl);
           stations.push(s);
         }
       }
@@ -363,23 +348,38 @@ async function fetchTvStations() {
     console.warn("  iptv-org JSON API failed:", e.message);
   }
 
+  // Uganda M3U — filtered strictly to known Uganda channel names only
   try {
     const m3uRes = await fetch(UGANDA_M3U);
     if (m3uRes.ok) {
       const m3uStations = parseM3U(await m3uRes.text());
+      let added = 0;
       for (const s of m3uStations) {
-        if (!seenIds.has(s.id)) {
+        if (!seenIds.has(s.id) && !seenUrls.has(s.streamUrl)) {
           seenIds.add(s.id);
+          seenUrls.add(s.streamUrl);
           stations.push(s);
+          added++;
         }
       }
-      console.log(`  Uganda M3U: ${m3uStations.length} additional entries`);
+      console.log(`  Uganda M3U: ${added} additional Uganda channels`);
     }
   } catch (e) {
     console.warn("  Uganda M3U failed:", e.message);
   }
 
-  return stations;
+  // Deduplicate by stream URL a final time (removes quality variants like
+  // "Bukedde TV 1 (576p)" that share a URL with "Bukedde TV 1")
+  const urlSeen = new Set();
+  const deduped = [];
+  for (const s of stations) {
+    if (!urlSeen.has(s.streamUrl)) {
+      urlSeen.add(s.streamUrl);
+      deduped.push(s);
+    }
+  }
+
+  return deduped;
 }
 
 // ─── Radio: radio-browser.info ────────────────────────────────────────────────
@@ -390,17 +390,46 @@ async function fetchRadioStations() {
   const seenUrls = new Set();
   const seenIds = new Set();
 
-  const [ugandaRes, intlRes] = await Promise.allSettled([
-    fetch(RADIO_UGANDA),
-    fetch(RADIO_INTERNATIONAL),
+  const headers = {
+    "User-Agent": RADIO_USER_AGENT,
+    Accept: "application/json",
+  };
+
+  // Try multiple radio-browser.info servers in case one is down
+  const servers = [
+    "https://de1.api.radio-browser.info",
+    "https://nl1.api.radio-browser.info",
+    "https://at1.api.radio-browser.info",
+  ];
+
+  async function radioFetch(path) {
+    for (const server of servers) {
+      try {
+        const res = await fetch(`${server}${path}`, {
+          headers,
+          signal: AbortSignal.timeout(15000),
+        });
+        if (res.ok) return res;
+      } catch {
+        // try next server
+      }
+    }
+    return null;
+  }
+
+  const [ugandaRes, intlRes] = await Promise.all([
+    radioFetch("/json/stations/bycountry/Uganda"),
+    radioFetch(
+      "/json/stations/search?limit=150&order=votes&reverse=true&hidebroken=true&language=english"
+    ),
   ]);
 
-  for (const result of [ugandaRes, intlRes]) {
-    if (result.status !== "fulfilled" || !result.value.ok) continue;
+  for (const res of [ugandaRes, intlRes]) {
+    if (!res) continue;
 
     let raw;
     try {
-      raw = await result.value.json();
+      raw = await res.json();
     } catch {
       continue;
     }
@@ -415,10 +444,7 @@ async function fetchRadioStations() {
 
       const countryCode = (item.countrycode ?? "").toUpperCase();
       const categories = item.tags
-        ? item.tags
-            .split(",")
-            .map((t) => t.trim())
-            .filter(Boolean)
+        ? item.tags.split(",").map((t) => t.trim()).filter(Boolean)
         : [];
 
       const station = {
@@ -443,6 +469,7 @@ async function fetchRadioStations() {
     }
   }
 
+  console.log(`  radio-browser.info: ${stations.length} stations found`);
   return stations;
 }
 
@@ -471,13 +498,16 @@ async function main() {
   );
 
   const all = [...validTv, ...validRadio];
+  const ugTv = all.filter((s) => s.type === "tv" && s.country === "UG");
+  const intlTv = all.filter((s) => s.type === "tv" && s.country !== "UG");
+  const ugRadio = all.filter((s) => s.type === "radio" && s.country === "UG");
+  const intlRadio = all.filter((s) => s.type === "radio" && s.country !== "UG");
+
   console.log(`Total working stations: ${all.length}`);
-  console.log(
-    `  TV: ${all.filter((s) => s.type === "tv").length}`,
-    `| Radio: ${all.filter((s) => s.type === "radio").length}`,
-    `| Uganda: ${all.filter((s) => s.country === "UG").length}`,
-    `| International: ${all.filter((s) => s.country !== "UG").length}`
-  );
+  console.log(`  Uganda TV:        ${ugTv.length}`);
+  console.log(`  International TV: ${intlTv.length}`);
+  console.log(`  Uganda Radio:     ${ugRadio.length}`);
+  console.log(`  International Radio: ${intlRadio.length}`);
 
   mkdirSync(OUTPUT_DIR, { recursive: true });
   writeFileSync(OUTPUT_FILE, JSON.stringify(all, null, 2));
