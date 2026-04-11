@@ -1,8 +1,7 @@
-import { memo } from "react";
-import { View, Text, FlatList } from "react-native";
-import { StationCard } from "./StationCard";
 import type { Station } from "@/lib/schemas";
-import { useTheme } from "@/lib/useTheme";
+import { memo } from "react";
+import { FlatList, Text, View } from "react-native";
+import { StationCard } from "./StationCard";
 
 interface CategoryRowProps {
   title: string;
@@ -13,19 +12,11 @@ export const CategoryRow = memo(function CategoryRow({
   title,
   stations,
 }: CategoryRowProps) {
-  const { colors } = useTheme();
   if (stations.length === 0) return null;
 
   return (
     <View className="mb-6">
-      <Text
-        className="mb-3 px-4"
-        style={{
-          color: colors.textPrimary,
-          fontSize: 18,
-          fontWeight: "700",
-        }}
-      >
+      <Text className="mb-3 px-4 text-lg font-bold text-foreground">
         {title}
       </Text>
       <FlatList
@@ -35,7 +26,7 @@ export const CategoryRow = memo(function CategoryRow({
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={{ paddingHorizontal: 16, gap: 12 }}
         renderItem={({ item }) => (
-          <View style={{ width: 160 }}>
+          <View className="w-40">
             <StationCard station={item} />
           </View>
         )}

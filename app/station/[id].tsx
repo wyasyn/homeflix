@@ -1,20 +1,20 @@
-import { View, Text, ScrollView, Pressable } from "react-native";
-import { useLocalSearchParams, useRouter } from "expo-router";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { HugeiconsIcon } from "@hugeicons/react-native";
+import { AudioPlayer } from "@/components/AudioPlayer";
+import { VideoPlayer } from "@/components/VideoPlayer";
+import { useTheme } from "@/lib/useTheme";
+import { useFavouritesStore } from "@/stores/useFavouritesStore";
+import { useStationStore } from "@/stores/useStationStore";
 import {
   ArrowLeft01Icon,
   FavouriteIcon,
-  Tv01Icon,
-  Radio01Icon,
   LinkSquare01Icon,
+  Radio01Icon,
+  Tv01Icon,
 } from "@hugeicons/core-free-icons";
-import { useStationStore } from "@/stores/useStationStore";
-import { useFavouritesStore } from "@/stores/useFavouritesStore";
-import { VideoPlayer } from "@/components/VideoPlayer";
-import { AudioPlayer } from "@/components/AudioPlayer";
-import { useTheme } from "@/lib/useTheme";
+import { HugeiconsIcon } from "@hugeicons/react-native";
+import { useLocalSearchParams, useRouter } from "expo-router";
 import * as WebBrowser from "expo-web-browser";
+import { Pressable, ScrollView, Text, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function StationScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -26,33 +26,23 @@ export default function StationScreen() {
 
   if (!station) {
     return (
-      <SafeAreaView
-        style={{
-          flex: 1,
-          alignItems: "center",
-          justifyContent: "center",
-          backgroundColor: colors.background,
-        }}
-      >
-        <Text style={{ color: colors.textSecondary }}>Station not found</Text>
-        <Pressable onPress={() => router.back()} style={{ marginTop: 16 }}>
-          <Text style={{ color: colors.primary }}>Go back</Text>
+      <SafeAreaView className="flex-1 items-center justify-center bg-background">
+        <Text className="text-text-secondary">Station not found</Text>
+        <Pressable onPress={() => router.back()} className="mt-4">
+          <Text className="text-primary">Go back</Text>
         </Pressable>
       </SafeAreaView>
     );
   }
 
-  const iconPill = {
-    backgroundColor: colors.surface,
-    padding: 10,
-    borderRadius: 999,
-  };
-
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: colors.background }}>
+    <SafeAreaView className="flex-1 bg-background">
       {/* Header */}
       <View className="flex-row items-center justify-between px-4 py-3">
-        <Pressable onPress={() => router.back()} style={iconPill}>
+        <Pressable
+          onPress={() => router.back()}
+          className="rounded-full bg-surface p-2.5"
+        >
           <HugeiconsIcon
             icon={ArrowLeft01Icon}
             size={22}
@@ -60,7 +50,10 @@ export default function StationScreen() {
           />
         </Pressable>
 
-        <Pressable onPress={() => toggle(id)} style={iconPill}>
+        <Pressable
+          onPress={() => toggle(id)}
+          className="rounded-full bg-surface p-2.5"
+        >
           <HugeiconsIcon
             icon={FavouriteIcon}
             size={22}
@@ -95,27 +88,13 @@ export default function StationScreen() {
               size={20}
               color={station.type === "tv" ? colors.primary : colors.success}
             />
-            <Text
-              style={{
-                marginLeft: 8,
-                fontSize: 24,
-                fontWeight: "700",
-                color: colors.textPrimary,
-              }}
-            >
+            <Text className="ml-2 text-2xl font-bold text-foreground">
               {station.name}
             </Text>
           </View>
 
           {station.description ? (
-            <Text
-              style={{
-                marginTop: 12,
-                fontSize: 15,
-                lineHeight: 24,
-                color: colors.textSecondary,
-              }}
-            >
+            <Text className="mt-3 text-[15px] leading-6 text-text-secondary">
               {station.description}
             </Text>
           ) : null}
@@ -124,22 +103,8 @@ export default function StationScreen() {
           {station.categories.length > 0 && (
             <View className="mt-4 flex-row flex-wrap gap-2">
               {station.categories.map((cat) => (
-                <View
-                  key={cat}
-                  style={{
-                    backgroundColor: colors.surface,
-                    paddingHorizontal: 12,
-                    paddingVertical: 6,
-                    borderRadius: 8,
-                  }}
-                >
-                  <Text
-                    style={{
-                      color: colors.textSecondary,
-                      fontSize: 11,
-                      textTransform: "capitalize",
-                    }}
-                  >
+                <View key={cat} className="rounded-lg bg-surface px-3 py-1.5">
+                  <Text className="text-[11px] capitalize text-text-secondary">
                     {cat}
                   </Text>
                 </View>
@@ -148,14 +113,7 @@ export default function StationScreen() {
           )}
 
           {/* Details */}
-          <View
-            style={{
-              marginTop: 24,
-              backgroundColor: colors.surface,
-              borderRadius: 16,
-              padding: 16,
-            }}
-          >
+          <View className="mt-6 rounded-2xl bg-surface p-4">
             <DetailRow label="Language" value={station.language} />
             <DetailRow label="Country" value={station.country} />
             <DetailRow
@@ -168,23 +126,14 @@ export default function StationScreen() {
           {station.website && (
             <Pressable
               onPress={() => WebBrowser.openBrowserAsync(station.website!)}
-              className="mt-4 flex-row items-center"
-              style={{
-                backgroundColor: colors.surface,
-                borderRadius: 16,
-                padding: 16,
-              }}
+              className="mt-4 flex-row items-center rounded-2xl bg-surface p-4"
             >
               <HugeiconsIcon
                 icon={LinkSquare01Icon}
                 size={20}
                 color={colors.primary}
               />
-              <Text
-                style={{ marginLeft: 12, flex: 1, color: colors.primary }}
-              >
-                Visit website
-              </Text>
+              <Text className="ml-3 flex-1 text-primary">Visit website</Text>
             </Pressable>
           )}
         </View>
@@ -194,19 +143,10 @@ export default function StationScreen() {
 }
 
 function DetailRow({ label, value }: { label: string; value: string }) {
-  const { colors } = useTheme();
   return (
     <View className="flex-row items-center justify-between py-2">
-      <Text style={{ fontSize: 13, color: colors.textSecondary }}>{label}</Text>
-      <Text
-        style={{
-          fontSize: 13,
-          fontWeight: "500",
-          color: colors.textPrimary,
-        }}
-      >
-        {value}
-      </Text>
+      <Text className="text-[13px] text-text-secondary">{label}</Text>
+      <Text className="text-[13px] font-medium text-foreground">{value}</Text>
     </View>
   );
 }

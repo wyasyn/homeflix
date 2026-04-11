@@ -1,34 +1,34 @@
-import { useState, useEffect, useCallback, useMemo } from "react";
-import { View, Text, Pressable, ActivityIndicator } from "react-native";
+import type { ThemePalette } from "@/constants/theme";
+import { useTheme } from "@/lib/useTheme";
 import {
-  useAudioPlayer,
-  useAudioPlayerStatus,
-  setAudioModeAsync,
-} from "expo-audio";
-import { Image } from "expo-image";
-import { HugeiconsIcon } from "@hugeicons/react-native";
-import {
-  PlayCircleIcon,
   PauseIcon,
+  PlayCircleIcon,
   Radio01Icon,
   StopIcon,
   VolumeHighIcon,
   VolumeLowIcon,
   VolumeMuteIcon,
 } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react-native";
+import {
+  setAudioModeAsync,
+  useAudioPlayer,
+  useAudioPlayerStatus,
+} from "expo-audio";
+import { Image } from "expo-image";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { ActivityIndicator, Pressable, Text, View } from "react-native";
+import { Gesture, GestureDetector } from "react-native-gesture-handler";
 import Animated, {
-  useAnimatedStyle,
-  useSharedValue,
-  withRepeat,
-  withTiming,
-  withDelay,
-  withSequence,
   cancelAnimation,
   Easing,
+  useAnimatedStyle,
+  useSharedValue,
+  withDelay,
+  withRepeat,
+  withSequence,
+  withTiming,
 } from "react-native-reanimated";
-import { Gesture, GestureDetector } from "react-native-gesture-handler";
-import { useTheme } from "@/lib/useTheme";
-import type { ThemePalette } from "@/constants/theme";
 
 interface AudioPlayerProps {
   streamUrl: string;
@@ -79,14 +79,10 @@ function WaveformBar({
 
   return (
     <Animated.View
+      className="mx-px w-[3px] rounded-[1.5px]"
       style={[
         barStyle,
-        {
-          width: 3,
-          borderRadius: 1.5,
-          backgroundColor: isPlaying ? colors.primary : colors.textSecondary,
-          marginHorizontal: 1,
-        },
+        { backgroundColor: isPlaying ? colors.primary : colors.textSecondary },
       ]}
     />
   );
@@ -205,11 +201,17 @@ export function AudioPlayer({
           ? "Stopped"
           : "Paused";
 
-  const statusColor = isPlaying
-    ? colors.primary
+  const statusClass = isPlaying
+    ? "text-primary"
     : hasError
-      ? colors.error
-      : colors.textSecondary;
+      ? "text-error"
+      : "text-text-secondary";
+
+  const dotClass = isPlaying
+    ? "bg-primary"
+    : hasError
+      ? "bg-error"
+      : "bg-text-secondary";
 
   const volumeIcon =
     volume === 0
@@ -232,31 +234,13 @@ export function AudioPlayer({
       <View className="relative mb-8 items-center justify-center">
         {/* Glow ring */}
         <Animated.View
-          style={[
-            glowStyle,
-            {
-              position: "absolute",
-              width: 240,
-              height: 240,
-              borderRadius: 120,
-              backgroundColor: colors.primary,
-            },
-          ]}
+          className="absolute h-60 w-60 rounded-full bg-primary"
+          style={glowStyle}
         />
 
         <Animated.View
-          style={[
-            discStyle,
-            {
-              height: 224,
-              width: 224,
-              alignItems: "center",
-              justifyContent: "center",
-              overflow: "hidden",
-              borderRadius: 999,
-              backgroundColor: colors.surfaceLight,
-            },
-          ]}
+          className="h-56 w-56 items-center justify-center overflow-hidden rounded-full bg-surface-light"
+          style={discStyle}
         >
           {logo ? (
             <Image
@@ -274,43 +258,19 @@ export function AudioPlayer({
           )}
 
           {/* Vinyl hole overlay */}
-          <View
-            style={{
-              position: "absolute",
-              height: 40,
-              width: 40,
-              borderRadius: 999,
-              backgroundColor: colors.background,
-            }}
-          />
+          <View className="absolute h-10 w-10 rounded-full bg-background" />
         </Animated.View>
       </View>
 
       {/* Station name */}
-      <Text
-        style={{
-          marginBottom: 4,
-          textAlign: "center",
-          fontSize: 24,
-          fontWeight: "700",
-          color: colors.textPrimary,
-        }}
-      >
+      <Text className="mb-1 text-center text-2xl font-bold text-foreground">
         {stationName}
       </Text>
 
       {/* Status indicator */}
       <View className="mb-6 flex-row items-center gap-2">
-        {isPlaying && (
-          <View
-            className="h-2 w-2 rounded-full"
-            style={{ backgroundColor: statusColor }}
-          />
-        )}
-        <Text
-          className="text-center text-sm font-medium"
-          style={{ color: statusColor }}
-        >
+        {isPlaying && <View className={`h-2 w-2 rounded-full ${dotClass}`} />}
+        <Text className={`text-center text-sm font-medium ${statusClass}`}>
           {statusText}
         </Text>
       </View>
@@ -327,24 +287,14 @@ export function AudioPlayer({
         <Pressable
           onPress={stop}
           disabled={!isPlaying && !isLoading}
-          style={{
-            opacity: isPlaying || isLoading ? 1 : 0.4,
-            backgroundColor: colors.surface,
-            padding: 16,
-            borderRadius: 999,
-          }}
+          className={`rounded-full bg-surface p-4 ${isPlaying || isLoading ? "" : "opacity-40"}`}
         >
           <HugeiconsIcon icon={StopIcon} size={28} color={colors.textPrimary} />
         </Pressable>
 
         <Pressable
           onPress={hasError ? retry : togglePlayback}
-          style={({ pressed }) => ({
-            transform: [{ scale: pressed ? 0.95 : 1 }],
-            backgroundColor: colors.primary,
-            padding: 24,
-            borderRadius: 999,
-          })}
+          className="rounded-full bg-primary p-6 active:scale-95"
         >
           {isLoading ? (
             <ActivityIndicator size={36} color="#fff" />
@@ -359,11 +309,7 @@ export function AudioPlayer({
 
         <Pressable
           onPress={() => setVolume((v) => (v > 0 ? 0 : 1))}
-          style={{
-            backgroundColor: colors.surface,
-            padding: 16,
-            borderRadius: 999,
-          }}
+          className="rounded-full bg-surface p-4"
         >
           <HugeiconsIcon icon={volumeIcon} size={28} color={colors.textPrimary} />
         </Pressable>
@@ -372,15 +318,7 @@ export function AudioPlayer({
       {/* Volume slider */}
       <View className="w-full flex-row items-center justify-center gap-3 px-4">
         <HugeiconsIcon icon={VolumeLowIcon} size={16} color={colors.textSecondary} />
-        <View
-          style={{
-            overflow: "hidden",
-            borderRadius: 999,
-            backgroundColor: colors.surface,
-            width: VOLUME_SLIDER_WIDTH,
-            height: 36,
-          }}
-        >
+        <View className="h-9 w-[200px] overflow-hidden rounded-full bg-surface">
           <GestureDetector gesture={volumeGesture}>
             <Pressable
               onPress={(e) => {
@@ -390,28 +328,13 @@ export function AudioPlayer({
                 );
                 setVolume(pct);
               }}
-              style={{
-                width: VOLUME_SLIDER_WIDTH,
-                height: 36,
-                justifyContent: "center",
-              }}
+              className="h-9 w-[200px] justify-center"
             >
               {/* Track */}
-              <View
-                style={{
-                  marginHorizontal: 12,
-                  height: 6,
-                  borderRadius: 999,
-                  backgroundColor: colors.border,
-                }}
-              >
+              <View className="mx-3 h-1.5 rounded-full bg-border">
                 <View
-                  style={{
-                    height: 6,
-                    borderRadius: 999,
-                    backgroundColor: colors.primary,
-                    width: `${volume * 100}%`,
-                  }}
+                  className="h-1.5 rounded-full bg-primary"
+                  style={{ width: `${volume * 100}%` }}
                 />
               </View>
               {/* Thumb */}
@@ -429,8 +352,8 @@ export function AudioPlayer({
       </View>
 
       {hasError && (
-        <Pressable onPress={retry} style={{ marginTop: 24 }}>
-          <Text style={{ color: colors.primary }}>Tap play to retry</Text>
+        <Pressable onPress={retry} className="mt-6">
+          <Text className="text-primary">Tap play to retry</Text>
         </Pressable>
       )}
     </View>

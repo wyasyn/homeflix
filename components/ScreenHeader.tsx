@@ -1,5 +1,5 @@
 import { Text, View } from "react-native";
-import { useTheme } from "@/lib/useTheme";
+import { RefreshIndicator } from "./RefreshIndicator";
 
 interface ScreenHeaderProps {
   title: string;
@@ -7,19 +7,17 @@ interface ScreenHeaderProps {
 }
 
 export function ScreenHeader({ title, subtitle }: ScreenHeaderProps) {
-  const { colors } = useTheme();
   return (
     <View className="px-4 pb-3 pt-4">
-      <Text
-        style={{ color: colors.textPrimary, fontSize: 24, fontWeight: "700" }}
-      >
-        {title}
-      </Text>
-      <Text
-        style={{ color: colors.textSecondary, fontSize: 14, marginTop: 4 }}
-      >
-        {subtitle}
-      </Text>
+      <View className="flex-row items-start justify-between">
+        <View className="flex-1 pr-3">
+          <Text className="text-2xl font-bold text-foreground">{title}</Text>
+          <Text className="mt-1 text-sm text-text-secondary">{subtitle}</Text>
+        </View>
+        <View className="pt-1">
+          <RefreshIndicator />
+        </View>
+      </View>
     </View>
   );
 }

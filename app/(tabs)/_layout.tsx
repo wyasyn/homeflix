@@ -1,9 +1,9 @@
 import { useTheme } from "@/lib/useTheme";
 import { useAuth } from "@clerk/expo";
 import {
+  FavouriteIcon,
   Home01Icon,
   Radio01Icon,
-  Settings01Icon,
   Tv01Icon,
 } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react-native";
@@ -13,7 +13,9 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 export default function TabLayout() {
   const insets = useSafeAreaInsets();
   const { colors } = useTheme();
-  const { isSignedIn, isLoaded } = useAuth();
+  const { isSignedIn, isLoaded } = useAuth({
+    treatPendingAsSignedOut: false,
+  });
 
   if (!isLoaded) return null;
   if (!isSignedIn) return <Redirect href={"/(auth)/sign-in" as never} />;
@@ -62,11 +64,11 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="settings"
+        name="favourites"
         options={{
-          title: "Settings",
+          title: "Favourites",
           tabBarIcon: ({ color, size }) => (
-            <HugeiconsIcon icon={Settings01Icon} size={size} color={color} />
+            <HugeiconsIcon icon={FavouriteIcon} size={size} color={color} />
           ),
         }}
       />

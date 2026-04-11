@@ -1,4 +1,4 @@
-import { useColorScheme } from "react-native";
+import { useColorScheme } from "nativewind";
 import { darkColors, lightColors, type ThemePalette } from "@/constants/theme";
 import { useThemeStore, type ThemeMode } from "@/stores/useThemeStore";
 
@@ -10,10 +10,9 @@ export interface Theme {
 
 export function useTheme(): Theme {
   const mode = useThemeStore((s) => s.mode);
-  const systemScheme = useColorScheme();
+  const { colorScheme } = useColorScheme();
 
-  const resolved: "light" | "dark" =
-    mode === "system" ? (systemScheme === "light" ? "light" : "dark") : mode;
+  const resolved: "light" | "dark" = colorScheme === "light" ? "light" : "dark";
 
   return {
     mode,

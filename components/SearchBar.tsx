@@ -16,18 +16,14 @@ export function SearchBar({
 }: SearchBarProps) {
   const { colors } = useTheme();
   return (
-    <View
-      className="mx-4 mb-4 flex-row items-center px-4 py-1"
-      style={{ backgroundColor: colors.surface, borderRadius: 16 }}
-    >
+    <View className="mx-4 mb-4 flex-row items-center rounded-2xl bg-surface px-4 py-1">
       <HugeiconsIcon
         icon={Search01Icon}
         size={20}
         color={colors.textSecondary}
       />
       <TextInput
-        className="ml-3 flex-1 text-base"
-        style={{ color: colors.textPrimary }}
+        className="ml-3 flex-1 text-base text-foreground"
         value={value}
         onChangeText={onChangeText}
         placeholder={placeholder}

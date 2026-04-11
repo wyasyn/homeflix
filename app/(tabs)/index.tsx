@@ -1,19 +1,18 @@
-import { ScrollView, View, Text, Pressable } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { useRouter } from "expo-router";
-import { FavouriteIcon } from "@hugeicons/core-free-icons";
-import { HugeiconsIcon } from "@hugeicons/react-native";
-import { useStationStore } from "@/stores/useStationStore";
-import { useFavouritesStore } from "@/stores/useFavouritesStore";
-import { HeroSection } from "@/components/HeroSection";
 import { CategoryRow } from "@/components/CategoryRow";
+import { HeroSection } from "@/components/HeroSection";
+import { RefreshIndicator } from "@/components/RefreshIndicator";
 import { SkeletonCard } from "@/components/SkeletonCard";
-import { useTheme } from "@/lib/useTheme";
+import { useStationStore } from "@/stores/useStationStore";
+import { useUser } from "@clerk/expo";
+import { UserIcon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react-native";
+import { useRouter } from "expo-router";
+import { Image, Pressable, ScrollView, Text, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function HomeScreen() {
-  const { colors } = useTheme();
   const router = useRouter();
-  const favouriteCount = useFavouritesStore((s) => s.ids.length);
+  const { user } = useUser();
   const stations = useStationStore((s) => s.stations);
   const isLoading = useStationStore((s) => s.isLoading);
   const tvStations = useStationStore((s) => s.tvStations);
@@ -25,30 +24,13 @@ export default function HomeScreen() {
 
   if (isLoading && stations.length === 0) {
     return (
-      <SafeAreaView
-        style={{ flex: 1, backgroundColor: colors.background }}
-        edges={["top"]}
-      >
+      <SafeAreaView className="flex-1 bg-background" edges={["top"]}>
         <View className="px-4 pt-6">
-          <View
-            style={{
-              marginBottom: 24,
-              height: 32,
-              width: 128,
-              borderRadius: 4,
-              backgroundColor: colors.surfaceLight,
-            }}
-          />
-          <View
-            style={{
-              height: 208,
-              borderRadius: 16,
-              backgroundColor: colors.surfaceLight,
-            }}
-          />
+          <View className="mb-6 h-8 w-32 rounded bg-surface-light" />
+          <View className="h-52 rounded-2xl bg-surface-light" />
           <View className="mt-6 flex-row gap-3">
             {Array.from({ length: 3 }).map((_, i) => (
-              <View key={i} style={{ width: 160 }}>
+              <View key={i} className="w-40">
                 <SkeletonCard />
               </View>
             ))}
@@ -59,85 +41,39 @@ export default function HomeScreen() {
   }
 
   return (
-    <SafeAreaView
-      style={{ flex: 1, backgroundColor: colors.background }}
-      edges={["top"]}
-    >
+    <SafeAreaView className="flex-1 bg-background" edges={["top"]}>
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ paddingBottom: 20 }}
       >
         {/* Header */}
-        <View
-          className="flex-row items-center justify-between px-4 pb-4 pt-6"
-        >
-          <View style={{ flex: 1 }}>
-            <Text
-              style={{
-                color: colors.textPrimary,
-                fontSize: 30,
-                fontWeight: "700",
-              }}
-            >
+        <View className="flex-row items-center justify-between px-4 pb-4 pt-6">
+          <View className="flex-1">
+            <Text className="text-3xl font-bold text-foreground">
               Homeflix
             </Text>
-            <Text
-              style={{
-                color: colors.textSecondary,
-                fontSize: 14,
-                marginTop: 4,
-              }}
-            >
+            <Text className="mt-1 text-sm text-text-secondary">
               Live Uganda TV & Radio
             </Text>
+            <View className="mt-2">
+              <RefreshIndicator />
+            </View>
           </View>
           <Pressable
-            onPress={() => router.push("/favourites")}
+            onPress={() => router.push("/settings")}
             hitSlop={8}
             accessibilityRole="button"
-            accessibilityLabel="Open favourites"
-            style={({ pressed }) => ({
-              opacity: pressed ? 0.7 : 1,
-              backgroundColor: colors.surface,
-              borderWidth: 1,
-              borderColor: colors.border,
-              padding: 10,
-              borderRadius: 999,
-              position: "relative",
-            })}
+            accessibilityLabel="Open settings"
+            className="h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-border bg-surface active:opacity-70"
           >
-            <HugeiconsIcon
-              icon={FavouriteIcon}
-              size={22}
-              color={colors.textPrimary}
-            />
-            {favouriteCount > 0 && (
-              <View
-                style={{
-                  position: "absolute",
-                  top: -2,
-                  right: -2,
-                  minWidth: 18,
-                  height: 18,
-                  paddingHorizontal: 4,
-                  borderRadius: 999,
-                  backgroundColor: colors.primary,
-                  alignItems: "center",
-                  justifyContent: "center",
-                  borderWidth: 2,
-                  borderColor: colors.background,
-                }}
-              >
-                <Text
-                  style={{
-                    color: "#FFFFFF",
-                    fontSize: 10,
-                    fontWeight: "700",
-                  }}
-                >
-                  {favouriteCount > 99 ? "99+" : favouriteCount}
-                </Text>
-              </View>
+            {user?.imageUrl ? (
+              <Image
+                source={{ uri: user.imageUrl }}
+                className="h-10 w-10"
+                style={{ borderRadius: 20 }}
+              />
+            ) : (
+              <HugeiconsIcon icon={UserIcon} size={20} color="#fff" />
             )}
           </Pressable>
         </View>

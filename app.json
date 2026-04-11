@@ -8,7 +8,8 @@
     "scheme": "homeflix",
     "userInterfaceStyle": "dark",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yasinwalum.homeflix"
     },
     "android": {
       "adaptiveIcon": {
@@ -17,7 +18,10 @@
         "monochromeImage": "./assets/images/icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "permissions": [],
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ],
       "package": "com.yasinwalum.homeflix"
     },
     "web": {

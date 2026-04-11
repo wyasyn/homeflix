@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { View } from "react-native";
 import Animated, {
   useAnimatedStyle,
@@ -5,11 +6,8 @@ import Animated, {
   withRepeat,
   withTiming,
 } from "react-native-reanimated";
-import { useEffect } from "react";
-import { useTheme } from "@/lib/useTheme";
 
 export function SkeletonCard() {
-  const { colors } = useTheme();
   const opacity = useSharedValue(0.3);
 
   useEffect(() => {
@@ -21,36 +19,19 @@ export function SkeletonCard() {
   }));
 
   return (
-    <View
-      className="mb-3 overflow-hidden"
-      style={{ backgroundColor: colors.surface, borderRadius: 16 }}
-    >
+    <View className="mb-3 overflow-hidden rounded-2xl bg-surface">
       <Animated.View
-        style={[{ height: 112, backgroundColor: colors.surfaceLight }, animatedStyle]}
+        className="h-28 bg-surface-light"
+        style={animatedStyle}
       />
       <View className="px-3 py-2.5">
         <Animated.View
-          style={[
-            {
-              height: 16,
-              width: "75%",
-              borderRadius: 4,
-              backgroundColor: colors.surfaceLight,
-            },
-            animatedStyle,
-          ]}
+          className="h-4 w-3/4 rounded bg-surface-light"
+          style={animatedStyle}
         />
         <Animated.View
-          style={[
-            {
-              marginTop: 8,
-              height: 12,
-              width: "33%",
-              borderRadius: 4,
-              backgroundColor: colors.surfaceLight,
-            },
-            animatedStyle,
-          ]}
+          className="mt-2 h-3 w-1/3 rounded bg-surface-light"
+          style={animatedStyle}
         />
       </View>
     </View>

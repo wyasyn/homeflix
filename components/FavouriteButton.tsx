@@ -1,15 +1,15 @@
-import { Pressable } from "react-native";
-import { HugeiconsIcon } from "@hugeicons/react-native";
+import { useTheme } from "@/lib/useTheme";
+import { useFavouritesStore } from "@/stores/useFavouritesStore";
 import { FavouriteIcon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react-native";
+import * as Haptics from "expo-haptics";
+import { Pressable } from "react-native";
 import Animated, {
   useAnimatedStyle,
   useSharedValue,
   withSequence,
   withSpring,
 } from "react-native-reanimated";
-import * as Haptics from "expo-haptics";
-import { useFavouritesStore } from "@/stores/useFavouritesStore";
-import { useTheme } from "@/lib/useTheme";
 
 interface FavouriteButtonProps {
   stationId: string;

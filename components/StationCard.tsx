@@ -1,12 +1,12 @@
-import { memo } from "react";
-import { Pressable, View, Text } from "react-native";
-import { Image } from "expo-image";
-import { useRouter } from "expo-router";
-import { HugeiconsIcon } from "@hugeicons/react-native";
-import { Tv01Icon, Radio01Icon } from "@hugeicons/core-free-icons";
 import { FavouriteButton } from "@/components/FavouriteButton";
 import type { Station } from "@/lib/schemas";
 import { useTheme } from "@/lib/useTheme";
+import { Radio01Icon, Tv01Icon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react-native";
+import { Image } from "expo-image";
+import { useRouter } from "expo-router";
+import { memo } from "react";
+import { Pressable, Text, View } from "react-native";
 
 interface StationCardProps {
   station: Station;
@@ -32,28 +32,12 @@ export const StationCard = memo(function StationCard({
           params: { id: station.id },
         } as never)
       }
-      style={({ pressed }) => ({
-        opacity: pressed ? 0.8 : 1,
-        borderRadius: 16,
-      })}
+      className="rounded-2xl active:opacity-80"
     >
-      <View
-        style={{
-          backgroundColor: colors.surface,
-          borderRadius: 16,
-          overflow: "hidden",
-          borderWidth: 1,
-          borderColor: colors.border,
-        }}
-      >
+      <View className="overflow-hidden rounded-2xl border border-border bg-surface">
         {/* Logo */}
         <View
-          style={{
-            alignItems: "center",
-            justifyContent: "center",
-            height: isLarge ? 176 : 112,
-            backgroundColor: colors.surfaceLight,
-          }}
+          className={`items-center justify-center bg-surface-light ${isLarge ? "h-44" : "h-28"}`}
         >
           {station.logo ? (
             <Image
@@ -72,59 +56,28 @@ export const StationCard = memo(function StationCard({
         </View>
 
         {/* Info */}
-        <View
-          style={{
-            flexDirection: "row",
-            alignItems: "flex-start",
-            justifyContent: "space-between",
-            paddingHorizontal: 12,
-            paddingVertical: 10,
-          }}
-        >
-          <View style={{ flex: 1 }}>
+        <View className="flex-row items-start justify-between px-3 py-2.5">
+          <View className="flex-1">
             <Text
               numberOfLines={1}
-              style={{
-                color: colors.textPrimary,
-                fontWeight: "600",
-                fontSize: isLarge ? 16 : 14,
-              }}
+              className={`font-semibold text-foreground ${isLarge ? "text-base" : "text-sm"}`}
             >
               {station.name}
             </Text>
-            <View
-              style={{
-                marginTop: 4,
-                flexDirection: "row",
-                alignItems: "center",
-              }}
-            >
+            <View className="mt-1 flex-row items-center">
               <View
-                style={{
-                  paddingHorizontal: 6,
-                  paddingVertical: 2,
-                  borderRadius: 6,
-                  backgroundColor: badgeColor + "33",
-                }}
+                className="rounded-md px-1.5 py-0.5"
+                style={{ backgroundColor: badgeColor + "33" }}
               >
                 <Text
-                  style={{
-                    color: badgeColor,
-                    fontSize: 11,
-                    fontWeight: "500",
-                  }}
+                  className="text-[11px] font-medium"
+                  style={{ color: badgeColor }}
                 >
                   {isTv ? "TV" : "Radio"}
                 </Text>
               </View>
               {station.language !== "English" && (
-                <Text
-                  style={{
-                    color: colors.textSecondary,
-                    fontSize: 11,
-                    marginLeft: 8,
-                  }}
-                >
+                <Text className="ml-2 text-[11px] text-text-secondary">
                   {station.language}
                 </Text>
               )}

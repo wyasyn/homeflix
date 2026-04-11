@@ -1,38 +1,42 @@
-import { useState, useRef, useCallback, useEffect } from "react";
+import { useTheme } from "@/lib/useTheme";
 import {
-  View,
-  Pressable,
-  ActivityIndicator,
-  Text,
-  StatusBar,
-  Modal,
-} from "react-native";
-import Video, {
-  type VideoRef,
-  type OnLoadData,
-  type OnBufferData,
-} from "react-native-video";
-import { HugeiconsIcon } from "@hugeicons/react-native";
-import {
-  PlayCircleIcon,
-  PauseIcon,
+  ArrowLeft01Icon,
   FullscreenIcon,
   MinimizeScreenIcon,
+  PauseIcon,
+  PlayCircleIcon,
+  ReloadIcon,
   VolumeHighIcon,
   VolumeLowIcon,
   VolumeMuteIcon,
-  ReloadIcon,
-  ArrowLeft01Icon,
 } from "@hugeicons/core-free-icons";
-import Animated, {
-  useSharedValue,
-  useAnimatedStyle,
-  withTiming,
-  runOnJS,
-} from "react-native-reanimated";
-import { Gesture, GestureDetector, GestureHandlerRootView } from "react-native-gesture-handler";
+import { HugeiconsIcon } from "@hugeicons/react-native";
 import * as ScreenOrientation from "expo-screen-orientation";
-import { useTheme } from "@/lib/useTheme";
+import { useCallback, useEffect, useRef, useState } from "react";
+import {
+  ActivityIndicator,
+  Modal,
+  Pressable,
+  StatusBar,
+  Text,
+  View,
+} from "react-native";
+import {
+  Gesture,
+  GestureDetector,
+  GestureHandlerRootView,
+} from "react-native-gesture-handler";
+import Animated, {
+  runOnJS,
+  useAnimatedStyle,
+  useSharedValue,
+  withTiming,
+} from "react-native-reanimated";
+import Video, {
+  type OnBufferData,
+  type OnLoadData,
+  type VideoRef,
+} from "react-native-video";
 
 interface VideoPlayerProps {
   streamUrl: string;
@@ -165,11 +169,6 @@ export function VideoPlayer({ streamUrl, onError, onReady, borderless = false }:
     showControls();
   }, [showControls]);
 
-  const toggleMute = useCallback(() => {
-    setVolume((v) => (v > 0 ? 0 : 1));
-    showControls();
-  }, [showControls]);
-
   // Volume slider gesture
   const volumeGesture = Gesture.Pan()
     .onUpdate((e) => {
@@ -200,13 +199,7 @@ export function VideoPlayer({ streamUrl, onError, onReady, borderless = false }:
       {isLoading && !hasError && (
         <View className="absolute inset-0 items-center justify-center bg-black/60">
           <ActivityIndicator size="large" color={colors.primary} />
-          <Text
-            style={{
-              marginTop: 12,
-              fontSize: 13,
-              color: "rgba(255,255,255,0.7)",
-            }}
-          >
+          <Text className="mt-3 text-[13px] text-white/70">
             Loading stream...
           </Text>
         </View>
@@ -215,18 +208,13 @@ export function VideoPlayer({ streamUrl, onError, onReady, borderless = false }:
       {/* Error overlay */}
       {hasError && (
         <View className="absolute inset-0 items-center justify-center bg-black/80">
-          <Text
-            style={{ marginBottom: 16, color: "rgba(255,255,255,0.7)" }}
-          >
-            Stream unavailable
-          </Text>
+          <Text className="mb-4 text-white/70">Stream unavailable</Text>
           <Pressable
             onPress={handleRetry}
-            className="flex-row items-center gap-2 px-6 py-3"
-            style={{ backgroundColor: colors.primary, borderRadius: 8 }}
+            className="flex-row items-center gap-2 rounded-lg bg-primary px-6 py-3"
           >
             <HugeiconsIcon icon={ReloadIcon} size={18} color="#fff" />
-            <Text style={{ fontWeight: "600", color: "#fff" }}>Retry</Text>
+            <Text className="font-semibold text-white">Retry</Text>
           </Pressable>
         </View>
       )}
@@ -234,7 +222,7 @@ export function VideoPlayer({ streamUrl, onError, onReady, borderless = false }:
       {/* Controls overlay */}
       {!hasError && !isLoading && (
         <Pressable onPress={toggleControls} className="absolute inset-0">
-          <Animated.View style={[{ flex: 1 }, controlsStyle]}>
+          <Animated.View className="flex-1" style={controlsStyle}>
             {controlsVisible && (
               <View className="absolute inset-0 bg-black/40">
                 {/* Top bar — back (fullscreen only) + volume */}
@@ -271,10 +259,7 @@ export function VideoPlayer({ streamUrl, onError, onReady, borderless = false }:
                 {/* Volume slider */}
                 {showVolumeSlider && (
                   <View className="absolute right-14 top-3.5 flex-row items-center">
-                    <View
-                      className="overflow-hidden rounded-full bg-black/60"
-                      style={{ width: VOLUME_SLIDER_WIDTH, height: 32 }}
-                    >
+                    <View className="h-8 w-[120px] overflow-hidden rounded-full bg-black/60">
                       <GestureDetector gesture={volumeGesture}>
                         <Pressable
                           onPress={(e) => {
@@ -285,16 +270,12 @@ export function VideoPlayer({ streamUrl, onError, onReady, borderless = false }:
                             setVolume(pct);
                             showControls();
                           }}
-                          style={{ width: VOLUME_SLIDER_WIDTH, height: 32, justifyContent: "center" }}
+                          className="h-8 w-[120px] justify-center"
                         >
                           <View className="mx-2 h-1 rounded-full bg-white/30">
                             <View
-                              style={{
-                                height: 4,
-                                borderRadius: 999,
-                                backgroundColor: colors.primary,
-                                width: `${volume * 100}%`,
-                              }}
+                              className="h-1 rounded-full bg-primary"
+                              style={{ width: `${volume * 100}%` }}
                             />
                           </View>
                           <View
@@ -327,14 +308,7 @@ export function VideoPlayer({ streamUrl, onError, onReady, borderless = false }:
                 {/* Bottom bar — live badge + fullscreen */}
                 <View className="flex-row items-center justify-between px-4 pb-3">
                   <View className="flex-row items-center gap-2">
-                    <View
-                      style={{
-                        height: 8,
-                        width: 8,
-                        borderRadius: 999,
-                        backgroundColor: colors.primary,
-                      }}
-                    />
+                    <View className="h-2 w-2 rounded-full bg-primary" />
                     <Text className="text-xs font-semibold uppercase text-white">
                       Live
                     </Text>
@@ -403,7 +377,7 @@ export function VideoPlayer({ streamUrl, onError, onReady, borderless = false }:
         supportedOrientations={["landscape"]}
         statusBarTranslucent
       >
-        <GestureHandlerRootView style={{ flex: 1 }}>
+        <GestureHandlerRootView className="flex-1">
           <View className="flex-1 bg-black">
             {videoElement}
             {overlays}

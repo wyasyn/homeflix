@@ -1,11 +1,11 @@
-import { View, Text, Pressable } from "react-native";
-import { Image } from "expo-image";
-import { useRouter } from "expo-router";
-import { LinearGradient } from "expo-linear-gradient";
-import { HugeiconsIcon } from "@hugeicons/react-native";
-import { PlayCircleIcon, Tv01Icon } from "@hugeicons/core-free-icons";
 import type { Station } from "@/lib/schemas";
 import { useTheme } from "@/lib/useTheme";
+import { PlayCircleIcon, Tv01Icon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react-native";
+import { Image } from "expo-image";
+import { LinearGradient } from "expo-linear-gradient";
+import { useRouter } from "expo-router";
+import { Pressable, Text, View } from "react-native";
 
 interface HeroSectionProps {
   station: Station;
@@ -23,10 +23,9 @@ export function HeroSection({ station }: HeroSectionProps) {
           params: { id: station.id },
         } as never)
       }
-      className="mx-4 mb-6 overflow-hidden"
-      style={{ borderRadius: 16 }}
+      className="mx-4 mb-6 overflow-hidden rounded-2xl"
     >
-      <View style={{ height: 208, backgroundColor: colors.surfaceLight }}>
+      <View className="h-52 bg-surface-light">
         {station.logo ? (
           <Image
             source={{ uri: station.logo }}
@@ -47,74 +46,35 @@ export function HeroSection({ station }: HeroSectionProps) {
         {/* Gradient overlay */}
         <LinearGradient
           colors={["transparent", "rgba(0,0,0,0.8)"]}
-          style={{
-            position: "absolute",
-            bottom: 0,
-            left: 0,
-            right: 0,
-            height: "60%",
-          }}
+          className="absolute bottom-0 left-0 right-0 h-[60%]"
         />
 
         {/* Content overlay */}
         <View className="absolute bottom-0 left-0 right-0 p-4">
           <View className="mb-1 flex-row items-center">
-            <View
-              style={{
-                backgroundColor: colors.primary,
-                borderRadius: 6,
-                paddingHorizontal: 8,
-                paddingVertical: 2,
-              }}
-            >
-              <Text
-                style={{ color: "#fff", fontSize: 11, fontWeight: "700" }}
-              >
+            <View className="rounded-md bg-primary px-2 py-0.5">
+              <Text className="text-[11px] font-bold text-white">
                 FEATURED
               </Text>
             </View>
-            <Text
-              style={{
-                marginLeft: 8,
-                fontSize: 11,
-                color: "rgba(255,255,255,0.7)",
-              }}
-            >
+            <Text className="ml-2 text-[11px] text-white/70">
               {station.type === "tv" ? "TV" : "Radio"}
             </Text>
           </View>
-          <Text
-            style={{ fontSize: 20, fontWeight: "700", color: "#fff" }}
-          >
-            {station.name}
-          </Text>
+          <Text className="text-xl font-bold text-white">{station.name}</Text>
           {station.description ? (
             <Text
               numberOfLines={1}
-              style={{
-                marginTop: 4,
-                fontSize: 13,
-                color: "rgba(255,255,255,0.7)",
-              }}
+              className="mt-1 text-[13px] text-white/70"
             >
               {station.description}
             </Text>
           ) : null}
 
           <View className="mt-3 flex-row items-center">
-            <View
-              className="flex-row items-center px-4 py-2"
-              style={{ backgroundColor: colors.primary, borderRadius: 999 }}
-            >
+            <View className="flex-row items-center rounded-full bg-primary px-4 py-2">
               <HugeiconsIcon icon={PlayCircleIcon} size={18} color="#fff" />
-              <Text
-                style={{
-                  marginLeft: 8,
-                  color: "#fff",
-                  fontWeight: "600",
-                  fontSize: 13,
-                }}
-              >
+              <Text className="ml-2 text-[13px] font-semibold text-white">
                 {station.type === "tv" ? "Watch Now" : "Listen Now"}
               </Text>
             </View>

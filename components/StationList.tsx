@@ -1,6 +1,5 @@
 import type { Station, StationType } from "@/lib/schemas";
 import { useDebounce } from "@/lib/useDebounce";
-import { useTheme } from "@/lib/useTheme";
 import { useStationStore } from "@/stores/useStationStore";
 import { ReactElement, useCallback, useMemo, useState } from "react";
 import { FlatList, View } from "react-native";
@@ -15,7 +14,6 @@ interface StationListProps {
 }
 
 export function StationList({ type, header }: StationListProps) {
-  const { colors } = useTheme();
   const isLoading = useStationStore((s) => s.isLoading);
   const sourceStations = useStationStore((s) =>
     type === "tv" ? s.tvStations : s.radioStations,
@@ -39,7 +37,7 @@ export function StationList({ type, header }: StationListProps) {
 
   const renderItem = useCallback(
     ({ item }: { item: Station }) => (
-      <View style={{ width: "48%" }}>
+      <View className="w-[48%]">
         <StationCard station={item} />
       </View>
     ),
@@ -62,11 +60,11 @@ export function StationList({ type, header }: StationListProps) {
 
   if (isLoading && stations.length === 0) {
     return (
-      <View style={{ flex: 1, backgroundColor: colors.background }}>
+      <View className="flex-1 bg-background">
         {ListHeader}
         <View className="flex-row flex-wrap justify-between px-4 pt-4">
           {Array.from({ length: 6 }).map((_, i) => (
-            <View key={i} style={{ width: "48%" }}>
+            <View key={i} className="w-[48%]">
               <SkeletonCard />
             </View>
           ))}
@@ -76,7 +74,7 @@ export function StationList({ type, header }: StationListProps) {
   }
 
   return (
-    <View style={{ flex: 1, backgroundColor: colors.background }}>
+    <View className="flex-1 bg-background">
       <FlatList
         data={stations}
         keyExtractor={keyExtractor}
