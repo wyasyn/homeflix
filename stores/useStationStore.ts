@@ -1,21 +1,13 @@
 import { create } from "zustand";
 import type { Station, StationType } from "@/lib/schemas";
-import { fetchStationsFromIPTV } from "@/lib/iptv";
-import { getCachedData, setCachedData, isCacheValid, setCacheTimestamp } from "@/lib/cache";
-import { CACHE_KEYS } from "@/lib/constants";
-
-/**
- * Lazily load + validate the bundled fallback stations.
- * Kept out of module scope so a valid-cache cold start never pays for the
- * JSON parse or the zod schema walk.
- */
-function loadFallbackStations(): Station[] {
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  const data = require("@/data/fallback-stations.json");
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  const { stationsArraySchema } = require("@/lib/schemas");
-  return stationsArraySchema.parse(data);
-}
+import { stationsArraySchema } from "@/lib/schemas";
+import {
+  getCachedData,
+  setCachedData,
+  isCacheValid,
+  setCacheTimestamp,
+} from "@/lib/cache";
+import { CACHE_KEYS, STATIONS_URL } from "@/lib/constants";
 
 interface StationStore {
   stations: Station[];
@@ -64,6 +56,16 @@ function deriveSlices(stations: Station[]) {
   return { tvStations, radioStations, featuredStations, internationalStations };
 }
 
+/**
+ * Lazily load the bundled fallback stations.
+ * Only used when the remote URL is unreachable and there is no local cache.
+ */
+function loadFallbackStations(): Station[] {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const data = require("@/data/fallback-stations.json");
+  return stationsArraySchema.parse(data);
+}
+
 export const useStationStore = create<StationStore>((set, get) => ({
   stations: [],
   tvStations: [],
@@ -84,7 +86,7 @@ export const useStationStore = create<StationStore>((set, get) => ({
   fetchStations: async () => {
     set({ isLoading: true, error: null });
 
-    // 1. Try cache
+    // 1. Try local cache
     const cacheValid = await isCacheValid(CACHE_KEYS.STATIONS_TIMESTAMP);
     const cached = await getCachedData<Station[]>(CACHE_KEYS.STATIONS);
 
@@ -96,56 +98,55 @@ export const useStationStore = create<StationStore>((set, get) => ({
         lastFetched: Date.now(),
       });
 
-      // Stale cache → refresh in background, don't block
+      // Stale cache → refresh in background without blocking
       if (!cacheValid) {
         void get().refreshStations();
       }
       return;
     }
 
-    // 2. No cache → load bundled fallback (lazy: only paid on first launch)
+    // 2. No cache → show bundled fallback (TV only — radio URLs may be stale)
     const fallback = loadFallbackStations();
+    const tvOnly = fallback.filter((s) => s.type !== "radio");
     set({
-      stations: fallback,
-      ...deriveSlices(fallback),
+      stations: tvOnly,
+      ...deriveSlices(tvOnly),
       isLoading: false,
     });
 
-    // 3. Fire remote fetch in background
+    // 3. Fetch fresh data in background
     void get().refreshStations();
   },
 
   /**
-   * Background refresh. Safe to call at any time — sets isRefreshing so UI
-   * can show a subtle indicator without blocking the splash screen.
+   * Background refresh: fetches the pre-validated stations.json from GitHub Pages.
+   * The file is rebuilt every 6 hours by GitHub Actions (see build-stations.yml).
    */
   refreshStations: async () => {
     if (get().isRefreshing) return;
     set({ isRefreshing: true });
 
     try {
-      const fetched = await fetchStationsFromIPTV();
-      if (fetched.length === 0) {
+      const res = await fetch(STATIONS_URL);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+      const raw: unknown = await res.json();
+      const stations = stationsArraySchema.parse(raw);
+
+      if (stations.length === 0) {
         set({ isRefreshing: false });
         return;
       }
 
-      // Merge with existing stations so we never lose fallback entries
-      const existing = get().stations;
-      const fetchedIds = new Set(fetched.map((s) => s.id));
-      const merged = [
-        ...fetched,
-        ...existing.filter((s) => !fetchedIds.has(s.id)),
-      ];
-
       set({
-        stations: merged,
-        ...deriveSlices(merged),
+        stations,
+        ...deriveSlices(stations),
         isRefreshing: false,
+        error: null,
         lastFetched: Date.now(),
       });
 
-      await setCachedData(CACHE_KEYS.STATIONS, merged);
+      await setCachedData(CACHE_KEYS.STATIONS, stations);
       await setCacheTimestamp(CACHE_KEYS.STATIONS_TIMESTAMP);
     } catch {
       set({ error: "Failed to refresh stations", isRefreshing: false });

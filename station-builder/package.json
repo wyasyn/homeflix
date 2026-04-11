@@ -1,0 +1,12 @@
+{
+  "name": "homeflix-station-builder",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Builds a validated stations.json for the Homeflix app",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
