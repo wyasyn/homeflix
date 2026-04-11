@@ -45,8 +45,7 @@
       ],
       "@clerk/expo",
       "expo-secure-store",
-      "expo-audio",
-      "react-native-track-player"
+      "expo-audio"
     ],
     "experiments": {
       "typedRoutes": true,
