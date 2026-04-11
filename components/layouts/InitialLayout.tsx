@@ -1,4 +1,5 @@
 import { applyDefaultFont, FONT_LOAD_TIMEOUT_MS } from "@/constants/contants";
+import { setupTrackPlayer } from "@/lib/trackPlayerSetup";
 import { useTheme, useThemeVars } from "@/lib/useTheme";
 import { VideoWarmup } from "@/lib/utils";
 import { View } from "react-native";
@@ -42,7 +43,7 @@ function InitialLayout() {
 
   useEffect(() => {
     async function init() {
-      await Promise.all([fetchStations(), hydrateFavourites(), hydrateTheme()]);
+      await Promise.all([fetchStations(), hydrateFavourites(), hydrateTheme(), setupTrackPlayer()]);
     }
     init();
   }, [fetchStations, hydrateFavourites, hydrateTheme]);

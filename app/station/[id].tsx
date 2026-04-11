@@ -3,6 +3,7 @@ import { VideoPlayer } from "@/components/VideoPlayer";
 import { YouTubePlayer } from "@/components/YouTubePlayer";
 import { useTheme } from "@/lib/useTheme";
 import { useFavouritesStore } from "@/stores/useFavouritesStore";
+import { usePlayerStore } from "@/stores/usePlayerStore";
 import { useStationStore } from "@/stores/useStationStore";
 import {
   ArrowLeft01Icon,
@@ -14,6 +15,7 @@ import {
 import { HugeiconsIcon } from "@hugeicons/react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import * as WebBrowser from "expo-web-browser";
+import { useEffect } from "react";
 import { Pressable, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -24,6 +26,14 @@ export default function StationScreen() {
   const station = useStationStore((s) => s.stations.find((st) => st.id === id));
   const isFavourite = useFavouritesStore((s) => s.ids.includes(id));
   const toggle = useFavouritesStore((s) => s.toggle);
+  const play = usePlayerStore((s) => s.play);
+  const stop = usePlayerStore((s) => s.stop);
+
+  // Register station as active immediately on mount; clean up on unmount
+  useEffect(() => {
+    if (station) play(station);
+    return () => stop();
+  }, [station, play, stop]);
 
   if (!station) {
     return (

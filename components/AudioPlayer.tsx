@@ -10,15 +10,14 @@ import {
   VolumeMuteIcon,
 } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react-native";
-import {
-  setAudioModeAsync,
-  useAudioPlayer,
-  useAudioPlayerStatus,
-} from "expo-audio";
 import { Image } from "expo-image";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { ActivityIndicator, Pressable, Text, View } from "react-native";
 import { Gesture, GestureDetector } from "react-native-gesture-handler";
+import TrackPlayer, {
+  State,
+  usePlaybackState,
+} from "react-native-track-player";
 import Animated, {
   cancelAnimation,
   Easing,
@@ -95,14 +94,70 @@ export function AudioPlayer({
   onError,
 }: AudioPlayerProps) {
   const { colors } = useTheme();
-  const player = useAudioPlayer({ uri: streamUrl });
-  const status = useAudioPlayerStatus(player);
+  const playbackState = usePlaybackState();
   const [isStopped, setIsStopped] = useState(false);
   const [volume, setVolume] = useState(1);
-
-  const isPlaying = status.playing;
-  const isLoading = status.isBuffering;
   const [hasError, setHasError] = useState(false);
+
+  // Derive booleans from TrackPlayer state
+  const state = playbackState.state;
+  const isPlaying = state === State.Playing;
+  const isLoading =
+    state === State.Loading ||
+    state === State.Buffering;
+
+  // Load the stream into TrackPlayer when this component mounts / streamUrl changes
+  useEffect(() => {
+    let cancelled = false;
+
+    async function loadAndPlay() {
+      try {
+        setHasError(false);
+        setIsStopped(false);
+
+        await TrackPlayer.reset();
+        await TrackPlayer.add({
+          url: streamUrl,
+          title: stationName,
+          artist: "Live Radio",
+          artwork: logo,
+          isLiveStream: true,
+        });
+
+        if (!cancelled) {
+          await TrackPlayer.play();
+        }
+      } catch {
+        if (!cancelled) {
+          setHasError(true);
+          onError?.("Stream failed to load");
+        }
+      }
+    }
+
+    loadAndPlay();
+
+    return () => {
+      cancelled = true;
+      // Stop and reset when navigating away so no ghost audio lingers
+      TrackPlayer.reset().catch(() => {});
+    };
+    // Only re-run when the URL actually changes
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [streamUrl]);
+
+  // Sync volume to TrackPlayer
+  useEffect(() => {
+    TrackPlayer.setVolume(volume).catch(() => {});
+  }, [volume]);
+
+  // Detect playback errors
+  useEffect(() => {
+    if (state === State.Error) {
+      setHasError(true);
+      onError?.("Stream failed to load");
+    }
+  }, [state, onError]);
 
   // Disc rotation animation
   const rotation = useSharedValue(0);
@@ -143,53 +198,38 @@ export function AudioPlayer({
     opacity: glowOpacity.value,
   }));
 
-  useEffect(() => {
-    if (status.playbackState === "error") {
+  const togglePlayback = useCallback(async () => {
+    if (isPlaying) {
+      await TrackPlayer.pause();
+    } else {
+      setIsStopped(false);
+      await TrackPlayer.play();
+    }
+  }, [isPlaying]);
+
+  const stop = useCallback(async () => {
+    await TrackPlayer.stop();
+    setIsStopped(true);
+  }, []);
+
+  const retry = useCallback(async () => {
+    try {
+      setHasError(false);
+      setIsStopped(false);
+      await TrackPlayer.reset();
+      await TrackPlayer.add({
+        url: streamUrl,
+        title: stationName,
+        artist: "Live Radio",
+        artwork: logo,
+        isLiveStream: true,
+      });
+      await TrackPlayer.play();
+    } catch {
       setHasError(true);
       onError?.("Stream failed to load");
     }
-  }, [status.playbackState, onError]);
-
-  // Set audio mode and auto-play on mount
-  useEffect(() => {
-    setAudioModeAsync({
-      playsInSilentMode: true,
-    })
-      .then(() => {
-        setIsStopped(false);
-        player.play();
-      })
-      .catch(() => {
-        player.play();
-      });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  // Sync volume
-  useEffect(() => {
-    player.volume = volume;
-  }, [player, volume]);
-
-  const togglePlayback = useCallback(() => {
-    if (isPlaying) {
-      player.pause();
-    } else {
-      setIsStopped(false);
-      player.play();
-    }
-  }, [player, isPlaying]);
-
-  const stop = useCallback(() => {
-    player.pause();
-    setIsStopped(true);
-  }, [player]);
-
-  const retry = useCallback(() => {
-    setHasError(false);
-    player.replace({ uri: streamUrl });
-    setIsStopped(false);
-    player.play();
-  }, [player, streamUrl]);
+  }, [streamUrl, stationName, logo, onError]);
 
   const statusText = isLoading
     ? "Connecting..."

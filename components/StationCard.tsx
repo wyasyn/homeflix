@@ -1,6 +1,7 @@
 import { FavouriteButton } from "@/components/FavouriteButton";
 import type { Station } from "@/lib/schemas";
 import { useTheme } from "@/lib/useTheme";
+import { usePlayerStore } from "@/stores/usePlayerStore";
 import { Radio01Icon, Tv01Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react-native";
 import { Image } from "expo-image";
@@ -28,12 +29,13 @@ export const StationCard = memo(function StationCard({
 
   return (
     <Pressable
-      onPress={() =>
+      onPress={() => {
+        usePlayerStore.getState().setPending(station.id);
         router.push({
           pathname: "/station/[id]" as const,
           params: { id: station.id },
-        } as never)
-      }
+        } as never);
+      }}
       className="rounded-2xl active:opacity-80"
     >
       <View className="overflow-hidden rounded-2xl border border-border bg-surface">

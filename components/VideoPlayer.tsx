@@ -347,10 +347,10 @@ export function VideoPlayer({ streamUrl, onError, onReady, borderless = false }:
       onError={handleError}
       onBuffer={handleBuffer}
       bufferConfig={{
-        minBufferMs: 15000,
-        maxBufferMs: 50000,
-        bufferForPlaybackMs: 2500,
-        bufferForPlaybackAfterRebufferMs: 5000,
+        minBufferMs: 5000,
+        maxBufferMs: 30000,
+        bufferForPlaybackMs: 800,
+        bufferForPlaybackAfterRebufferMs: 2000,
       }}
       maxBitRate={2000000}
     />
