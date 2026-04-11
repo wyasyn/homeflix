@@ -5,7 +5,7 @@ import { Radio01Icon, Tv01Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react-native";
 import { Image } from "expo-image";
 import { useRouter } from "expo-router";
-import { memo } from "react";
+import { memo, useState } from "react";
 import { Pressable, Text, View } from "react-native";
 
 interface StationCardProps {
@@ -23,6 +23,8 @@ export const StationCard = memo(function StationCard({
   const isLarge = size === "large";
   const isTv = station.type === "tv";
   const badgeColor = isTv ? colors.primary : colors.success;
+  const [logoFailed, setLogoFailed] = useState(false);
+  const showFallback = !station.logo || logoFailed;
 
   return (
     <Pressable
@@ -39,18 +41,19 @@ export const StationCard = memo(function StationCard({
         <View
           className={`items-center justify-center bg-surface-light ${isLarge ? "h-44" : "h-28"}`}
         >
-          {station.logo ? (
+          {showFallback ? (
+            <HugeiconsIcon
+              icon={isTv ? Tv01Icon : Radio01Icon}
+              size={isLarge ? 48 : 32}
+              color={colors.textSecondary}
+            />
+          ) : (
             <Image
               source={{ uri: station.logo }}
               style={{ width: "100%", height: "100%" }}
               contentFit="cover"
               transition={200}
-            />
-          ) : (
-            <HugeiconsIcon
-              icon={isTv ? Tv01Icon : Radio01Icon}
-              size={isLarge ? 48 : 32}
-              color={colors.textSecondary}
+              onError={() => setLogoFailed(true)}
             />
           )}
         </View>

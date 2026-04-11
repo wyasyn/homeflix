@@ -1,11 +1,13 @@
 import type { Station } from "@/lib/schemas";
-import { useTheme } from "@/lib/useTheme";
-import { PlayCircleIcon, Tv01Icon } from "@hugeicons/core-free-icons";
+import { PlayCircleIcon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react-native";
 import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
 import { useRouter } from "expo-router";
+import { useState } from "react";
 import { Pressable, Text, View } from "react-native";
+import radioFallback from "../assets/images/radio.jpg";
+import tvFallback from "../assets/images/tv.jpg";
 
 interface HeroSectionProps {
   station: Station;
@@ -13,7 +15,10 @@ interface HeroSectionProps {
 
 export function HeroSection({ station }: HeroSectionProps) {
   const router = useRouter();
-  const { colors } = useTheme();
+  const [logoFailed, setLogoFailed] = useState(false);
+  const isTv = isTv;
+  const showFallback = !station.logo || logoFailed;
+  const fallbackSource = isTv ? tvFallback : radioFallback;
 
   return (
     <Pressable
@@ -26,21 +31,21 @@ export function HeroSection({ station }: HeroSectionProps) {
       className="mx-4 mb-6 overflow-hidden rounded-2xl"
     >
       <View className="h-52 bg-surface-light">
-        {station.logo ? (
+        {showFallback ? (
           <Image
-            source={{ uri: station.logo }}
+            source={fallbackSource}
             style={{ width: "100%", height: "100%" }}
             contentFit="cover"
             transition={300}
           />
         ) : (
-          <View className="flex-1 items-center justify-center">
-            <HugeiconsIcon
-              icon={Tv01Icon}
-              size={64}
-              color={colors.textSecondary}
-            />
-          </View>
+          <Image
+            source={{ uri: station.logo }}
+            style={{ width: "100%", height: "100%" }}
+            contentFit="cover"
+            transition={300}
+            onError={() => setLogoFailed(true)}
+          />
         )}
 
         {/* Gradient overlay */}
@@ -58,7 +63,7 @@ export function HeroSection({ station }: HeroSectionProps) {
               </Text>
             </View>
             <Text className="ml-2 text-[11px] text-white/70">
-              {station.type === "tv" ? "TV" : "Radio"}
+              {isTv ? "TV" : "Radio"}
             </Text>
           </View>
           <Text className="text-xl font-bold text-white">{station.name}</Text>
@@ -75,7 +80,7 @@ export function HeroSection({ station }: HeroSectionProps) {
             <View className="flex-row items-center rounded-full bg-primary px-4 py-2">
               <HugeiconsIcon icon={PlayCircleIcon} size={18} color="#fff" />
               <Text className="ml-2 text-[13px] font-semibold text-white">
-                {station.type === "tv" ? "Watch Now" : "Listen Now"}
+                {isTv ? "Watch Now" : "Listen Now"}
               </Text>
             </View>
           </View>
