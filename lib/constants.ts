@@ -8,10 +8,10 @@
 export const STATIONS_URL = "https://wyasyn.github.io/homeflix/stations.json";
 
 export const CACHE_KEYS = {
-  STATIONS: "@homeflix/stations",
-  STATIONS_TIMESTAMP: "@homeflix/stations_timestamp",
-  FAVOURITES: "@homeflix/favourites",
-  THEME_MODE: "@homeflix/theme_mode",
+  STATIONS: "@laba/stations",
+  STATIONS_TIMESTAMP: "@laba/stations_timestamp",
+  FAVOURITES: "@laba/favourites",
+  THEME_MODE: "@laba/theme_mode",
 } as const;
 
 // 24 hours in milliseconds

@@ -1,15 +1,15 @@
 {
   "expo": {
-    "name": "HomeFlix",
-    "slug": "homeflix",
+    "name": "Laba",
+    "slug": "laba",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "homeflix",
+    "scheme": "laba",
     "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.yasinwalum.homeflix"
+      "bundleIdentifier": "com.yasinwalum.laba"
     },
     "android": {
       "adaptiveIcon": {
@@ -24,7 +24,7 @@
         "android.permission.FOREGROUND_SERVICE",
         "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
       ],
-      "package": "com.yasinwalum.homeflix"
+      "package": "com.yasinwalum.laba"
     },
     "web": {
       "bundler": "metro",

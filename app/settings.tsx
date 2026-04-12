@@ -23,7 +23,7 @@ import { Linking, Pressable, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const APP_VERSION = Constants.expoConfig?.version ?? "1.0.0";
-const APP_NAME = Constants.expoConfig?.name ?? "Homeflix";
+const APP_NAME = Constants.expoConfig?.name ?? "Laba";
 const RUNTIME_VERSION =
   (Constants.expoConfig?.runtimeVersion as string | undefined) ??
   Constants.expoConfig?.sdkVersion ??
@@ -220,7 +220,7 @@ export default function SettingsScreen() {
             <Pressable
               className={ROW_CLASS}
               onPress={() =>
-                Linking.openURL("mailto:support@homeflix.app").catch(() => {})
+                Linking.openURL("mailto:ywalum@gmail.com").catch(() => {})
               }
             >
               <HugeiconsIcon
@@ -290,7 +290,7 @@ export default function SettingsScreen() {
           </View>
 
           <Text className="mt-4 text-center text-xs leading-[18px] text-text-secondary">
-            Homeflix streams free-to-air Ugandan TV and radio.{"\n"}
+            Laba streams free-to-air Ugandan TV and radio.{"\n"}
             Made with care in Uganda.
           </Text>
         </View>

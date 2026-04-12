@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Homeflix Station Builder
+ * Laba Station Builder
  *
  * Fetches TV and radio stations from iptv-org and radio-browser.info,
  * validates every stream URL, and writes a clean stations.json.
@@ -30,7 +30,7 @@ const RADIO_INTERNATIONAL =
   "https://de1.api.radio-browser.info/json/stations/search?limit=150&order=votes&reverse=true&hidebroken=true";
 
 // User-Agent required by radio-browser.info to avoid being blocked
-const RADIO_USER_AGENT = "Homeflix/1.0 (github.com/wyasyn/homeflix)";
+const RADIO_USER_AGENT = "Laba/1.0 (github.com/wyasyn/homeflix)";
 
 // ─── Filtering constants ──────────────────────────────────────────────────────
 
@@ -592,7 +592,7 @@ async function fetchRadioStations() {
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 async function main() {
-  console.log("=== Homeflix Station Builder ===\n");
+  console.log("=== Laba Station Builder ===\n");
 
   console.log("Step 1/3: Fetching stations...");
   const [rawTv, rawRadio] = await Promise.all([

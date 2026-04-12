@@ -1,8 +1,8 @@
 {
-  "name": "homeflix-station-builder",
+  "name": "laba-station-builder",
   "version": "1.0.0",
   "type": "module",
-  "description": "Builds a validated stations.json for the Homeflix app",
+  "description": "Builds a validated stations.json for the Laba app",
   "scripts": {
     "build": "node build.js"
   },

@@ -61,7 +61,7 @@ export default function HomeScreen() {
         {/* Header */}
         <View className="flex-row items-center justify-between px-4 pb-4 pt-6">
           <View className="flex-1">
-            <Text className="text-3xl font-bold text-foreground">Homeflix</Text>
+            <Text className="text-3xl font-bold text-foreground">Laba</Text>
             <Text className="mt-1 text-sm text-text-secondary">
               Live Uganda TV & Radio
             </Text>
