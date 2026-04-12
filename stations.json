@@ -84,34 +84,6 @@
     "isFeatured": true
   },
   {
-    "id": "fort-tv",
-    "name": "FORT TV",
-    "type": "tv",
-    "streamUrl": "https://fort.co-works.org/memfs/87017643-274a-4bc0-a786-7767a0d159c2.m3u8",
-    "description": "entertainment",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "entertainment"
-    ],
-    "website": "https://fort-tv.com/",
-    "isFeatured": true
-  },
-  {
-    "id": "praise-jesus-tower-tv",
-    "name": "Praise Jesus Tower TV",
-    "type": "tv",
-    "streamUrl": "https://vsrv1.az-streamingserver.com:3555/live/dyjoqlgklive.m3u8",
-    "description": "religious",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "religious"
-    ],
-    "website": "https://praisejesustower.org/",
-    "isFeatured": true
-  },
-  {
     "id": "tv-west",
     "name": "TV West",
     "type": "tv",
@@ -966,6 +938,20 @@
     "isFeatured": true
   },
   {
+    "id": "radio-cgtn-radio-ug",
+    "name": "CGTN Radio",
+    "type": "radio",
+    "streamUrl": "http://sk.cri.cn/am846.m3u8",
+    "description": "news",
+    "language": "english uk",
+    "country": "UG",
+    "categories": [
+      "news"
+    ],
+    "website": "http://chinaplus.cri.cn/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-chennai-live-ug",
     "name": "CHENNAI LIVE",
     "type": "radio",
@@ -1616,6 +1602,20 @@
       "current affairs"
     ],
     "website": "http://media-ice.musicradio.com/LBCUK",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-mello-fm-jamaica-ug",
+    "name": "Mello fm Jamaica",
+    "type": "radio",
+    "streamUrl": "http://peridot.streamguys.com:5660/live",
+    "description": "music",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "music"
+    ],
+    "website": "http://www.mellofmjamaica.com/",
     "isFeatured": true
   },
   {
@@ -2586,6 +2586,21 @@
     "isFeatured": false
   },
   {
+    "id": "radio-977-hitz-us",
+    "name": ".977 Hitz",
+    "type": "radio",
+    "streamUrl": "http://18863.live.streamtheworld.com/977_HITS_SC",
+    "description": "hits, top 40",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "hits",
+      "top 40"
+    ],
+    "website": "http://www.977music.com/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-your-classical-relax-us",
     "name": "Your Classical - Relax",
     "type": "radio",
@@ -2599,21 +2614,6 @@
       "relax"
     ],
     "website": "http://www.yourclassical.org/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-977-hitz-us",
-    "name": ".977 Hitz",
-    "type": "radio",
-    "streamUrl": "http://18863.live.streamtheworld.com/977_HITS_SC",
-    "description": "hits, top 40",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "hits",
-      "top 40"
-    ],
-    "website": "http://www.977music.com/",
     "isFeatured": false
   },
   {
@@ -3618,6 +3618,23 @@
     "isFeatured": false
   },
   {
+    "id": "radio-zbs-zodiak-fm-mw",
+    "name": "ZBS Zodiak FM",
+    "type": "radio",
+    "streamUrl": "https://ice31.securenetsystems.net/0079",
+    "description": "entertainment, local music, news, sport",
+    "language": "english",
+    "country": "MW",
+    "categories": [
+      "entertainment",
+      "local music",
+      "news",
+      "sport"
+    ],
+    "website": "https://zodiakmalawi.com/live-radio",
+    "isFeatured": false
+  },
+  {
     "id": "radio-abc-newsradio-mp3-au",
     "name": "ABC NewsRadio MP3",
     "type": "radio",
@@ -4087,22 +4104,6 @@
     "isFeatured": false
   },
   {
-    "id": "radio-smoothjazz-com-128k-mp3-us",
-    "name": "SmoothJazz.com 128k mp3",
-    "type": "radio",
-    "streamUrl": "https://smoothjazz.cdnstream1.com/2585_128.mp3",
-    "logo": "https://www.smoothjazz.com/sites/default/files/theme/sj-circle-logo.png",
-    "description": "monterey, smooth jazz",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "monterey",
-      "smooth jazz"
-    ],
-    "website": "https://www.smoothjazz.com/",
-    "isFeatured": false
-  },
-  {
     "id": "radio-voa-learning-english-us",
     "name": "VOA Learning English",
     "type": "radio",
@@ -4116,6 +4117,22 @@
       "learn language"
     ],
     "website": "http://www.voanews.com/t/60.html",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-smoothjazz-com-128k-mp3-us",
+    "name": "SmoothJazz.com 128k mp3",
+    "type": "radio",
+    "streamUrl": "https://smoothjazz.cdnstream1.com/2585_128.mp3",
+    "logo": "https://www.smoothjazz.com/sites/default/files/theme/sj-circle-logo.png",
+    "description": "monterey, smooth jazz",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "monterey",
+      "smooth jazz"
+    ],
+    "website": "https://www.smoothjazz.com/",
     "isFeatured": false
   },
   {
