@@ -28,6 +28,20 @@
     "isFeatured": true
   },
   {
+    "id": "btv",
+    "name": "BTV",
+    "type": "tv",
+    "streamUrl": "https://streamfi-alphadgtl1.zettawiseroutes.com:8181/hls/stream.m3u8",
+    "description": "entertainment",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "entertainment"
+    ],
+    "website": "https://imc.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "bukedde-tv-1",
     "name": "Bukedde TV 1",
     "type": "tv",
@@ -67,6 +81,20 @@
       "religious"
     ],
     "website": "http://www.imc.ug/",
+    "isFeatured": true
+  },
+  {
+    "id": "fort-tv",
+    "name": "FORT TV",
+    "type": "tv",
+    "streamUrl": "https://fort.co-works.org/memfs/87017643-274a-4bc0-a786-7767a0d159c2.m3u8",
+    "description": "entertainment",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "entertainment"
+    ],
+    "website": "https://fort-tv.com/",
     "isFeatured": true
   },
   {
@@ -673,6 +701,20 @@
     "isFeatured": true
   },
   {
+    "id": "radio-98-1-isaiah-fm-trinidad-ug",
+    "name": "98.1 Isaiah FM Trinidad",
+    "type": "radio",
+    "streamUrl": "https://ice66.securenetsystems.net/FFBN?playSessionID=8D29A2B7-D966-0B14-AFCD7A340AFA6C15",
+    "description": "gospel",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "gospel"
+    ],
+    "website": "https://ice66.securenetsystems.net/FFBN?playSessionID=8D29A2B7-D966-0B14-AFCD7A340AFA6C15",
+    "isFeatured": true
+  },
+  {
     "id": "radio-98-7-mcf-radio-ug",
     "name": "98.7 MCF Radio",
     "type": "radio",
@@ -699,6 +741,20 @@
       "christian"
     ],
     "website": "http://www.mutundwechristianfellowship.org/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-99-5-global-fm-bahamas-ug",
+    "name": "99.5 Global Fm Bahamas",
+    "type": "radio",
+    "streamUrl": "http://ice64.securenetsystems.net/GLOBALBS",
+    "description": "music",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "music"
+    ],
+    "website": "http://ice64.securenetsystems.net/GLOBALBS",
     "isFeatured": true
   },
   {
@@ -1030,6 +1086,21 @@
     "isFeatured": true
   },
   {
+    "id": "radio-christian-life-radio-ug",
+    "name": "Christian life radio",
+    "type": "radio",
+    "streamUrl": "https://ice64.securenetsystems.net/CLR1MP3",
+    "logo": "https://www.communitynetradio.org/favicon.ico",
+    "description": "christian",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian"
+    ],
+    "website": "https://www.communitynetradio.org/christianliferadio",
+    "isFeatured": true
+  },
+  {
     "id": "radio-christian-music-channel-ug",
     "name": "Christian music channel",
     "type": "radio",
@@ -1141,6 +1212,20 @@
       "gospel music"
     ],
     "website": "https://demagospel.com/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-dove-fm-ug",
+    "name": "Dove Fm",
+    "type": "radio",
+    "streamUrl": "https://ice64.securenetsystems.net/DOVEMAIN",
+    "description": "christian",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian"
+    ],
+    "website": "http://www.dovefm.org/",
     "isFeatured": true
   },
   {
@@ -2515,21 +2600,6 @@
     "isFeatured": false
   },
   {
-    "id": "radio-977-hitz-us",
-    "name": ".977 Hitz",
-    "type": "radio",
-    "streamUrl": "http://18863.live.streamtheworld.com/977_HITS_SC",
-    "description": "hits, top 40",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "hits",
-      "top 40"
-    ],
-    "website": "http://www.977music.com/",
-    "isFeatured": false
-  },
-  {
     "id": "radio-your-classical-relax-us",
     "name": "Your Classical - Relax",
     "type": "radio",
@@ -2543,6 +2613,21 @@
       "relax"
     ],
     "website": "http://www.yourclassical.org/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-977-hitz-us",
+    "name": ".977 Hitz",
+    "type": "radio",
+    "streamUrl": "http://18863.live.streamtheworld.com/977_HITS_SC",
+    "description": "hits, top 40",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "hits",
+      "top 40"
+    ],
+    "website": "http://www.977music.com/",
     "isFeatured": false
   },
   {
@@ -2574,6 +2659,26 @@
       "political talk"
     ],
     "website": "http://www.lbc.co.uk/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-somafm-groove-salad-128k-mp3-us",
+    "name": "SomaFM Groove Salad (128k MP3)",
+    "type": "radio",
+    "streamUrl": "https://ice5.somafm.com/groovesalad-128-mp3",
+    "logo": "https://somafm.com/img3/groovesalad-400.jpg",
+    "description": "ambient, chillout, downtempo, groove, lounge, sleep",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "ambient",
+      "chillout",
+      "downtempo",
+      "groove",
+      "lounge",
+      "sleep"
+    ],
+    "website": "https://somafm.com/groovesalad/",
     "isFeatured": false
   },
   {
@@ -2662,6 +2767,26 @@
     "isFeatured": false
   },
   {
+    "id": "radio-somafm-secret-agent-128k-mp3-us",
+    "name": "SomaFM Secret Agent (128k MP3)",
+    "type": "radio",
+    "streamUrl": "https://ice6.somafm.com/secretagent-128-mp3",
+    "logo": "https://somafm.com/img3/secretagent-400.jpg",
+    "description": "ambient, downtempo, jazz, lounge, samba, sixties",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "ambient",
+      "downtempo",
+      "jazz",
+      "lounge",
+      "samba",
+      "sixties"
+    ],
+    "website": "https://somafm.com/secretagent/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-heart-london-106-2-mp3-gb",
     "name": "Heart London 106.2 [MP3]",
     "type": "radio",
@@ -2732,6 +2857,23 @@
       "waynesboro"
     ],
     "website": "http://www.181.fm/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-somafm-underground-80s-128k-mp3-us",
+    "name": "SomaFM Underground 80s (128k MP3)",
+    "type": "radio",
+    "streamUrl": "https://ice6.somafm.com/u80s-128-mp3",
+    "logo": "https://somafm.com/img3/u80s-400.png",
+    "description": "80s, new wave, uk synthpop",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "80s",
+      "new wave",
+      "uk synthpop"
+    ],
+    "website": "https://somafm.com/u80s/",
     "isFeatured": false
   },
   {
@@ -2829,6 +2971,23 @@
     "isFeatured": false
   },
   {
+    "id": "radio-somafm-space-station-soma-128k-aac-us",
+    "name": "SomaFM Space Station Soma (128k AAC)",
+    "type": "radio",
+    "streamUrl": "https://ice5.somafm.com/spacestation-128-aac",
+    "logo": "https://somafm.com/img3/spacestation-400.png",
+    "description": "ambient, electronica, mid-tempo",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "ambient",
+      "electronica",
+      "mid-tempo"
+    ],
+    "website": "https://somafm.com/spacestation/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-the-big-80s-station-us",
     "name": "The Big 80s Station",
     "type": "radio",
@@ -2840,6 +2999,23 @@
       "80s"
     ],
     "website": "http://www.thebig80sstation.com/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-somafm-poptron-128k-mp3-us",
+    "name": "SomaFM PopTron (128k MP3)",
+    "type": "radio",
+    "streamUrl": "https://ice2.somafm.com/poptron-128-mp3",
+    "logo": "https://somafm.com/img3/poptron-400.png",
+    "description": "electropop, indie, synthpop",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "electropop",
+      "indie",
+      "synthpop"
+    ],
+    "website": "https://somafm.com/poptron/",
     "isFeatured": false
   },
   {
@@ -2855,6 +3031,23 @@
       "smooth jazz"
     ],
     "website": "http://www.977music.com/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-somafm-indie-pop-rocks-128k-aac-us",
+    "name": "SomaFM Indie Pop Rocks! (128k AAC)",
+    "type": "radio",
+    "streamUrl": "https://ice6.somafm.com/indiepop-128-aac",
+    "logo": "https://somafm.com/img3/indiepop-400.jpg",
+    "description": "indie, indie pop, indie rock",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "indie",
+      "indie pop",
+      "indie rock"
+    ],
+    "website": "https://somafm.com/indiepop/",
     "isFeatured": false
   },
   {
@@ -2892,6 +3085,24 @@
       "waynesboro"
     ],
     "website": "http://www.181.fm/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-somafm-left-coast-70s-320k-mp3-us",
+    "name": "SomaFM Left Coast 70s (320k MP3)",
+    "type": "radio",
+    "streamUrl": "https://ice5.somafm.com/seventies-320-mp3",
+    "logo": "https://somafm.com/img3/seventies400.jpg",
+    "description": "easy listening, mellow album rock, rock, yacht rock",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "easy listening",
+      "mellow album rock",
+      "rock",
+      "yacht rock"
+    ],
+    "website": "https://somafm.com/seventies/",
     "isFeatured": false
   },
   {
@@ -2973,23 +3184,6 @@
     "isFeatured": false
   },
   {
-    "id": "radio-jazz-lounge-my",
-    "name": "Jazz Lounge",
-    "type": "radio",
-    "streamUrl": "http://eu8.fastcast4u.com:5068/;",
-    "description": "320kbps, classic jazz, jazz, smooth jazz",
-    "language": "english",
-    "country": "MY",
-    "categories": [
-      "320kbps",
-      "classic jazz",
-      "jazz",
-      "smooth jazz"
-    ],
-    "website": "http://shoutcast.flashradio.info/#/Jazz/1292701/",
-    "isFeatured": false
-  },
-  {
     "id": "radio-gold-gb",
     "name": "Gold",
     "type": "radio",
@@ -3006,6 +3200,23 @@
       "variety"
     ],
     "website": "https://www.mygoldmusic.co.uk/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-jazz-lounge-my",
+    "name": "Jazz Lounge",
+    "type": "radio",
+    "streamUrl": "http://eu8.fastcast4u.com:5068/;",
+    "description": "320kbps, classic jazz, jazz, smooth jazz",
+    "language": "english",
+    "country": "MY",
+    "categories": [
+      "320kbps",
+      "classic jazz",
+      "jazz",
+      "smooth jazz"
+    ],
+    "website": "http://shoutcast.flashradio.info/#/Jazz/1292701/",
     "isFeatured": false
   },
   {
@@ -3201,6 +3412,25 @@
     "isFeatured": false
   },
   {
+    "id": "radio-somafm-lush-128k-mp3-us",
+    "name": "SomaFM Lush (128k MP3)",
+    "type": "radio",
+    "streamUrl": "https://ice2.somafm.com/lush-128-mp3",
+    "logo": "https://somafm.com/img3/lush-400.jpg",
+    "description": "electronic, femalevocals, lounge, mellow, vocal",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "electronic",
+      "femalevocals",
+      "lounge",
+      "mellow",
+      "vocal"
+    ],
+    "website": "https://somafm.com/lush/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-pure-ibiza-radio-es",
     "name": "Pure Ibiza Radio",
     "type": "radio",
@@ -3351,6 +3581,20 @@
     "isFeatured": false
   },
   {
+    "id": "radio-weow-fm-92-7-us",
+    "name": "WEOW FM 92.7",
+    "type": "radio",
+    "streamUrl": "http://ice42.securenetsystems.net/WEOW",
+    "description": "rock",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "rock"
+    ],
+    "website": "http://www.weow927.com/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-radio-5-turkey-tr",
     "name": "Radio 5 Turkey",
     "type": "radio",
@@ -3385,6 +3629,23 @@
       "uplifting trance"
     ],
     "website": "https://www.tranceathena.com/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-zbs-zodiak-fm-mw",
+    "name": "ZBS Zodiak FM",
+    "type": "radio",
+    "streamUrl": "https://ice31.securenetsystems.net/0079",
+    "description": "entertainment, local music, news, sport",
+    "language": "english",
+    "country": "MW",
+    "categories": [
+      "entertainment",
+      "local music",
+      "news",
+      "sport"
+    ],
+    "website": "https://zodiakmalawi.com/live-radio",
     "isFeatured": false
   },
   {
@@ -3628,6 +3889,27 @@
       "talk"
     ],
     "website": "http://www.lbc.co.uk/faq/online-listen-live/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-somafm-metal-detector-128k-aac-us",
+    "name": "SomaFM Metal Detector (128k AAC)",
+    "type": "radio",
+    "streamUrl": "https://ice4.somafm.com/metal-128-aac",
+    "logo": "https://somafm.com/img3/metal-400.png",
+    "description": "black metal, doom metal, post-punk, progressive rock, sludge, stoner rock, trash",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "black metal",
+      "doom metal",
+      "post-punk",
+      "progressive rock",
+      "sludge",
+      "stoner rock",
+      "trash"
+    ],
+    "website": "https://somafm.com/metal/",
     "isFeatured": false
   },
   {
