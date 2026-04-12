@@ -30,7 +30,7 @@ const RADIO_INTERNATIONAL =
   "https://de1.api.radio-browser.info/json/stations/search?limit=150&order=votes&reverse=true&hidebroken=true";
 
 // User-Agent required by radio-browser.info to avoid being blocked
-const RADIO_USER_AGENT = "Laba/1.0 (github.com/wyasyn/homeflix)";
+const RADIO_USER_AGENT = "Laba/1.0 (github.com/wyasyn/laba)";
 
 // ─── Filtering constants ──────────────────────────────────────────────────────
 

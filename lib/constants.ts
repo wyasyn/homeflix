@@ -5,7 +5,7 @@
  * After enabling GitHub Pages on your repo, replace this URL with:
  *   https://<your-username>.github.io/<your-repo>/stations.json
  */
-export const STATIONS_URL = "https://wyasyn.github.io/homeflix/stations.json";
+export const STATIONS_URL = "https://wyasyn.github.io/laba/stations.json";
 
 export const CACHE_KEYS = {
   STATIONS: "@laba/stations",
