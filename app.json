@@ -54,8 +54,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "e43961b3-06f3-4a39-a157-6e3e4bdf8685"
+        "projectId": "8581c4a8-e957-4553-bb1b-afb2dafda078"
       }
-    }
+    },
+    "owner": "yasyn"
   }
 }
