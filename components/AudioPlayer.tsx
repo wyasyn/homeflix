@@ -12,12 +12,13 @@ import {
 import { HugeiconsIcon } from "@hugeicons/react-native";
 import { useAudioPlayer, useAudioPlayerStatus } from "expo-audio";
 import { Image } from "expo-image";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import { ActivityIndicator, Pressable, Text, View } from "react-native";
 import { Gesture, GestureDetector } from "react-native-gesture-handler";
 import Animated, {
   cancelAnimation,
   Easing,
+  runOnJS,
   useAnimatedStyle,
   useSharedValue,
   withDelay,
@@ -36,7 +37,7 @@ interface AudioPlayerProps {
 const BAR_COUNT = 40;
 const VOLUME_SLIDER_WIDTH = 200;
 
-function WaveformBar({
+const WaveformBar = memo(function WaveformBar({
   index,
   isPlaying,
   colors,
@@ -82,7 +83,7 @@ function WaveformBar({
       ]}
     />
   );
-}
+});
 
 export function AudioPlayer({
   streamUrl,
@@ -96,6 +97,7 @@ export function AudioPlayer({
   const [isStopped, setIsStopped] = useState(false);
   const [volume, setVolume] = useState(1);
   const [hasError, setHasError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const isPlaying = status.playing;
   const isLoading = !status.isLoaded || status.isBuffering;
@@ -103,13 +105,16 @@ export function AudioPlayer({
   // Reload stream when URL changes, then auto-play
   useEffect(() => {
     setHasError(false);
+    setErrorMessage(null);
     setIsStopped(false);
     try {
       player.replace({ uri: streamUrl });
       player.play();
-    } catch {
+    } catch (e) {
+      const msg = e instanceof Error ? e.message : "Stream failed to load";
       setHasError(true);
-      onError?.("Stream failed to load");
+      setErrorMessage(msg);
+      onError?.(msg);
     }
     return () => {
       try {
@@ -181,12 +186,15 @@ export function AudioPlayer({
   const retry = useCallback(() => {
     try {
       setHasError(false);
+      setErrorMessage(null);
       setIsStopped(false);
       player.replace({ uri: streamUrl });
       player.play();
-    } catch {
+    } catch (e) {
+      const msg = e instanceof Error ? e.message : "Stream failed to load";
       setHasError(true);
-      onError?.("Stream failed to load");
+      setErrorMessage(msg);
+      onError?.(msg);
     }
   }, [streamUrl, player, onError]);
 
@@ -219,10 +227,15 @@ export function AudioPlayer({
         ? VolumeLowIcon
         : VolumeHighIcon;
 
-  const volumeGesture = Gesture.Pan().onUpdate((e) => {
-    const pct = Math.min(1, Math.max(0, e.x / VOLUME_SLIDER_WIDTH));
-    setVolume(pct);
-  });
+  const volumeGesture = useMemo(
+    () =>
+      Gesture.Pan().onUpdate((e) => {
+        "worklet";
+        const pct = Math.min(1, Math.max(0, e.x / VOLUME_SLIDER_WIDTH));
+        runOnJS(setVolume)(pct);
+      }),
+    [],
+  );
 
   const barIndices = useMemo(() => Array.from({ length: BAR_COUNT }, (_, i) => i), []);
 
@@ -245,6 +258,7 @@ export function AudioPlayer({
               source={{ uri: logo }}
               style={{ width: "100%", height: "100%" }}
               contentFit="cover"
+              cachePolicy="memory-disk"
               transition={200}
             />
           ) : (
@@ -350,9 +364,23 @@ export function AudioPlayer({
       </View>
 
       {hasError && (
-        <Pressable onPress={retry} className="mt-6">
-          <Text className="text-primary">Tap play to retry</Text>
-        </Pressable>
+        <View className="mt-6 items-center px-6">
+          {errorMessage && (
+            <Text className="mb-1 text-center text-sm text-text-secondary">
+              {errorMessage}
+            </Text>
+          )}
+          <Text className="mb-3 text-center text-xs text-text-secondary">
+            Check your connection and try again
+          </Text>
+          <Pressable
+            onPress={retry}
+            accessibilityRole="button"
+            accessibilityLabel="Retry loading stream"
+          >
+            <Text className="font-semibold text-primary">Retry</Text>
+          </Pressable>
+        </View>
       )}
     </View>
   );

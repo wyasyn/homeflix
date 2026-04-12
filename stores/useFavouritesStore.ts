@@ -30,14 +30,17 @@ export const useFavouritesStore = create<FavouritesStore>((set, get) => ({
   },
 
   toggle: (stationId) => {
-    const { ids } = get();
-    const next = ids.includes(stationId)
-      ? ids.filter((id) => id !== stationId)
-      : [...ids, stationId];
+    const { ids: prev } = get();
+    const next = prev.includes(stationId)
+      ? prev.filter((id) => id !== stationId)
+      : [...prev, stationId];
 
     set({ ids: next });
     AsyncStorage.setItem(CACHE_KEYS.FAVOURITES, JSON.stringify(next)).catch(
-      () => {}
+      () => {
+        // Revert optimistic update on storage failure
+        set({ ids: prev });
+      }
     );
   },
 

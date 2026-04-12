@@ -1,12 +1,22 @@
 import type { Station } from "@/lib/schemas";
 import { memo } from "react";
-import { FlatList, Text, View } from "react-native";
+import { FlatList, ListRenderItem, Text, View } from "react-native";
 import { StationCard } from "./StationCard";
 
 interface CategoryRowProps {
   title: string;
   stations: Station[];
 }
+
+const CONTENT_CONTAINER_STYLE = { paddingHorizontal: 16, gap: 12 } as const;
+
+const keyExtractor = (item: Station) => item.id;
+
+const renderItem: ListRenderItem<Station> = ({ item }) => (
+  <View className="w-40">
+    <StationCard station={item} />
+  </View>
+);
 
 export const CategoryRow = memo(function CategoryRow({
   title,
@@ -21,15 +31,15 @@ export const CategoryRow = memo(function CategoryRow({
       </Text>
       <FlatList
         data={stations}
-        keyExtractor={(item) => item.id}
+        keyExtractor={keyExtractor}
         horizontal
         showsHorizontalScrollIndicator={false}
-        contentContainerStyle={{ paddingHorizontal: 16, gap: 12 }}
-        renderItem={({ item }) => (
-          <View className="w-40">
-            <StationCard station={item} />
-          </View>
-        )}
+        contentContainerStyle={CONTENT_CONTAINER_STYLE}
+        renderItem={renderItem}
+        initialNumToRender={4}
+        maxToRenderPerBatch={4}
+        windowSize={3}
+        removeClippedSubviews
       />
     </View>
   );

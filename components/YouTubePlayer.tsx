@@ -1,11 +1,12 @@
 import { useTheme } from "@/lib/useTheme";
 import {
+  ArrowLeft01Icon,
   FullscreenIcon,
   MinimizeScreenIcon,
 } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react-native";
 import * as ScreenOrientation from "expo-screen-orientation";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Modal, Pressable, StatusBar, View } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { WebView } from "react-native-webview";
@@ -13,7 +14,10 @@ import { WebView } from "react-native-webview";
 interface YouTubePlayerProps {
   channelId: string;
   borderless?: boolean;
+  onBack?: () => void;
 }
+
+const BACK_TIMEOUT = 4000;
 
 function buildEmbedUrl(channelId: string) {
   return (
@@ -25,9 +29,24 @@ function buildEmbedUrl(channelId: string) {
 export function YouTubePlayer({
   channelId,
   borderless = false,
+  onBack,
 }: YouTubePlayerProps) {
   const { colors } = useTheme();
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [showBack, setShowBack] = useState(false);
+  const backTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const revealBack = useCallback(() => {
+    setShowBack(true);
+    if (backTimer.current) clearTimeout(backTimer.current);
+    backTimer.current = setTimeout(() => setShowBack(false), BACK_TIMEOUT);
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      if (backTimer.current) clearTimeout(backTimer.current);
+    };
+  }, []);
 
   const enterFullscreen = useCallback(async () => {
     await ScreenOrientation.lockAsync(
@@ -73,6 +92,29 @@ export function YouTubePlayer({
     </Pressable>
   );
 
+  const backOverlay = onBack ? (
+    <>
+      {/* Top-left tap zone to reveal the back button */}
+      <Pressable
+        onPress={revealBack}
+        className="absolute left-0 top-0 h-16 w-20"
+        accessibilityRole="button"
+        accessibilityLabel="Show back button"
+      />
+      {showBack && (
+        <Pressable
+          onPress={onBack}
+          className="absolute left-3 top-3 rounded-full bg-black/60 p-2"
+          hitSlop={8}
+          accessibilityRole="button"
+          accessibilityLabel="Go back"
+        >
+          <HugeiconsIcon icon={ArrowLeft01Icon} size={20} color="#fff" />
+        </Pressable>
+      )}
+    </>
+  ) : null;
+
   return (
     <>
       {/* Inline player */}
@@ -83,6 +125,7 @@ export function YouTubePlayer({
           <>
             {webview}
             {fullscreenButton}
+            {backOverlay}
           </>
         )}
       </View>

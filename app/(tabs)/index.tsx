@@ -9,26 +9,40 @@ import { HugeiconsIcon } from "@hugeicons/react-native";
 import { useRouter } from "expo-router";
 import { Image, Pressable, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { useShallow } from "zustand/react/shallow";
+
+const SCROLL_CONTENT_STYLE = { paddingBottom: 20 } as const;
 
 export default function HomeScreen() {
   const router = useRouter();
   const { user } = useUser();
-  const stations = useStationStore((s) => s.stations);
-  const isLoading = useStationStore((s) => s.isLoading);
-  const tvStations = useStationStore((s) => s.tvStations);
-  const radioStations = useStationStore((s) => s.radioStations);
-  const internationalStations = useStationStore((s) => s.internationalStations);
-  const featuredStations = useStationStore((s) => s.featuredStations);
+  const {
+    stations,
+    isLoading,
+    tvStations,
+    radioStations,
+    internationalStations,
+    featuredStations,
+  } = useStationStore(
+    useShallow((s) => ({
+      stations: s.stations,
+      isLoading: s.isLoading,
+      tvStations: s.tvStations,
+      radioStations: s.radioStations,
+      internationalStations: s.internationalStations,
+      featuredStations: s.featuredStations,
+    })),
+  );
 
   if (isLoading && stations.length === 0) {
     return (
       <SafeAreaView className="flex-1 bg-background" edges={["top"]}>
         <View className="px-4 pt-6">
           <View className="mb-6 h-8 w-32 rounded bg-surface-light" />
-          <View className="h-52 rounded-2xl bg-surface-light" />
-          <View className="mt-6 flex-row gap-3">
-            {Array.from({ length: 3 }).map((_, i) => (
-              <View key={i} className="w-40">
+          <View className="mb-6 h-52 rounded-2xl bg-surface-light" />
+          <View className="flex-row flex-wrap justify-between">
+            {Array.from({ length: 4 }).map((_, i) => (
+              <View key={i} className="w-[48%]">
                 <SkeletonCard />
               </View>
             ))}
@@ -42,7 +56,7 @@ export default function HomeScreen() {
     <SafeAreaView className="flex-1 bg-background" edges={["top"]}>
       <ScrollView
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={{ paddingBottom: 20 }}
+        contentContainerStyle={SCROLL_CONTENT_STYLE}
       >
         {/* Header */}
         <View className="flex-row items-center justify-between px-4 pb-4 pt-6">

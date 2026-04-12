@@ -1,8 +1,8 @@
 import type { Station, StationType } from "@/lib/schemas";
 import { useDebounce } from "@/lib/useDebounce";
 import { useStationStore } from "@/stores/useStationStore";
-import { ReactElement, useCallback, useMemo, useState } from "react";
-import { FlatList, View } from "react-native";
+import { ReactElement, useCallback, useMemo, useRef, useState } from "react";
+import { FlatList, TextInput, View } from "react-native";
 import { EmptyState } from "./EmptyState";
 import { SearchBar } from "./SearchBar";
 import { SkeletonCard } from "./SkeletonCard";
@@ -13,14 +13,25 @@ interface StationListProps {
   type: StationType;
 }
 
+const COLUMN_WRAPPER_STYLE = {
+  justifyContent: "space-between",
+  paddingHorizontal: 16,
+  marginBottom: 12,
+} as const;
+
+const CONTENT_CONTAINER_STYLE = { paddingBottom: 20 } as const;
+
 export function StationList({ type, header }: StationListProps) {
   const isLoading = useStationStore((s) => s.isLoading);
+  const isRefreshing = useStationStore((s) => s.isRefreshing);
+  const refreshStations = useStationStore((s) => s.refreshStations);
   const sourceStations = useStationStore((s) =>
     type === "tv" ? s.tvStations : s.radioStations,
   );
 
   const [searchQuery, setSearchQuery] = useState("");
   const debouncedQuery = useDebounce(searchQuery, 250);
+  const searchRef = useRef<TextInput>(null);
 
   const stations = useMemo(() => {
     const q = debouncedQuery.toLowerCase().trim();
@@ -44,24 +55,23 @@ export function StationList({ type, header }: StationListProps) {
     [],
   );
 
-  const ListHeader = useMemo(
-    () => (
-      <View>
-        {header}
-        <SearchBar
-          value={searchQuery}
-          onChangeText={setSearchQuery}
-          placeholder={`Search ${type === "tv" ? "TV" : "radio"} stations...`}
-        />
-      </View>
-    ),
-    [header, searchQuery, type],
+  const placeholder = useMemo(
+    () => `Search ${type === "tv" ? "TV" : "radio"} stations...`,
+    [type],
   );
+
+  const listHeader = useMemo(() => <View>{header}</View>, [header]);
 
   if (isLoading && stations.length === 0) {
     return (
       <View className="flex-1 bg-background">
-        {ListHeader}
+        {header}
+        <SearchBar
+          ref={searchRef}
+          value={searchQuery}
+          onChangeText={setSearchQuery}
+          placeholder={placeholder}
+        />
         <View className="flex-row flex-wrap justify-between px-4 pt-4">
           {Array.from({ length: 6 }).map((_, i) => (
             <View key={i} className="w-[48%]">
@@ -79,19 +89,28 @@ export function StationList({ type, header }: StationListProps) {
         data={stations}
         keyExtractor={keyExtractor}
         numColumns={2}
-        columnWrapperStyle={{
-          justifyContent: "space-between",
-          paddingHorizontal: 16,
-          marginBottom: 12,
-        }}
+        columnWrapperStyle={COLUMN_WRAPPER_STYLE}
         renderItem={renderItem}
         initialNumToRender={8}
         maxToRenderPerBatch={8}
         windowSize={5}
-        ListHeaderComponent={ListHeader}
+        removeClippedSubviews
+        ListHeaderComponent={
+          <>
+            {listHeader}
+            <SearchBar
+              ref={searchRef}
+              value={searchQuery}
+              onChangeText={setSearchQuery}
+              placeholder={placeholder}
+            />
+          </>
+        }
         ListEmptyComponent={<EmptyState />}
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={{ paddingBottom: 20 }}
+        contentContainerStyle={CONTENT_CONTAINER_STYLE}
+        refreshing={isRefreshing}
+        onRefresh={refreshStations}
       />
     </View>
   );

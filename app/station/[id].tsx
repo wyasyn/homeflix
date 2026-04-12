@@ -16,7 +16,7 @@ import { HugeiconsIcon } from "@hugeicons/react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import * as WebBrowser from "expo-web-browser";
 import { useEffect } from "react";
-import { Pressable, ScrollView, Text, View } from "react-native";
+import { Pressable, RefreshControl, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function StationScreen() {
@@ -28,6 +28,8 @@ export default function StationScreen() {
   const toggle = useFavouritesStore((s) => s.toggle);
   const play = usePlayerStore((s) => s.play);
   const stop = usePlayerStore((s) => s.stop);
+  const isRefreshing = useStationStore((s) => s.isRefreshing);
+  const refreshStations = useStationStore((s) => s.refreshStations);
 
   // Register station as active immediately on mount; clean up on unmount
   useEffect(() => {
@@ -46,44 +48,64 @@ export default function StationScreen() {
     );
   }
 
-  return (
-    <SafeAreaView className="flex-1 bg-background">
-      {/* Header */}
-      <View className="flex-row items-center justify-between px-4 py-3">
-        <Pressable
-          onPress={() => router.back()}
-          className="rounded-full bg-surface p-2.5"
-        >
-          <HugeiconsIcon
-            icon={ArrowLeft01Icon}
-            size={22}
-            color={colors.textPrimary}
-          />
-        </Pressable>
+  const isTv = station.type === "tv";
 
-        <Pressable
-          onPress={() => toggle(id)}
-          className="rounded-full bg-surface p-2.5"
-        >
-          <HugeiconsIcon
-            icon={FavouriteIcon}
-            size={22}
-            color={isFavourite ? colors.primary : colors.textSecondary}
-          />
-        </Pressable>
-      </View>
+  return (
+    <SafeAreaView className="flex-1 bg-background" edges={isTv ? ["top"] : undefined}>
+      {/* Header — hidden for TV (back button is inside the player) */}
+      {!isTv && (
+        <View className="flex-row items-center justify-between px-4 py-3">
+          <Pressable
+            onPress={() => router.back()}
+            className="rounded-full bg-surface p-2.5"
+          >
+            <HugeiconsIcon
+              icon={ArrowLeft01Icon}
+              size={22}
+              color={colors.textPrimary}
+            />
+          </Pressable>
+
+          <Pressable
+            onPress={() => toggle(id)}
+            className="rounded-full bg-surface p-2.5"
+          >
+            <HugeiconsIcon
+              icon={FavouriteIcon}
+              size={22}
+              color={isFavourite ? colors.primary : colors.textSecondary}
+            />
+          </Pressable>
+        </View>
+      )}
 
       <ScrollView
         className="flex-1"
         contentContainerStyle={{ paddingBottom: 40 }}
         showsVerticalScrollIndicator={false}
+        refreshControl={
+          <RefreshControl
+            refreshing={isRefreshing}
+            onRefresh={refreshStations}
+            tintColor={colors.primary}
+            colors={[colors.primary]}
+          />
+        }
       >
         {/* Player */}
-        {station.type === "tv" ? (
+        {isTv ? (
           station.youtubeChannelId ? (
-            <YouTubePlayer channelId={station.youtubeChannelId} borderless />
+            <YouTubePlayer
+              channelId={station.youtubeChannelId}
+              borderless
+              onBack={() => router.back()}
+            />
           ) : (
-            <VideoPlayer streamUrl={station.streamUrl!} borderless />
+            <VideoPlayer
+              streamUrl={station.streamUrl!}
+              borderless
+              onBack={() => router.back()}
+            />
           )
         ) : (
           <View className="px-4">
@@ -97,15 +119,29 @@ export default function StationScreen() {
 
         {/* Station Info */}
         <View className="mt-6 px-4">
-          <View className="flex-row items-center">
-            <HugeiconsIcon
-              icon={station.type === "tv" ? Tv01Icon : Radio01Icon}
-              size={20}
-              color={station.type === "tv" ? colors.primary : colors.success}
-            />
-            <Text className="ml-2 text-2xl font-bold text-foreground">
-              {station.name}
-            </Text>
+          <View className="flex-row items-center justify-between">
+            <View className="flex-1 flex-row items-center">
+              <HugeiconsIcon
+                icon={isTv ? Tv01Icon : Radio01Icon}
+                size={20}
+                color={isTv ? colors.primary : colors.success}
+              />
+              <Text className="ml-2 flex-1 text-2xl font-bold text-foreground">
+                {station.name}
+              </Text>
+            </View>
+            {isTv && (
+              <Pressable
+                onPress={() => toggle(id)}
+                className="ml-3 rounded-full bg-surface p-2.5"
+              >
+                <HugeiconsIcon
+                  icon={FavouriteIcon}
+                  size={22}
+                  color={isFavourite ? colors.primary : colors.textSecondary}
+                />
+              </Pressable>
+            )}
           </View>
 
           {station.description ? (

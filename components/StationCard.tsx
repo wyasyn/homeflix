@@ -6,7 +6,8 @@ import { Radio01Icon, Tv01Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react-native";
 import { Image } from "expo-image";
 import { useRouter } from "expo-router";
-import { memo, useState } from "react";
+import * as Haptics from "expo-haptics";
+import { memo, useCallback, useState } from "react";
 import { Pressable, Text, View } from "react-native";
 
 interface StationCardProps {
@@ -27,15 +28,22 @@ export const StationCard = memo(function StationCard({
   const [logoFailed, setLogoFailed] = useState(false);
   const showFallback = !station.logo || logoFailed;
 
+  const handlePress = useCallback(() => {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+    usePlayerStore.getState().setPending(station.id);
+    router.push({
+      pathname: "/station/[id]" as const,
+      params: { id: station.id },
+    } as never);
+  }, [station.id, router]);
+
+  const handleLogoError = useCallback(() => setLogoFailed(true), []);
+
   return (
     <Pressable
-      onPress={() => {
-        usePlayerStore.getState().setPending(station.id);
-        router.push({
-          pathname: "/station/[id]" as const,
-          params: { id: station.id },
-        } as never);
-      }}
+      onPress={handlePress}
+      accessibilityRole="button"
+      accessibilityLabel={`Play ${station.name}`}
       className="rounded-2xl active:opacity-80"
     >
       <View className="overflow-hidden rounded-2xl border border-border bg-surface">
@@ -54,8 +62,9 @@ export const StationCard = memo(function StationCard({
               source={{ uri: station.logo }}
               style={{ width: "100%", height: "100%" }}
               contentFit="cover"
+              cachePolicy="memory-disk"
               transition={200}
-              onError={() => setLogoFailed(true)}
+              onError={handleLogoError}
             />
           )}
         </View>
