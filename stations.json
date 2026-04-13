@@ -1101,20 +1101,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-christian-music-channel-ug",
-    "name": "Christian music channel",
-    "type": "radio",
-    "streamUrl": "http://streaming.live365.com/a08828",
-    "description": "christian",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian"
-    ],
-    "website": "https://docradio.org/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-christmas-choir-ug",
     "name": "Christmas choir",
     "type": "radio",
@@ -2596,6 +2582,21 @@
     "isFeatured": false
   },
   {
+    "id": "radio-977-hitz-us",
+    "name": ".977 Hitz",
+    "type": "radio",
+    "streamUrl": "http://18863.live.streamtheworld.com/977_HITS_SC",
+    "description": "hits, top 40",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "hits",
+      "top 40"
+    ],
+    "website": "http://www.977music.com/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-181-fm-old-school-hiphop-rnb-us",
     "name": "181.FM - Old School HipHop/RnB",
     "type": "radio",
@@ -2627,21 +2628,6 @@
       "relax"
     ],
     "website": "http://www.yourclassical.org/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-977-hitz-us",
-    "name": ".977 Hitz",
-    "type": "radio",
-    "streamUrl": "http://18863.live.streamtheworld.com/977_HITS_SC",
-    "description": "hits, top 40",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "hits",
-      "top 40"
-    ],
-    "website": "http://www.977music.com/",
     "isFeatured": false
   },
   {
@@ -2985,6 +2971,20 @@
     "isFeatured": false
   },
   {
+    "id": "radio-the-big-80s-station-us",
+    "name": "The Big 80s Station",
+    "type": "radio",
+    "streamUrl": "http://158.69.114.190:8065/;",
+    "description": "80s",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "80s"
+    ],
+    "website": "http://www.thebig80sstation.com/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-somafm-space-station-soma-128k-aac-us",
     "name": "SomaFM Space Station Soma (128k AAC)",
     "type": "radio",
@@ -2999,20 +2999,6 @@
       "mid-tempo"
     ],
     "website": "https://somafm.com/spacestation/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-the-big-80s-station-us",
-    "name": "The Big 80s Station",
-    "type": "radio",
-    "streamUrl": "http://158.69.114.190:8065/;",
-    "description": "80s",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "80s"
-    ],
-    "website": "http://www.thebig80sstation.com/",
     "isFeatured": false
   },
   {
@@ -3426,6 +3412,22 @@
     "isFeatured": false
   },
   {
+    "id": "radio-pure-ibiza-radio-es",
+    "name": "Pure Ibiza Radio",
+    "type": "radio",
+    "streamUrl": "https://pureibizaradio.clubbingradios.com:9518/PureIbizaRadio",
+    "description": "dance, electronic music, ibiza club",
+    "language": "english,spanish",
+    "country": "ES",
+    "categories": [
+      "dance",
+      "electronic music",
+      "ibiza club"
+    ],
+    "website": "https://www.pureibizaradio.com/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-somafm-lush-128k-mp3-us",
     "name": "SomaFM Lush (128k MP3)",
     "type": "radio",
@@ -3442,22 +3444,6 @@
       "vocal"
     ],
     "website": "https://somafm.com/lush/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-pure-ibiza-radio-es",
-    "name": "Pure Ibiza Radio",
-    "type": "radio",
-    "streamUrl": "https://pureibizaradio.clubbingradios.com:9518/PureIbizaRadio",
-    "description": "dance, electronic music, ibiza club",
-    "language": "english,spanish",
-    "country": "ES",
-    "categories": [
-      "dance",
-      "electronic music",
-      "ibiza club"
-    ],
-    "website": "https://www.pureibizaradio.com/",
     "isFeatured": false
   },
   {
