@@ -28,20 +28,6 @@
     "isFeatured": true
   },
   {
-    "id": "btv",
-    "name": "BTV",
-    "type": "tv",
-    "streamUrl": "https://streamfi-alphadgtl1.zettawiseroutes.com:8181/hls/stream.m3u8",
-    "description": "entertainment",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "entertainment"
-    ],
-    "website": "https://imc.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "bukedde-tv-1",
     "name": "Bukedde TV 1",
     "type": "tv",
@@ -67,20 +53,6 @@
       "general"
     ],
     "website": "https://www.bukedde.co.ug/",
-    "isFeatured": true
-  },
-  {
-    "id": "dream-tv",
-    "name": "Dream TV",
-    "type": "tv",
-    "streamUrl": "https://streamfi-dreamtv1.zettawiseroutes.com:8181/hls/stream.m3u8",
-    "description": "religious",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "religious"
-    ],
-    "website": "http://www.imc.ug/",
     "isFeatured": true
   },
   {
@@ -1101,6 +1073,20 @@
     "isFeatured": true
   },
   {
+    "id": "radio-christian-music-channel-ug",
+    "name": "Christian music channel",
+    "type": "radio",
+    "streamUrl": "http://streaming.live365.com/a08828",
+    "description": "christian",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian"
+    ],
+    "website": "https://docradio.org/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-christmas-choir-ug",
     "name": "Christmas choir",
     "type": "radio",
@@ -1867,6 +1853,19 @@
     "isFeatured": true
   },
   {
+    "id": "radio-radio-pacis-ug",
+    "name": "Radio Pacis",
+    "type": "radio",
+    "streamUrl": "http://148.251.43.231:8308/stream",
+    "logo": "https://www.radiopacis.org/wp-content/uploads/2025/11/logo_ris.jpg",
+    "description": "Radio station",
+    "language": "English",
+    "country": "UG",
+    "categories": [],
+    "website": "https://www.radiopacis.org/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-radio-pacis-90-9-ug",
     "name": "Radio Pacis 90.9",
     "type": "radio",
@@ -1878,6 +1877,19 @@
       "christian",
       "english"
     ],
+    "website": "https://www.radiopacis.org/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-radio-pacis-94-5-ug",
+    "name": "Radio Pacis 94.5",
+    "type": "radio",
+    "streamUrl": "http://136.243.44.41:8182/stream",
+    "logo": "https://www.radiopacis.org/wp-content/uploads/2025/11/logo_ris.jpg",
+    "description": "Radio station",
+    "language": "English",
+    "country": "UG",
+    "categories": [],
     "website": "https://www.radiopacis.org/",
     "isFeatured": true
   },
@@ -2022,23 +2034,6 @@
       "variety"
     ],
     "website": "https://sdamissionug.com/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-shalom-radio-jinja-mp3-ug",
-    "name": "Shalom Radio Jinja (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/rvnov6bmdhsvv",
-    "description": "christian, gospel, religious, talk",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious",
-      "talk"
-    ],
-    "website": "https://shalomradio.co.ug/",
     "isFeatured": true
   },
   {
@@ -2582,21 +2577,6 @@
     "isFeatured": false
   },
   {
-    "id": "radio-977-hitz-us",
-    "name": ".977 Hitz",
-    "type": "radio",
-    "streamUrl": "http://18863.live.streamtheworld.com/977_HITS_SC",
-    "description": "hits, top 40",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "hits",
-      "top 40"
-    ],
-    "website": "http://www.977music.com/",
-    "isFeatured": false
-  },
-  {
     "id": "radio-181-fm-old-school-hiphop-rnb-us",
     "name": "181.FM - Old School HipHop/RnB",
     "type": "radio",
@@ -2612,6 +2592,21 @@
       "waynesboro"
     ],
     "website": "http://www.181.fm/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-977-hitz-us",
+    "name": ".977 Hitz",
+    "type": "radio",
+    "streamUrl": "http://18863.live.streamtheworld.com/977_HITS_SC",
+    "description": "hits, top 40",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "hits",
+      "top 40"
+    ],
+    "website": "http://www.977music.com/",
     "isFeatured": false
   },
   {
