@@ -28,6 +28,20 @@
     "isFeatured": true
   },
   {
+    "id": "btv",
+    "name": "BTV",
+    "type": "tv",
+    "streamUrl": "https://streamfi-alphadgtl1.zettawiseroutes.com:8181/hls/stream.m3u8",
+    "description": "entertainment",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "entertainment"
+    ],
+    "website": "https://imc.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "bukedde-tv-1",
     "name": "Bukedde TV 1",
     "type": "tv",
@@ -1633,6 +1647,25 @@
     "isFeatured": true
   },
   {
+    "id": "radio-my-radio-ug",
+    "name": "My Radio",
+    "type": "radio",
+    "streamUrl": "http://myradioug.duckdns.org:8000/radio.mp3",
+    "logo": "https://econews.digital/wp-content/uploads/2025/11/cropped-WhatsApp-Image-2025-11-14-at-15.21.28_a76b6284.jpg",
+    "description": "christian-gospel, gospel, gospel pop, smoothest songs, urban gospel",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian-gospel",
+      "gospel",
+      "gospel pop",
+      "smoothest songs",
+      "urban gospel"
+    ],
+    "website": "https://econews.digital/home/myradio/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-nakawa-online-radio-kampala-mp3-ug",
     "name": "Nakawa Online Radio - Kampala (MP3)",
     "type": "radio",
@@ -1863,6 +1896,22 @@
     "isFeatured": true
   },
   {
+    "id": "radio-radio-sinza-mp3-ug",
+    "name": "Radio Sinza (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/raoopfak6k2vv",
+    "description": "christian, gospel, religious",
+    "language": "english,luganda,swahili",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious"
+    ],
+    "website": "http://www.radiosinza.co.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-radio-yoo-mp3-ug",
     "name": "Radio Yoo (MP3)",
     "type": "radio",
@@ -1932,6 +1981,20 @@
     "isFeatured": true
   },
   {
+    "id": "radio-sanctuary-fm-ug",
+    "name": "SANCTUARY FM",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/vyx334hsbphvv",
+    "description": "religious",
+    "language": "luganda",
+    "country": "UG",
+    "categories": [
+      "religious"
+    ],
+    "website": "https://www.sanctuaryfm.co.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-sbn-ug",
     "name": "SBN",
     "type": "radio",
@@ -1962,6 +2025,37 @@
     "isFeatured": true
   },
   {
+    "id": "radio-sda-missions-radio-ug",
+    "name": "SDA Missions radio",
+    "type": "radio",
+    "streamUrl": "https://stream-57.zeno.fm/mkkr2bcgkf9uv",
+    "description": "variety",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "variety"
+    ],
+    "website": "https://sdamissionug.com/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-shalom-radio-jinja-mp3-ug",
+    "name": "Shalom Radio Jinja (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/rvnov6bmdhsvv",
+    "description": "christian, gospel, religious, talk",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious",
+      "talk"
+    ],
+    "website": "https://shalomradio.co.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-sky-news-ug",
     "name": "Sky News",
     "type": "radio",
@@ -1973,6 +2067,20 @@
       "current affairs"
     ],
     "website": "https://video.news.sky.com/snr/news/snrnews.mp3",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-skynet-fm-ug",
+    "name": "SKYNET FM",
+    "type": "radio",
+    "streamUrl": "https://stream-44.zeno.fm/1uhqawtfk5zuv",
+    "description": "music",
+    "language": "luganda",
+    "country": "UG",
+    "categories": [
+      "music"
+    ],
+    "website": "https://zeno.fm/radio/skynet-radio/",
     "isFeatured": true
   },
   {
@@ -2060,6 +2168,108 @@
       "music"
     ],
     "website": "https://24503.live.streamtheworld.com/977_HITSAAC_SC",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-sport-live-ug",
+    "name": "Sport Live",
+    "type": "radio",
+    "streamUrl": "https://radio.talksport.com/stream",
+    "logo": "https://firebasestorage.googleapis.com/v0/b/radiogalaxy-580f4.appspot.com/o/images%2FIMG_20240501_222002653.jpg?alt=media&token=1d08839c-4f50-4eb6-919d-bbcf2769471c",
+    "description": "talksport",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "talksport"
+    ],
+    "website": "https://radio.talksport.com/stream",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-street-deejays-radio-mbarara-mp3-ug",
+    "name": "Street Deejays Radio - Mbarara (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/nbwdnxz7na0uv",
+    "logo": "https://images.zeno.fm/psoaqXYCmiMezzEGvnQMZ79oLFbyP29TsIyimZh13E8/rs:fit:240:240/g:ce:0:0/aHR0cHM6Ly9zdHJlYW0tdG9vbHMuemVub21lZGlhLmNvbS9jb250ZW50L3N0YXRpb25zL2FneHpmbnBsYm04dGMzUmhkSE55TWdzU0NrRjFkR2hEYkdsbGJuUVlnSURnck92Y2tRa01DeElPVTNSaGRHbHZibEJ5YjJacGJHVVlnSURReUplSnh3b01vZ0VFZW1WdWJ3L2ltYWdlLz91cGRhdGVkPTE2NjE2NzcxNjUwMDA.webp",
+    "description": "music",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "music"
+    ],
+    "website": "http://www.streetdeejaysradio.co.ug/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-talk-radio-ug",
+    "name": "TALK RADIO",
+    "type": "radio",
+    "streamUrl": "https://playerservices.streamtheworld.com/api/livestream-redirect/TALK_RADIO_EUROPE.mp3",
+    "logo": "https://static.flashscore.com/res/_fs/image/4_favicons/_mobi/touch-icon-180x180.png?v=8",
+    "description": "variety",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "variety"
+    ],
+    "website": "https://www.livescore.cz/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-talkradio-ug",
+    "name": "TALKRADIO",
+    "type": "radio",
+    "streamUrl": "https://radio.talkradio.co.uk/stream",
+    "description": "news",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "news"
+    ],
+    "website": "https://www.nrm.ug/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-talksport-ug",
+    "name": "Talksport",
+    "type": "radio",
+    "streamUrl": "https://radio.talksport.com/stream?aw_0_1st.platform=website&aw_0_1st.playerid=wireless-website&aw_0_req.gdpr=true&aw_0_awz.listenerid=#ADVERTISINGID&_=383957",
+    "logo": "https://firebasestorage.googleapis.com/v0/b/radiogalaxy-580f4.appspot.com/o/images%2FIMG_20241102_165602672.jpg?alt=media&token=e2a175e1-3810-4929-84e8-77833dbb5cfd",
+    "description": "sports",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "sports"
+    ],
+    "website": "https://radio.talksport.com/stream?aw_0_1st.platform=website&aw_0_1st.playerid=wireless-website&aw_0_req.gdpr=true&aw_0_awz.listenerid=#ADVERTISINGID&_=383957",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-talksport-2-ug",
+    "name": "talkSPORT 2",
+    "type": "radio",
+    "streamUrl": "http://radio.talksport.com/stream2?ref=rf",
+    "description": "sports",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "sports"
+    ],
+    "website": "http://radio.talksport.com/stream2?ref=rf",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-talksport-spanish-ug",
+    "name": "Talksport Spanish",
+    "type": "radio",
+    "streamUrl": "http://live.talksport.com/channel1m-es",
+    "description": "sports",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "sports"
+    ],
+    "website": "http://live.talksport.com/channel1m-es",
     "isFeatured": true
   },
   {
@@ -3753,20 +3963,6 @@
     "isFeatured": false
   },
   {
-    "id": "radio-977-comedy-us",
-    "name": ".977 Comedy",
-    "type": "radio",
-    "streamUrl": "http://26433.live.streamtheworld.com/977_COMEDY_SC",
-    "description": "comedy",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "comedy"
-    ],
-    "website": "http://www.977music.com/",
-    "isFeatured": false
-  },
-  {
     "id": "radio-1-fm-deep-techno-deep-house-ch",
     "name": "1.FM - Deep Techno & Deep House",
     "type": "radio",
@@ -3779,6 +3975,20 @@
       "techno"
     ],
     "website": "http://www.1.fm/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-977-comedy-us",
+    "name": ".977 Comedy",
+    "type": "radio",
+    "streamUrl": "http://26433.live.streamtheworld.com/977_COMEDY_SC",
+    "description": "comedy",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "comedy"
+    ],
+    "website": "http://www.977music.com/",
     "isFeatured": false
   },
   {
@@ -3922,22 +4132,6 @@
     "isFeatured": false
   },
   {
-    "id": "radio-smoothjazz-com-128k-mp3-us",
-    "name": "SmoothJazz.com 128k mp3",
-    "type": "radio",
-    "streamUrl": "https://smoothjazz.cdnstream1.com/2585_128.mp3",
-    "logo": "https://www.smoothjazz.com/sites/default/files/theme/sj-circle-logo.png",
-    "description": "monterey, smooth jazz",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "monterey",
-      "smooth jazz"
-    ],
-    "website": "https://www.smoothjazz.com/",
-    "isFeatured": false
-  },
-  {
     "id": "radio-voa-learning-english-us",
     "name": "VOA Learning English",
     "type": "radio",
@@ -3951,6 +4145,22 @@
       "learn language"
     ],
     "website": "http://www.voanews.com/t/60.html",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-smoothjazz-com-128k-mp3-us",
+    "name": "SmoothJazz.com 128k mp3",
+    "type": "radio",
+    "streamUrl": "https://smoothjazz.cdnstream1.com/2585_128.mp3",
+    "logo": "https://www.smoothjazz.com/sites/default/files/theme/sj-circle-logo.png",
+    "description": "monterey, smooth jazz",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "monterey",
+      "smooth jazz"
+    ],
+    "website": "https://www.smoothjazz.com/",
     "isFeatured": false
   },
   {
