@@ -14,48 +14,6 @@
     "isFeatured": true
   },
   {
-    "id": "ark-tv",
-    "name": "Ark TV",
-    "type": "tv",
-    "streamUrl": "https://stream.hydeinnovations.com/arktv-international/index.fmp4.m3u8",
-    "description": "religious",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "religious"
-    ],
-    "website": "https://www.holycityentebbe.org/",
-    "isFeatured": true
-  },
-  {
-    "id": "bukedde-tv-1",
-    "name": "Bukedde TV 1",
-    "type": "tv",
-    "streamUrl": "https://stream.hydeinnovations.com/bukedde1flussonic/index.m3u8",
-    "description": "general",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "general"
-    ],
-    "website": "https://www.bukedde.co.ug/",
-    "isFeatured": true
-  },
-  {
-    "id": "bukedde-tv-2",
-    "name": "Bukedde TV 2",
-    "type": "tv",
-    "streamUrl": "https://stream.hydeinnovations.com/bukedde2flussonic/index.m3u8",
-    "description": "general",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "general"
-    ],
-    "website": "https://www.bukedde.co.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "fort-tv",
     "name": "FORT TV",
     "type": "tv",
@@ -81,34 +39,6 @@
       "religious"
     ],
     "website": "https://praisejesustower.org/",
-    "isFeatured": true
-  },
-  {
-    "id": "tv-west",
-    "name": "TV West",
-    "type": "tv",
-    "streamUrl": "https://stream.hydeinnovations.com/tvwest-flussonic/index.m3u8",
-    "description": "general",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "general"
-    ],
-    "website": "https://tvwest.co.ug/",
-    "isFeatured": true
-  },
-  {
-    "id": "wan-luo-tv",
-    "name": "Wan Luo TV",
-    "type": "tv",
-    "streamUrl": "https://stream.hydeinnovations.com/luotv-flussonic/index.m3u8",
-    "description": "general",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "general"
-    ],
-    "website": "https://www.newvision.co.ug/tv/11",
     "isFeatured": true
   },
   {
@@ -596,22 +526,6 @@
       "music"
     ],
     "website": "https://stream.zeno.fm/cub84trbgy5tv",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-94-8-xfm-kampala-ug",
-    "name": "94.8 XFM Kampala",
-    "type": "radio",
-    "streamUrl": "http://stream.hydeinnovations.com:2020/stream/xfm/stream",
-    "logo": "https://i.ibb.co/VBfTj1z/xfm.jpg",
-    "description": "hits, pop",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "hits",
-      "pop"
-    ],
-    "website": "http://xfm.co.ug/",
     "isFeatured": true
   },
   {
@@ -2037,6 +1951,23 @@
     "isFeatured": true
   },
   {
+    "id": "radio-shalom-radio-jinja-mp3-ug",
+    "name": "Shalom Radio Jinja (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/rvnov6bmdhsvv",
+    "description": "christian, gospel, religious, talk",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious",
+      "talk"
+    ],
+    "website": "https://shalomradio.co.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-sky-news-ug",
     "name": "Sky News",
     "type": "radio",
@@ -2595,21 +2526,6 @@
     "isFeatured": false
   },
   {
-    "id": "radio-977-hitz-us",
-    "name": ".977 Hitz",
-    "type": "radio",
-    "streamUrl": "http://18863.live.streamtheworld.com/977_HITS_SC",
-    "description": "hits, top 40",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "hits",
-      "top 40"
-    ],
-    "website": "http://www.977music.com/",
-    "isFeatured": false
-  },
-  {
     "id": "radio-your-classical-relax-us",
     "name": "Your Classical - Relax",
     "type": "radio",
@@ -2623,6 +2539,21 @@
       "relax"
     ],
     "website": "http://www.yourclassical.org/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-977-hitz-us",
+    "name": ".977 Hitz",
+    "type": "radio",
+    "streamUrl": "http://18863.live.streamtheworld.com/977_HITS_SC",
+    "description": "hits, top 40",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "hits",
+      "top 40"
+    ],
+    "website": "http://www.977music.com/",
     "isFeatured": false
   },
   {
@@ -4113,22 +4044,6 @@
     "isFeatured": false
   },
   {
-    "id": "radio-voa-learning-english-us",
-    "name": "VOA Learning English",
-    "type": "radio",
-    "streamUrl": "https://voa-ingest.akamaized.net/hls/live/2035234/160_342L/playlist.m3u8",
-    "logo": "http://www.voanews.com/content/responsive/voa/img/webapp/ico-128x128.png",
-    "description": "learn english, learn language",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "learn english",
-      "learn language"
-    ],
-    "website": "http://www.voanews.com/t/60.html",
-    "isFeatured": false
-  },
-  {
     "id": "radio-smoothjazz-com-128k-mp3-us",
     "name": "SmoothJazz.com 128k mp3",
     "type": "radio",
@@ -4142,6 +4057,22 @@
       "smooth jazz"
     ],
     "website": "https://www.smoothjazz.com/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-voa-learning-english-us",
+    "name": "VOA Learning English",
+    "type": "radio",
+    "streamUrl": "https://voa-ingest.akamaized.net/hls/live/2035234/160_342L/playlist.m3u8",
+    "logo": "http://www.voanews.com/content/responsive/voa/img/webapp/ico-128x128.png",
+    "description": "learn english, learn language",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "learn english",
+      "learn language"
+    ],
+    "website": "http://www.voanews.com/t/60.html",
     "isFeatured": false
   },
   {
