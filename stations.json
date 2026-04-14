@@ -28,20 +28,6 @@
     "isFeatured": true
   },
   {
-    "id": "btv",
-    "name": "BTV",
-    "type": "tv",
-    "streamUrl": "https://streamfi-alphadgtl1.zettawiseroutes.com:8181/hls/stream.m3u8",
-    "description": "entertainment",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "entertainment"
-    ],
-    "website": "https://imc.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "bukedde-tv-1",
     "name": "Bukedde TV 1",
     "type": "tv",
@@ -70,17 +56,17 @@
     "isFeatured": true
   },
   {
-    "id": "fort-tv",
-    "name": "FORT TV",
+    "id": "dream-tv",
+    "name": "Dream TV",
     "type": "tv",
-    "streamUrl": "https://fort.co-works.org/memfs/87017643-274a-4bc0-a786-7767a0d159c2.m3u8",
-    "description": "entertainment",
+    "streamUrl": "https://streamfi-dreamtv1.zettawiseroutes.com:8181/hls/stream.m3u8",
+    "description": "religious",
     "language": "English",
     "country": "UG",
     "categories": [
-      "entertainment"
+      "religious"
     ],
-    "website": "https://fort-tv.com/",
+    "website": "http://www.imc.ug/",
     "isFeatured": true
   },
   {
@@ -2051,23 +2037,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-shalom-radio-jinja-mp3-ug",
-    "name": "Shalom Radio Jinja (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/rvnov6bmdhsvv",
-    "description": "christian, gospel, religious, talk",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious",
-      "talk"
-    ],
-    "website": "https://shalomradio.co.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-sky-news-ug",
     "name": "Sky News",
     "type": "radio",
@@ -2396,23 +2365,6 @@
       "rock"
     ],
     "website": "https://theafricanvoiceradio.com/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-voice-of-heaven-kampala-mp3-ug",
-    "name": "Voice Of Heaven - Kampala (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/s961sfesdmntv",
-    "logo": "https://i.ibb.co/Kz9VR9n/119909.jpg",
-    "description": "christian, gospel, religious",
-    "language": "english,luganda,swahili",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious"
-    ],
-    "website": "https://www.voiceofheaven.co.ug/",
     "isFeatured": true
   },
   {
@@ -3636,6 +3588,25 @@
       "top 100"
     ],
     "website": "https://www.radio5.com.tr/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-trance-athena-gr",
+    "name": "Trance Athena",
+    "type": "radio",
+    "streamUrl": "http://cast.streams.ovh:8008/stream",
+    "logo": "https://static.wixstatic.com/media/7f073d_ed80ca4374ef48449f0a212faf03c149%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/7f073d_ed80ca4374ef48449f0a212faf03c149%7Emv2.jpg",
+    "description": "electronic, melodic trance, music, trance, uplifting trance",
+    "language": "english",
+    "country": "GR",
+    "categories": [
+      "electronic",
+      "melodic trance",
+      "music",
+      "trance",
+      "uplifting trance"
+    ],
+    "website": "https://www.tranceathena.com/",
     "isFeatured": false
   },
   {
