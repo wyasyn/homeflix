@@ -14,6 +14,62 @@
     "isFeatured": true
   },
   {
+    "id": "ark-tv",
+    "name": "Ark TV",
+    "type": "tv",
+    "streamUrl": "https://stream.hydeinnovations.com/arktv-international/index.fmp4.m3u8",
+    "description": "religious",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "religious"
+    ],
+    "website": "https://www.holycityentebbe.org/",
+    "isFeatured": true
+  },
+  {
+    "id": "btv",
+    "name": "BTV",
+    "type": "tv",
+    "streamUrl": "https://streamfi-alphadgtl1.zettawiseroutes.com:8181/hls/stream.m3u8",
+    "description": "entertainment",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "entertainment"
+    ],
+    "website": "https://imc.ug/",
+    "isFeatured": true
+  },
+  {
+    "id": "bukedde-tv-1",
+    "name": "Bukedde TV 1",
+    "type": "tv",
+    "streamUrl": "https://stream.hydeinnovations.com/bukedde1flussonic/index.m3u8",
+    "description": "general",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "general"
+    ],
+    "website": "https://www.bukedde.co.ug/",
+    "isFeatured": true
+  },
+  {
+    "id": "bukedde-tv-2",
+    "name": "Bukedde TV 2",
+    "type": "tv",
+    "streamUrl": "https://stream.hydeinnovations.com/bukedde2flussonic/index.m3u8",
+    "description": "general",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "general"
+    ],
+    "website": "https://www.bukedde.co.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "fort-tv",
     "name": "FORT TV",
     "type": "tv",
@@ -39,6 +95,34 @@
       "religious"
     ],
     "website": "https://praisejesustower.org/",
+    "isFeatured": true
+  },
+  {
+    "id": "tv-west",
+    "name": "TV West",
+    "type": "tv",
+    "streamUrl": "https://stream.hydeinnovations.com/tvwest-flussonic/index.m3u8",
+    "description": "general",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "general"
+    ],
+    "website": "https://tvwest.co.ug/",
+    "isFeatured": true
+  },
+  {
+    "id": "wan-luo-tv",
+    "name": "Wan Luo TV",
+    "type": "tv",
+    "streamUrl": "https://stream.hydeinnovations.com/luotv-flussonic/index.m3u8",
+    "description": "general",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "general"
+    ],
+    "website": "https://www.newvision.co.ug/tv/11",
     "isFeatured": true
   },
   {
@@ -526,6 +610,22 @@
       "music"
     ],
     "website": "https://stream.zeno.fm/cub84trbgy5tv",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-94-8-xfm-kampala-ug",
+    "name": "94.8 XFM Kampala",
+    "type": "radio",
+    "streamUrl": "http://stream.hydeinnovations.com:2020/stream/xfm/stream",
+    "logo": "https://i.ibb.co/VBfTj1z/xfm.jpg",
+    "description": "hits, pop",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "hits",
+      "pop"
+    ],
+    "website": "http://xfm.co.ug/",
     "isFeatured": true
   },
   {
@@ -3536,25 +3636,6 @@
       "top 100"
     ],
     "website": "https://www.radio5.com.tr/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-trance-athena-gr",
-    "name": "Trance Athena",
-    "type": "radio",
-    "streamUrl": "http://cast.streams.ovh:8008/stream",
-    "logo": "https://static.wixstatic.com/media/7f073d_ed80ca4374ef48449f0a212faf03c149%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/7f073d_ed80ca4374ef48449f0a212faf03c149%7Emv2.jpg",
-    "description": "electronic, melodic trance, music, trance, uplifting trance",
-    "language": "english",
-    "country": "GR",
-    "categories": [
-      "electronic",
-      "melodic trance",
-      "music",
-      "trance",
-      "uplifting trance"
-    ],
-    "website": "https://www.tranceathena.com/",
     "isFeatured": false
   },
   {
