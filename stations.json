@@ -28,6 +28,20 @@
     "isFeatured": true
   },
   {
+    "id": "btv",
+    "name": "BTV",
+    "type": "tv",
+    "streamUrl": "https://streamfi-alphadgtl1.zettawiseroutes.com:8181/hls/stream.m3u8",
+    "description": "entertainment",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "entertainment"
+    ],
+    "website": "https://imc.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "bukedde-tv-1",
     "name": "Bukedde TV 1",
     "type": "tv",
@@ -53,6 +67,20 @@
       "general"
     ],
     "website": "https://www.bukedde.co.ug/",
+    "isFeatured": true
+  },
+  {
+    "id": "dream-tv",
+    "name": "Dream TV",
+    "type": "tv",
+    "streamUrl": "https://streamfi-dreamtv1.zettawiseroutes.com:8181/hls/stream.m3u8",
+    "description": "religious",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "religious"
+    ],
+    "website": "http://www.imc.ug/",
     "isFeatured": true
   },
   {
@@ -673,20 +701,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-98-1-isaiah-fm-trinidad-ug",
-    "name": "98.1 Isaiah FM Trinidad",
-    "type": "radio",
-    "streamUrl": "https://ice66.securenetsystems.net/FFBN?playSessionID=8D29A2B7-D966-0B14-AFCD7A340AFA6C15",
-    "description": "gospel",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "gospel"
-    ],
-    "website": "https://ice66.securenetsystems.net/FFBN?playSessionID=8D29A2B7-D966-0B14-AFCD7A340AFA6C15",
-    "isFeatured": true
-  },
-  {
     "id": "radio-98-7-mcf-radio-ug",
     "name": "98.7 MCF Radio",
     "type": "radio",
@@ -713,20 +727,6 @@
       "christian"
     ],
     "website": "http://www.mutundwechristianfellowship.org/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-99-5-global-fm-bahamas-ug",
-    "name": "99.5 Global Fm Bahamas",
-    "type": "radio",
-    "streamUrl": "http://ice64.securenetsystems.net/GLOBALBS",
-    "description": "music",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "music"
-    ],
-    "website": "http://ice64.securenetsystems.net/GLOBALBS",
     "isFeatured": true
   },
   {
@@ -1058,21 +1058,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-christian-life-radio-ug",
-    "name": "Christian life radio",
-    "type": "radio",
-    "streamUrl": "https://ice64.securenetsystems.net/CLR1MP3",
-    "logo": "https://www.communitynetradio.org/favicon.ico",
-    "description": "christian",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian"
-    ],
-    "website": "https://www.communitynetradio.org/christianliferadio",
-    "isFeatured": true
-  },
-  {
     "id": "radio-christian-music-channel-ug",
     "name": "Christian music channel",
     "type": "radio",
@@ -1184,20 +1169,6 @@
       "gospel music"
     ],
     "website": "https://demagospel.com/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-dove-fm-ug",
-    "name": "Dove Fm",
-    "type": "radio",
-    "streamUrl": "https://ice64.securenetsystems.net/DOVEMAIN",
-    "description": "christian",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian"
-    ],
-    "website": "http://www.dovefm.org/",
     "isFeatured": true
   },
   {
@@ -3593,20 +3564,6 @@
     "isFeatured": false
   },
   {
-    "id": "radio-weow-fm-92-7-us",
-    "name": "WEOW FM 92.7",
-    "type": "radio",
-    "streamUrl": "http://ice42.securenetsystems.net/WEOW",
-    "description": "rock",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "rock"
-    ],
-    "website": "http://www.weow927.com/",
-    "isFeatured": false
-  },
-  {
     "id": "radio-radio-5-turkey-tr",
     "name": "Radio 5 Turkey",
     "type": "radio",
@@ -3641,23 +3598,6 @@
       "uplifting trance"
     ],
     "website": "https://www.tranceathena.com/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-zbs-zodiak-fm-mw",
-    "name": "ZBS Zodiak FM",
-    "type": "radio",
-    "streamUrl": "https://ice31.securenetsystems.net/0079",
-    "description": "entertainment, local music, news, sport",
-    "language": "english",
-    "country": "MW",
-    "categories": [
-      "entertainment",
-      "local music",
-      "news",
-      "sport"
-    ],
-    "website": "https://zodiakmalawi.com/live-radio",
     "isFeatured": false
   },
   {
@@ -4197,24 +4137,6 @@
     "isFeatured": false
   },
   {
-    "id": "radio-bbc-afrique-radio-gb",
-    "name": "BBC Afrique Radio",
-    "type": "radio",
-    "streamUrl": "http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/sbr_low/ak/bbc_afrique_radio.m3u8",
-    "logo": "https://static.files.bbci.co.uk/ws/simorgh-assets/public/afrique/images/icons/icon-128x128.png",
-    "description": "africa, afrique, news, talk",
-    "language": "english,french",
-    "country": "GB",
-    "categories": [
-      "africa",
-      "afrique",
-      "news",
-      "talk"
-    ],
-    "website": "https://www.bbc.com/afrique/bbc_afrique_radio/liveradio",
-    "isFeatured": false
-  },
-  {
     "id": "radio-heart-uk-gb",
     "name": "Heart UK",
     "type": "radio",
@@ -4230,6 +4152,24 @@
       "variety"
     ],
     "website": "https://www.heart.co.uk/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-bbc-afrique-radio-gb",
+    "name": "BBC Afrique Radio",
+    "type": "radio",
+    "streamUrl": "http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/sbr_low/ak/bbc_afrique_radio.m3u8",
+    "logo": "https://static.files.bbci.co.uk/ws/simorgh-assets/public/afrique/images/icons/icon-128x128.png",
+    "description": "africa, afrique, news, talk",
+    "language": "english,french",
+    "country": "GB",
+    "categories": [
+      "africa",
+      "afrique",
+      "news",
+      "talk"
+    ],
+    "website": "https://www.bbc.com/afrique/bbc_afrique_radio/liveradio",
     "isFeatured": false
   },
   {
