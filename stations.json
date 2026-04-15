@@ -84,20 +84,6 @@
     "isFeatured": true
   },
   {
-    "id": "fort-tv",
-    "name": "FORT TV",
-    "type": "tv",
-    "streamUrl": "https://fort.co-works.org/memfs/87017643-274a-4bc0-a786-7767a0d159c2.m3u8",
-    "description": "entertainment",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "entertainment"
-    ],
-    "website": "https://fort-tv.com/",
-    "isFeatured": true
-  },
-  {
     "id": "praise-jesus-tower-tv",
     "name": "Praise Jesus Tower TV",
     "type": "tv",
@@ -730,6 +716,20 @@
     "isFeatured": true
   },
   {
+    "id": "radio-99-5-global-fm-bahamas-ug",
+    "name": "99.5 Global Fm Bahamas",
+    "type": "radio",
+    "streamUrl": "http://ice64.securenetsystems.net/GLOBALBS",
+    "description": "music",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "music"
+    ],
+    "website": "http://ice64.securenetsystems.net/GLOBALBS",
+    "isFeatured": true
+  },
+  {
     "id": "radio-akaboozi-87-9-fm-ug",
     "name": "Akaboozi 87.9 FM",
     "type": "radio",
@@ -1058,6 +1058,21 @@
     "isFeatured": true
   },
   {
+    "id": "radio-christian-life-radio-ug",
+    "name": "Christian life radio",
+    "type": "radio",
+    "streamUrl": "https://ice64.securenetsystems.net/CLR1MP3",
+    "logo": "https://www.communitynetradio.org/favicon.ico",
+    "description": "christian",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian"
+    ],
+    "website": "https://www.communitynetradio.org/christianliferadio",
+    "isFeatured": true
+  },
+  {
     "id": "radio-christian-music-channel-ug",
     "name": "Christian music channel",
     "type": "radio",
@@ -1169,6 +1184,20 @@
       "gospel music"
     ],
     "website": "https://demagospel.com/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-dove-fm-ug",
+    "name": "Dove Fm",
+    "type": "radio",
+    "streamUrl": "https://ice64.securenetsystems.net/DOVEMAIN",
+    "description": "christian",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian"
+    ],
+    "website": "http://www.dovefm.org/",
     "isFeatured": true
   },
   {
@@ -1652,20 +1681,6 @@
       "news"
     ],
     "website": "https://www.iheart.com/live/nbc-news-radio-6043/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-old-christmas-hit-channel-ug",
-    "name": "old Christmas hit channel",
-    "type": "radio",
-    "streamUrl": "http://streams.80s80s.de/christmas/mp3-192/streams.80s80s.de/%20Find%20more%20stations%20in%20app%20:%20https://play.google.com/store/apps/details?id=com.atf.radiogalaxy",
-    "description": "music",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "music"
-    ],
-    "website": "http://streams.80s80s.de/christmas/mp3-192/streams.80s80s.de/%20Find%20more%20stations%20in%20app%20:%20https://play.google.com/store/apps/details?id=com.atf.radiogalaxy",
     "isFeatured": true
   },
   {
@@ -3564,6 +3579,20 @@
     "isFeatured": false
   },
   {
+    "id": "radio-weow-fm-92-7-us",
+    "name": "WEOW FM 92.7",
+    "type": "radio",
+    "streamUrl": "http://ice42.securenetsystems.net/WEOW",
+    "description": "rock",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "rock"
+    ],
+    "website": "http://www.weow927.com/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-radio-5-turkey-tr",
     "name": "Radio 5 Turkey",
     "type": "radio",
@@ -3598,6 +3627,23 @@
       "uplifting trance"
     ],
     "website": "https://www.tranceathena.com/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-zbs-zodiak-fm-mw",
+    "name": "ZBS Zodiak FM",
+    "type": "radio",
+    "streamUrl": "https://ice31.securenetsystems.net/0079",
+    "description": "entertainment, local music, news, sport",
+    "language": "english",
+    "country": "MW",
+    "categories": [
+      "entertainment",
+      "local music",
+      "news",
+      "sport"
+    ],
+    "website": "https://zodiakmalawi.com/live-radio",
     "isFeatured": false
   },
   {
