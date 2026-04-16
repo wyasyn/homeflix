@@ -56,20 +56,6 @@
     "isFeatured": true
   },
   {
-    "id": "fort-tv",
-    "name": "FORT TV",
-    "type": "tv",
-    "streamUrl": "https://fort.co-works.org/memfs/87017643-274a-4bc0-a786-7767a0d159c2.m3u8",
-    "description": "entertainment",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "entertainment"
-    ],
-    "website": "https://fort-tv.com/",
-    "isFeatured": true
-  },
-  {
     "id": "praise-jesus-tower-tv",
     "name": "Praise Jesus Tower TV",
     "type": "tv",
@@ -1354,24 +1340,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-glory-fm-maganjo-kampala-mp3-ug",
-    "name": "Glory FM Maganjo - Kampala (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/bn7dbg8w0nhvv",
-    "logo": "https://i.ibb.co/fnTZJLC/image-2.webp",
-    "description": "christian, gospel, religious, talk",
-    "language": "english,luganda,swahili",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious",
-      "talk"
-    ],
-    "website": "http://www.gloryfmmaganjo.co.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-good-news-radio-ug",
     "name": "Good News Radio",
     "type": "radio",
@@ -2037,23 +2005,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-shalom-radio-jinja-mp3-ug",
-    "name": "Shalom Radio Jinja (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/rvnov6bmdhsvv",
-    "description": "christian, gospel, religious, talk",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious",
-      "talk"
-    ],
-    "website": "https://shalomradio.co.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-sky-news-ug",
     "name": "Sky News",
     "type": "radio",
@@ -2594,6 +2545,22 @@
     "isFeatured": false
   },
   {
+    "id": "radio-your-classical-relax-us",
+    "name": "Your Classical - Relax",
+    "type": "radio",
+    "streamUrl": "http://relax.stream.publicradio.org/relax.mp3",
+    "logo": "http://www.yourclassical.org/apple-touch-icon.png",
+    "description": "classical, relax",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "classical",
+      "relax"
+    ],
+    "website": "http://www.yourclassical.org/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-181-fm-old-school-hiphop-rnb-us",
     "name": "181.FM - Old School HipHop/RnB",
     "type": "radio",
@@ -2624,22 +2591,6 @@
       "top 40"
     ],
     "website": "http://www.977music.com/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-your-classical-relax-us",
-    "name": "Your Classical - Relax",
-    "type": "radio",
-    "streamUrl": "http://relax.stream.publicradio.org/relax.mp3",
-    "logo": "http://www.yourclassical.org/apple-touch-icon.png",
-    "description": "classical, relax",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "classical",
-      "relax"
-    ],
-    "website": "http://www.yourclassical.org/",
     "isFeatured": false
   },
   {
