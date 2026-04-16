@@ -28,6 +28,20 @@
     "isFeatured": true
   },
   {
+    "id": "btv",
+    "name": "BTV",
+    "type": "tv",
+    "streamUrl": "https://streamfi-alphadgtl1.zettawiseroutes.com:8181/hls/stream.m3u8",
+    "description": "entertainment",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "entertainment"
+    ],
+    "website": "https://imc.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "bukedde-tv-1",
     "name": "Bukedde TV 1",
     "type": "tv",
@@ -53,6 +67,34 @@
       "general"
     ],
     "website": "https://www.bukedde.co.ug/",
+    "isFeatured": true
+  },
+  {
+    "id": "dream-tv",
+    "name": "Dream TV",
+    "type": "tv",
+    "streamUrl": "https://streamfi-dreamtv1.zettawiseroutes.com:8181/hls/stream.m3u8",
+    "description": "religious",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "religious"
+    ],
+    "website": "http://www.imc.ug/",
+    "isFeatured": true
+  },
+  {
+    "id": "fort-tv",
+    "name": "FORT TV",
+    "type": "tv",
+    "streamUrl": "https://fort.co-works.org/memfs/87017643-274a-4bc0-a786-7767a0d159c2.m3u8",
+    "description": "entertainment",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "entertainment"
+    ],
+    "website": "https://fort-tv.com/",
     "isFeatured": true
   },
   {
@@ -1515,6 +1557,20 @@
       "music"
     ],
     "website": "https://stream.jewishmusicstream.com:8000/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-joy-hits-ug",
+    "name": "JOY HITS",
+    "type": "radio",
+    "streamUrl": "http://joyhits.online/joyhitshq.mp3",
+    "description": "variety",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "variety"
+    ],
+    "website": "https://joyhits.online/",
     "isFeatured": true
   },
   {
@@ -3667,6 +3723,22 @@
     "isFeatured": false
   },
   {
+    "id": "radio-101-smooth-jazz-mellow-mix-us",
+    "name": "101 SMOOTH JAZZ MELLOW MIX",
+    "type": "radio",
+    "streamUrl": "http://streaming.live365.com/b48071_128mp3",
+    "description": "easy listening, mellow, smooth jazz",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "easy listening",
+      "mellow",
+      "smooth jazz"
+    ],
+    "website": "http://www.101smoothjazz.com/mellow.html",
+    "isFeatured": false
+  },
+  {
     "id": "radio-radiox-uk-gb",
     "name": "RadioX UK",
     "type": "radio",
@@ -4069,22 +4141,6 @@
     "isFeatured": false
   },
   {
-    "id": "radio-smoothjazz-com-128k-mp3-us",
-    "name": "SmoothJazz.com 128k mp3",
-    "type": "radio",
-    "streamUrl": "https://smoothjazz.cdnstream1.com/2585_128.mp3",
-    "logo": "https://www.smoothjazz.com/sites/default/files/theme/sj-circle-logo.png",
-    "description": "monterey, smooth jazz",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "monterey",
-      "smooth jazz"
-    ],
-    "website": "https://www.smoothjazz.com/",
-    "isFeatured": false
-  },
-  {
     "id": "radio-voa-learning-english-us",
     "name": "VOA Learning English",
     "type": "radio",
@@ -4098,6 +4154,22 @@
       "learn language"
     ],
     "website": "http://www.voanews.com/t/60.html",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-smoothjazz-com-128k-mp3-us",
+    "name": "SmoothJazz.com 128k mp3",
+    "type": "radio",
+    "streamUrl": "https://smoothjazz.cdnstream1.com/2585_128.mp3",
+    "logo": "https://www.smoothjazz.com/sites/default/files/theme/sj-circle-logo.png",
+    "description": "monterey, smooth jazz",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "monterey",
+      "smooth jazz"
+    ],
+    "website": "https://www.smoothjazz.com/",
     "isFeatured": false
   },
   {
@@ -4169,24 +4241,6 @@
       "talk"
     ],
     "website": "https://www.bbc.com/afrique/bbc_afrique_radio/liveradio",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-jacaranda-fm-za",
-    "name": "Jacaranda FM",
-    "type": "radio",
-    "streamUrl": "https://edge.iono.fm/xice/jacarandafm_live_medium.aac",
-    "logo": "https://turntable.kagiso.io/core/images/jacaranda/apple-touch-icon.png",
-    "description": "adult contemporary, pop, regional radio, talk",
-    "language": "english",
-    "country": "ZA",
-    "categories": [
-      "adult contemporary",
-      "pop",
-      "regional radio",
-      "talk"
-    ],
-    "website": "https://www.jacarandafm.com/",
     "isFeatured": false
   },
   {
