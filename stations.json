@@ -28,20 +28,6 @@
     "isFeatured": true
   },
   {
-    "id": "btv",
-    "name": "BTV",
-    "type": "tv",
-    "streamUrl": "https://streamfi-alphadgtl1.zettawiseroutes.com:8181/hls/stream.m3u8",
-    "description": "entertainment",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "entertainment"
-    ],
-    "website": "https://imc.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "bukedde-tv-1",
     "name": "Bukedde TV 1",
     "type": "tv",
@@ -966,6 +952,20 @@
     "isFeatured": true
   },
   {
+    "id": "radio-cgtn-radio-ug",
+    "name": "CGTN Radio",
+    "type": "radio",
+    "streamUrl": "http://sk.cri.cn/am846.m3u8",
+    "description": "news",
+    "language": "english uk",
+    "country": "UG",
+    "categories": [
+      "news"
+    ],
+    "website": "http://chinaplus.cri.cn/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-chennai-live-ug",
     "name": "CHENNAI LIVE",
     "type": "radio",
@@ -1619,6 +1619,25 @@
     "isFeatured": true
   },
   {
+    "id": "radio-my-radio-ug",
+    "name": "My Radio",
+    "type": "radio",
+    "streamUrl": "http://myradioug.duckdns.org:8000/radio.mp3",
+    "logo": "https://econews.digital/wp-content/uploads/2025/11/cropped-WhatsApp-Image-2025-11-14-at-15.21.28_a76b6284.jpg",
+    "description": "christian-gospel, gospel, gospel pop, smoothest songs, urban gospel",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian-gospel",
+      "gospel",
+      "gospel pop",
+      "smoothest songs",
+      "urban gospel"
+    ],
+    "website": "https://econews.digital/home/myradio/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-nakawa-online-radio-kampala-mp3-ug",
     "name": "Nakawa Online Radio - Kampala (MP3)",
     "type": "radio",
@@ -1888,6 +1907,27 @@
       "religious"
     ],
     "website": "http://www.radiosinza.co.ug/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-radio-yoo-mp3-ug",
+    "name": "Radio Yoo (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/v73tc5gwaphvv",
+    "logo": "https://images.zeno.fm/bm9Qljp5KBGgX-jj3APC401Q1f3LUvLWUJpACYAXseY/rs:fit:240:240/g:ce:0:0/aHR0cHM6Ly9zdHJlYW0tdG9vbHMuemVub21lZGlhLmNvbS9jb250ZW50L3N0YXRpb25zL2FneHpmbnBsYm04dGMzUmhkSE55TWdzU0NrRjFkR2hEYkdsbGJuUVlnSUNJby1MT3hBZ01DeElPVTNSaGRHbHZibEJ5YjJacGJHVVlnSUNJNDh6eGlnb01vZ0VFZW1WdWJ3L2ltYWdlLz91cGRhdGVkPTE2ODk3NjkxNzYwMDA.webp",
+    "description": "christian, entertainment, gospel, hits, news, religious, talk",
+    "language": "english,luganda",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "entertainment",
+      "gospel",
+      "hits",
+      "news",
+      "religious",
+      "talk"
+    ],
+    "website": "http://www.radioyoo.co.ug/",
     "isFeatured": true
   },
   {
@@ -2328,23 +2368,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-voice-of-heaven-kampala-mp3-ug",
-    "name": "Voice Of Heaven - Kampala (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/s961sfesdmntv",
-    "logo": "https://i.ibb.co/Kz9VR9n/119909.jpg",
-    "description": "christian, gospel, religious",
-    "language": "english,luganda,swahili",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious"
-    ],
-    "website": "https://www.voiceofheaven.co.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-voice-of-kyankwanzi-kiboga-89-7-fm-mp3-ug",
     "name": "Voice of Kyankwanzi - Kiboga - 89.7 FM (MP3)",
     "type": "radio",
@@ -2555,6 +2578,21 @@
     "isFeatured": false
   },
   {
+    "id": "radio-977-hitz-us",
+    "name": ".977 Hitz",
+    "type": "radio",
+    "streamUrl": "http://18863.live.streamtheworld.com/977_HITS_SC",
+    "description": "hits, top 40",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "hits",
+      "top 40"
+    ],
+    "website": "http://www.977music.com/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-your-classical-relax-us",
     "name": "Your Classical - Relax",
     "type": "radio",
@@ -2568,21 +2606,6 @@
       "relax"
     ],
     "website": "http://www.yourclassical.org/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-977-hitz-us",
-    "name": ".977 Hitz",
-    "type": "radio",
-    "streamUrl": "http://18863.live.streamtheworld.com/977_HITS_SC",
-    "description": "hits, top 40",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "hits",
-      "top 40"
-    ],
-    "website": "http://www.977music.com/",
     "isFeatured": false
   },
   {
@@ -3584,23 +3607,6 @@
       "uplifting trance"
     ],
     "website": "https://www.tranceathena.com/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-zbs-zodiak-fm-mw",
-    "name": "ZBS Zodiak FM",
-    "type": "radio",
-    "streamUrl": "https://ice31.securenetsystems.net/0079",
-    "description": "entertainment, local music, news, sport",
-    "language": "english",
-    "country": "MW",
-    "categories": [
-      "entertainment",
-      "local music",
-      "news",
-      "sport"
-    ],
-    "website": "https://zodiakmalawi.com/live-radio",
     "isFeatured": false
   },
   {
