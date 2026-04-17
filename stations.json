@@ -966,20 +966,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-cgtn-radio-ug",
-    "name": "CGTN Radio",
-    "type": "radio",
-    "streamUrl": "http://sk.cri.cn/am846.m3u8",
-    "description": "news",
-    "language": "english uk",
-    "country": "UG",
-    "categories": [
-      "news"
-    ],
-    "website": "http://chinaplus.cri.cn/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-chennai-live-ug",
     "name": "CHENNAI LIVE",
     "type": "radio",
@@ -1560,20 +1546,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-joy-hits-ug",
-    "name": "JOY HITS",
-    "type": "radio",
-    "streamUrl": "http://joyhits.online/joyhitshq.mp3",
-    "description": "variety",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "variety"
-    ],
-    "website": "https://joyhits.online/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-jubilee-radio-fort-portal-105-6-fm-mp3-ug",
     "name": "Jubilee Radio - Fort Portal - 105.6 FM (MP3)",
     "type": "radio",
@@ -1644,25 +1616,6 @@
       "music"
     ],
     "website": "http://www.mellofmjamaica.com/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-my-radio-ug",
-    "name": "My Radio",
-    "type": "radio",
-    "streamUrl": "http://myradioug.duckdns.org:8000/radio.mp3",
-    "logo": "https://econews.digital/wp-content/uploads/2025/11/cropped-WhatsApp-Image-2025-11-14-at-15.21.28_a76b6284.jpg",
-    "description": "christian-gospel, gospel, gospel pop, smoothest songs, urban gospel",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian-gospel",
-      "gospel",
-      "gospel pop",
-      "smoothest songs",
-      "urban gospel"
-    ],
-    "website": "https://econews.digital/home/myradio/",
     "isFeatured": true
   },
   {
@@ -2041,23 +1994,6 @@
       "variety"
     ],
     "website": "https://sdamissionug.com/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-shalom-radio-jinja-mp3-ug",
-    "name": "Shalom Radio Jinja (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/rvnov6bmdhsvv",
-    "description": "christian, gospel, religious, talk",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious",
-      "talk"
-    ],
-    "website": "https://shalomradio.co.ug/",
     "isFeatured": true
   },
   {
