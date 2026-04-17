@@ -1382,6 +1382,24 @@
     "isFeatured": true
   },
   {
+    "id": "radio-glory-fm-maganjo-kampala-mp3-ug",
+    "name": "Glory FM Maganjo - Kampala (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/bn7dbg8w0nhvv",
+    "logo": "https://i.ibb.co/fnTZJLC/image-2.webp",
+    "description": "christian, gospel, religious, talk",
+    "language": "english,luganda,swahili",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious",
+      "talk"
+    ],
+    "website": "http://www.gloryfmmaganjo.co.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-good-news-radio-ug",
     "name": "Good News Radio",
     "type": "radio",
@@ -2026,6 +2044,23 @@
     "isFeatured": true
   },
   {
+    "id": "radio-shalom-radio-jinja-mp3-ug",
+    "name": "Shalom Radio Jinja (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/rvnov6bmdhsvv",
+    "description": "christian, gospel, religious, talk",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious",
+      "talk"
+    ],
+    "website": "https://shalomradio.co.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-sky-news-ug",
     "name": "Sky News",
     "type": "radio",
@@ -2566,6 +2601,24 @@
     "isFeatured": false
   },
   {
+    "id": "radio-181-fm-old-school-hiphop-rnb-us",
+    "name": "181.FM - Old School HipHop/RnB",
+    "type": "radio",
+    "streamUrl": "http://listen.181fm.com/181-oldschool_128k.mp3",
+    "logo": "http://www.181.fm/favicon.ico",
+    "description": "hiphop, oldschool, rnb, waynesboro",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "hiphop",
+      "oldschool",
+      "rnb",
+      "waynesboro"
+    ],
+    "website": "http://www.181.fm/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-your-classical-relax-us",
     "name": "Your Classical - Relax",
     "type": "radio",
@@ -2594,24 +2647,6 @@
       "top 40"
     ],
     "website": "http://www.977music.com/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-181-fm-old-school-hiphop-rnb-us",
-    "name": "181.FM - Old School HipHop/RnB",
-    "type": "radio",
-    "streamUrl": "http://listen.181fm.com/181-oldschool_128k.mp3",
-    "logo": "http://www.181.fm/favicon.ico",
-    "description": "hiphop, oldschool, rnb, waynesboro",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "hiphop",
-      "oldschool",
-      "rnb",
-      "waynesboro"
-    ],
-    "website": "http://www.181.fm/",
     "isFeatured": false
   },
   {
@@ -3648,6 +3683,21 @@
       "public radio"
     ],
     "website": "http://www.abc.net.au/newsradio/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-autolife-radio-azerbaijan-az",
+    "name": "AutoLife Radio Azerbaijan",
+    "type": "radio",
+    "streamUrl": "http://radio.autoliferadio.com:8090/radio",
+    "description": "pop, pop music",
+    "language": "azerbaijani,english,russian,turkish",
+    "country": "AZ",
+    "categories": [
+      "pop",
+      "pop music"
+    ],
+    "website": "https://autoliferadio.com/",
     "isFeatured": false
   },
   {
