@@ -1603,21 +1603,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-kyoga-veritas-radio-soroti-91-5-fm-mp3-ug",
-    "name": "Kyoga Veritas Radio - Soroti - 91.5 FM (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/hyyzuphrsg0uv",
-    "description": "community radio, urban",
-    "language": "ateso,english,kupsabiny,ngakarimojong",
-    "country": "UG",
-    "categories": [
-      "community radio",
-      "urban"
-    ],
-    "website": "https://kvr.ssoccom.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-lbc-news-ug",
     "name": "LBC News",
     "type": "radio",
@@ -1709,6 +1694,20 @@
       "news"
     ],
     "website": "https://www.iheart.com/live/nbc-news-radio-6043/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-old-christmas-hit-channel-ug",
+    "name": "old Christmas hit channel",
+    "type": "radio",
+    "streamUrl": "http://streams.80s80s.de/christmas/mp3-192/streams.80s80s.de/%20Find%20more%20stations%20in%20app%20:%20https://play.google.com/store/apps/details?id=com.atf.radiogalaxy",
+    "description": "music",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "music"
+    ],
+    "website": "http://streams.80s80s.de/christmas/mp3-192/streams.80s80s.de/%20Find%20more%20stations%20in%20app%20:%20https://play.google.com/store/apps/details?id=com.atf.radiogalaxy",
     "isFeatured": true
   },
   {
@@ -2022,6 +2021,21 @@
     "isFeatured": true
   },
   {
+    "id": "radio-scripture-for-america-ug",
+    "name": "Scripture for America",
+    "type": "radio",
+    "streamUrl": "http://67.225.254.37:5530/",
+    "logo": "http://www.dashradio.com/apple-touch-icon.png",
+    "description": "christian",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian"
+    ],
+    "website": "http://www.dashradio.com/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-sda-missions-radio-ug",
     "name": "SDA Missions radio",
     "type": "radio",
@@ -2033,6 +2047,23 @@
       "variety"
     ],
     "website": "https://sdamissionug.com/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-shalom-radio-jinja-mp3-ug",
+    "name": "Shalom Radio Jinja (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/rvnov6bmdhsvv",
+    "description": "christian, gospel, religious, talk",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious",
+      "talk"
+    ],
+    "website": "https://shalomradio.co.ug/",
     "isFeatured": true
   },
   {
