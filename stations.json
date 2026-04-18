@@ -14,45 +14,17 @@
     "isFeatured": true
   },
   {
-    "id": "ark-tv",
-    "name": "Ark TV",
+    "id": "btv",
+    "name": "BTV",
     "type": "tv",
-    "streamUrl": "https://stream.hydeinnovations.com/arktv-international/index.fmp4.m3u8",
-    "description": "religious",
+    "streamUrl": "https://streamfi-alphadgtl1.zettawiseroutes.com:8181/hls/stream.m3u8",
+    "description": "entertainment",
     "language": "English",
     "country": "UG",
     "categories": [
-      "religious"
+      "entertainment"
     ],
-    "website": "https://www.holycityentebbe.org/",
-    "isFeatured": true
-  },
-  {
-    "id": "bukedde-tv-1",
-    "name": "Bukedde TV 1",
-    "type": "tv",
-    "streamUrl": "https://stream.hydeinnovations.com/bukedde1flussonic/index.m3u8",
-    "description": "general",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "general"
-    ],
-    "website": "https://www.bukedde.co.ug/",
-    "isFeatured": true
-  },
-  {
-    "id": "bukedde-tv-2",
-    "name": "Bukedde TV 2",
-    "type": "tv",
-    "streamUrl": "https://stream.hydeinnovations.com/bukedde2flussonic/index.m3u8",
-    "description": "general",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "general"
-    ],
-    "website": "https://www.bukedde.co.ug/",
+    "website": "https://imc.ug/",
     "isFeatured": true
   },
   {
@@ -95,34 +67,6 @@
       "religious"
     ],
     "website": "https://praisejesustower.org/",
-    "isFeatured": true
-  },
-  {
-    "id": "tv-west",
-    "name": "TV West",
-    "type": "tv",
-    "streamUrl": "https://stream.hydeinnovations.com/tvwest-flussonic/index.m3u8",
-    "description": "general",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "general"
-    ],
-    "website": "https://tvwest.co.ug/",
-    "isFeatured": true
-  },
-  {
-    "id": "wan-luo-tv",
-    "name": "Wan Luo TV",
-    "type": "tv",
-    "streamUrl": "https://stream.hydeinnovations.com/luotv-flussonic/index.m3u8",
-    "description": "general",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "general"
-    ],
-    "website": "https://www.newvision.co.ug/tv/11",
     "isFeatured": true
   },
   {
@@ -610,22 +554,6 @@
       "music"
     ],
     "website": "https://stream.zeno.fm/cub84trbgy5tv",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-94-8-xfm-kampala-ug",
-    "name": "94.8 XFM Kampala",
-    "type": "radio",
-    "streamUrl": "http://stream.hydeinnovations.com:2020/stream/xfm/stream",
-    "logo": "https://i.ibb.co/VBfTj1z/xfm.jpg",
-    "description": "hits, pop",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "hits",
-      "pop"
-    ],
-    "website": "http://xfm.co.ug/",
     "isFeatured": true
   },
   {
@@ -1546,6 +1474,20 @@
     "isFeatured": true
   },
   {
+    "id": "radio-joy-hits-ug",
+    "name": "JOY HITS",
+    "type": "radio",
+    "streamUrl": "http://joyhits.online/joyhitshq.mp3",
+    "description": "variety",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "variety"
+    ],
+    "website": "https://joyhits.online/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-jubilee-radio-fort-portal-105-6-fm-mp3-ug",
     "name": "Jubilee Radio - Fort Portal - 105.6 FM (MP3)",
     "type": "radio",
@@ -2037,6 +1979,23 @@
     "isFeatured": true
   },
   {
+    "id": "radio-shalom-radio-jinja-mp3-ug",
+    "name": "Shalom Radio Jinja (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/rvnov6bmdhsvv",
+    "description": "christian, gospel, religious, talk",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious",
+      "talk"
+    ],
+    "website": "https://shalomradio.co.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-sky-news-ug",
     "name": "Sky News",
     "type": "radio",
@@ -2365,6 +2324,23 @@
       "rock"
     ],
     "website": "https://theafricanvoiceradio.com/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-voice-of-heaven-kampala-mp3-ug",
+    "name": "Voice Of Heaven - Kampala (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/s961sfesdmntv",
+    "logo": "https://i.ibb.co/Kz9VR9n/119909.jpg",
+    "description": "christian, gospel, religious",
+    "language": "english,luganda,swahili",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious"
+    ],
+    "website": "https://www.voiceofheaven.co.ug/",
     "isFeatured": true
   },
   {
@@ -3588,6 +3564,23 @@
       "top 100"
     ],
     "website": "https://www.radio5.com.tr/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-zbs-zodiak-fm-mw",
+    "name": "ZBS Zodiak FM",
+    "type": "radio",
+    "streamUrl": "https://ice31.securenetsystems.net/0079",
+    "description": "entertainment, local music, news, sport",
+    "language": "english",
+    "country": "MW",
+    "categories": [
+      "entertainment",
+      "local music",
+      "news",
+      "sport"
+    ],
+    "website": "https://zodiakmalawi.com/live-radio",
     "isFeatured": false
   },
   {
