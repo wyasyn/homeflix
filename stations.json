@@ -14,6 +14,20 @@
     "isFeatured": true
   },
   {
+    "id": "ark-tv",
+    "name": "Ark TV",
+    "type": "tv",
+    "streamUrl": "https://stream.hydeinnovations.com/arktv-international/index.fmp4.m3u8",
+    "description": "religious",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "religious"
+    ],
+    "website": "https://www.holycityentebbe.org/",
+    "isFeatured": true
+  },
+  {
     "id": "btv",
     "name": "BTV",
     "type": "tv",
@@ -25,6 +39,34 @@
       "entertainment"
     ],
     "website": "https://imc.ug/",
+    "isFeatured": true
+  },
+  {
+    "id": "bukedde-tv-1",
+    "name": "Bukedde TV 1",
+    "type": "tv",
+    "streamUrl": "https://stream.hydeinnovations.com/bukedde1flussonic/index.m3u8",
+    "description": "general",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "general"
+    ],
+    "website": "https://www.bukedde.co.ug/",
+    "isFeatured": true
+  },
+  {
+    "id": "bukedde-tv-2",
+    "name": "Bukedde TV 2",
+    "type": "tv",
+    "streamUrl": "https://stream.hydeinnovations.com/bukedde2flussonic/index.m3u8",
+    "description": "general",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "general"
+    ],
+    "website": "https://www.bukedde.co.ug/",
     "isFeatured": true
   },
   {
@@ -67,6 +109,34 @@
       "religious"
     ],
     "website": "https://praisejesustower.org/",
+    "isFeatured": true
+  },
+  {
+    "id": "tv-west",
+    "name": "TV West",
+    "type": "tv",
+    "streamUrl": "https://stream.hydeinnovations.com/tvwest-flussonic/index.m3u8",
+    "description": "general",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "general"
+    ],
+    "website": "https://tvwest.co.ug/",
+    "isFeatured": true
+  },
+  {
+    "id": "wan-luo-tv",
+    "name": "Wan Luo TV",
+    "type": "tv",
+    "streamUrl": "https://stream.hydeinnovations.com/luotv-flussonic/index.m3u8",
+    "description": "general",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "general"
+    ],
+    "website": "https://www.newvision.co.ug/tv/11",
     "isFeatured": true
   },
   {
@@ -554,6 +624,22 @@
       "music"
     ],
     "website": "https://stream.zeno.fm/cub84trbgy5tv",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-94-8-xfm-kampala-ug",
+    "name": "94.8 XFM Kampala",
+    "type": "radio",
+    "streamUrl": "http://stream.hydeinnovations.com:2020/stream/xfm/stream",
+    "logo": "https://i.ibb.co/VBfTj1z/xfm.jpg",
+    "description": "hits, pop",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "hits",
+      "pop"
+    ],
+    "website": "http://xfm.co.ug/",
     "isFeatured": true
   },
   {
@@ -1976,23 +2062,6 @@
       "variety"
     ],
     "website": "https://sdamissionug.com/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-shalom-radio-jinja-mp3-ug",
-    "name": "Shalom Radio Jinja (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/rvnov6bmdhsvv",
-    "description": "christian, gospel, religious, talk",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious",
-      "talk"
-    ],
-    "website": "https://shalomradio.co.ug/",
     "isFeatured": true
   },
   {
