@@ -1712,20 +1712,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-old-christmas-hit-channel-ug",
-    "name": "old Christmas hit channel",
-    "type": "radio",
-    "streamUrl": "http://streams.80s80s.de/christmas/mp3-192/streams.80s80s.de/%20Find%20more%20stations%20in%20app%20:%20https://play.google.com/store/apps/details?id=com.atf.radiogalaxy",
-    "description": "music",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "music"
-    ],
-    "website": "http://streams.80s80s.de/christmas/mp3-192/streams.80s80s.de/%20Find%20more%20stations%20in%20app%20:%20https://play.google.com/store/apps/details?id=com.atf.radiogalaxy",
-    "isFeatured": true
-  },
-  {
     "id": "radio-old-school-music-ug",
     "name": "Old School Music",
     "type": "radio",
@@ -2033,21 +2019,6 @@
       "religious"
     ],
     "website": "https://live.radio.sonlife.olympusatmedia.com/index.m3u8",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-scripture-for-america-ug",
-    "name": "Scripture for America",
-    "type": "radio",
-    "streamUrl": "http://67.225.254.37:5530/",
-    "logo": "http://www.dashradio.com/apple-touch-icon.png",
-    "description": "christian",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian"
-    ],
-    "website": "http://www.dashradio.com/",
     "isFeatured": true
   },
   {
