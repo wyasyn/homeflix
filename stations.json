@@ -354,6 +354,18 @@
     "isFeatured": false
   },
   {
+    "id": "radio-abdulbasit-abdulsamad-ug",
+    "name": ". Abdulbasit Abdulsamad",
+    "type": "radio",
+    "streamUrl": "https://radio.mp3islam.com/listen/abdulbasit/radio.mp3",
+    "description": "Radio station",
+    "language": "arabic",
+    "country": "UG",
+    "categories": [],
+    "website": "https://mp3islam.com/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-101-8-radio-maria-ug",
     "name": "101.8 Radio Maria",
     "type": "radio",
@@ -2050,23 +2062,6 @@
       "variety"
     ],
     "website": "https://sdamissionug.com/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-shalom-radio-jinja-mp3-ug",
-    "name": "Shalom Radio Jinja (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/rvnov6bmdhsvv",
-    "description": "christian, gospel, religious, talk",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious",
-      "talk"
-    ],
-    "website": "https://shalomradio.co.ug/",
     "isFeatured": true
   },
   {
@@ -4005,20 +4000,6 @@
     "isFeatured": false
   },
   {
-    "id": "radio-977-comedy-us",
-    "name": ".977 Comedy",
-    "type": "radio",
-    "streamUrl": "http://26433.live.streamtheworld.com/977_COMEDY_SC",
-    "description": "comedy",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "comedy"
-    ],
-    "website": "http://www.977music.com/",
-    "isFeatured": false
-  },
-  {
     "id": "radio-1-fm-high-voltage-radio-ch",
     "name": "1.FM - High Voltage Radio",
     "type": "radio",
@@ -4032,6 +4013,20 @@
       "rock"
     ],
     "website": "http://www.1.fm/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-977-comedy-us",
+    "name": ".977 Comedy",
+    "type": "radio",
+    "streamUrl": "http://26433.live.streamtheworld.com/977_COMEDY_SC",
+    "description": "comedy",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "comedy"
+    ],
+    "website": "http://www.977music.com/",
     "isFeatured": false
   },
   {
