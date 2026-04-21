@@ -1909,6 +1909,19 @@
     "isFeatured": true
   },
   {
+    "id": "radio-radio-pacis-94-5-ug",
+    "name": "Radio Pacis 94.5",
+    "type": "radio",
+    "streamUrl": "http://136.243.44.41:8182/stream",
+    "logo": "https://www.radiopacis.org/wp-content/uploads/2025/11/logo_ris.jpg",
+    "description": "Radio station",
+    "language": "English",
+    "country": "UG",
+    "categories": [],
+    "website": "https://www.radiopacis.org/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-radio-sinza-mp3-ug",
     "name": "Radio Sinza (MP3)",
     "type": "radio",
@@ -2049,23 +2062,6 @@
       "variety"
     ],
     "website": "https://sdamissionug.com/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-shalom-radio-jinja-mp3-ug",
-    "name": "Shalom Radio Jinja (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/rvnov6bmdhsvv",
-    "description": "christian, gospel, religious, talk",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious",
-      "talk"
-    ],
-    "website": "https://shalomradio.co.ug/",
     "isFeatured": true
   },
   {
