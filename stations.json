@@ -1291,21 +1291,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-exodus-comfort-radio-ug",
-    "name": "Exodus Comfort Radio",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/k2zma0qewtjvv",
-    "logo": "https://mynoise.net/apple-touch-icon.png",
-    "description": "christian",
-    "language": "luganda",
-    "country": "UG",
-    "categories": [
-      "christian"
-    ],
-    "website": "https://mynoise.net/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-faith-radio-ug",
     "name": "FAITH RADIO",
     "type": "radio",
@@ -1630,42 +1615,6 @@
       "music"
     ],
     "website": "http://www.mellofmjamaica.com/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-my-radio-ug",
-    "name": "My Radio",
-    "type": "radio",
-    "streamUrl": "http://myradioug.duckdns.org:8000/radio.mp3",
-    "logo": "https://econews.digital/wp-content/uploads/2025/11/cropped-WhatsApp-Image-2025-11-14-at-15.21.28_a76b6284.jpg",
-    "description": "christian-gospel, gospel, gospel pop, smoothest songs, urban gospel",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian-gospel",
-      "gospel",
-      "gospel pop",
-      "smoothest songs",
-      "urban gospel"
-    ],
-    "website": "https://econews.digital/home/myradio/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-nakawa-online-radio-kampala-mp3-ug",
-    "name": "Nakawa Online Radio - Kampala (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/6hs5suuvqfhvv",
-    "logo": "https://i.ibb.co/4Knx6nq/image-1.webp",
-    "description": "christian, gospel, talk",
-    "language": "english,luganda,swahili",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "talk"
-    ],
-    "website": "https://www.radio.nakawapentecostal.org/",
     "isFeatured": true
   },
   {
@@ -2423,23 +2372,6 @@
       "adult contemporary"
     ],
     "website": "http://www.kyankwanzifm.net/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-way-to-god-radio-mp3-ug",
-    "name": "Way To God Radio (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/g876nxxz8vzuv",
-    "logo": "https://images.zeno.fm/WZoX_AarzsL-ubF-VgFKQu5HZqjWjRlRujPZmVvt53o/rs:fit:240:240/g:ce:0:0/aHR0cHM6Ly9zdHJlYW0tdG9vbHMuemVub21lZGlhLmNvbS9jb250ZW50L3N0YXRpb25zL2FneHpmbnBsYm04dGMzUmhkSE55TWdzU0NrRjFkR2hEYkdsbGJuUVlnSUNRNEthUjdBc01DeElPVTNSaGRHbHZibEJ5YjJacGJHVVlnSUNRa1AyamhRc01vZ0VFZW1WdWJ3L2ltYWdlLz91cGRhdGVkPTE2NTAxODg3MjQwMDA.webp",
-    "description": "christian, gospel, religious",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious"
-    ],
-    "website": "http://www.waytogodradio.co.ug/",
     "isFeatured": true
   },
   {
