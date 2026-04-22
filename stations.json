@@ -687,6 +687,20 @@
     "isFeatured": true
   },
   {
+    "id": "radio-98-1-isaiah-fm-trinidad-ug",
+    "name": "98.1 Isaiah FM Trinidad",
+    "type": "radio",
+    "streamUrl": "https://ice66.securenetsystems.net/FFBN?playSessionID=8D29A2B7-D966-0B14-AFCD7A340AFA6C15",
+    "description": "gospel",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "gospel"
+    ],
+    "website": "https://ice66.securenetsystems.net/FFBN?playSessionID=8D29A2B7-D966-0B14-AFCD7A340AFA6C15",
+    "isFeatured": true
+  },
+  {
     "id": "radio-98-7-mcf-radio-ug",
     "name": "98.7 MCF Radio",
     "type": "radio",
@@ -713,6 +727,20 @@
       "christian"
     ],
     "website": "http://www.mutundwechristianfellowship.org/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-99-5-global-fm-bahamas-ug",
+    "name": "99.5 Global Fm Bahamas",
+    "type": "radio",
+    "streamUrl": "http://ice64.securenetsystems.net/GLOBALBS",
+    "description": "music",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "music"
+    ],
+    "website": "http://ice64.securenetsystems.net/GLOBALBS",
     "isFeatured": true
   },
   {
@@ -1044,6 +1072,21 @@
     "isFeatured": true
   },
   {
+    "id": "radio-christian-life-radio-ug",
+    "name": "Christian life radio",
+    "type": "radio",
+    "streamUrl": "https://ice64.securenetsystems.net/CLR1MP3",
+    "logo": "https://www.communitynetradio.org/favicon.ico",
+    "description": "christian",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian"
+    ],
+    "website": "https://www.communitynetradio.org/christianliferadio",
+    "isFeatured": true
+  },
+  {
     "id": "radio-christian-music-channel-ug",
     "name": "Christian music channel",
     "type": "radio",
@@ -1155,6 +1198,20 @@
       "gospel music"
     ],
     "website": "https://demagospel.com/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-dove-fm-ug",
+    "name": "Dove Fm",
+    "type": "radio",
+    "streamUrl": "https://ice64.securenetsystems.net/DOVEMAIN",
+    "description": "christian",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian"
+    ],
+    "website": "http://www.dovefm.org/",
     "isFeatured": true
   },
   {
@@ -1991,23 +2048,6 @@
       "variety"
     ],
     "website": "https://sdamissionug.com/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-shalom-radio-jinja-mp3-ug",
-    "name": "Shalom Radio Jinja (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/rvnov6bmdhsvv",
-    "description": "christian, gospel, religious, talk",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious",
-      "talk"
-    ],
-    "website": "https://shalomradio.co.ug/",
     "isFeatured": true
   },
   {
@@ -3560,6 +3600,20 @@
       "rock"
     ],
     "website": "http://www.radiokiss.gr/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-weow-fm-92-7-us",
+    "name": "WEOW FM 92.7",
+    "type": "radio",
+    "streamUrl": "http://ice42.securenetsystems.net/WEOW",
+    "description": "rock",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "rock"
+    ],
+    "website": "http://www.weow927.com/",
     "isFeatured": false
   },
   {
