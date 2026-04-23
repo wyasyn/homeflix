@@ -1666,23 +1666,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-nakawa-online-radio-kampala-mp3-ug",
-    "name": "Nakawa Online Radio - Kampala (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/6hs5suuvqfhvv",
-    "logo": "https://i.ibb.co/4Knx6nq/image-1.webp",
-    "description": "christian, gospel, talk",
-    "language": "english,luganda,swahili",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "talk"
-    ],
-    "website": "https://www.radio.nakawapentecostal.org/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-namaste-radio-ug",
     "name": "Namaste Radio",
     "type": "radio",
@@ -2065,6 +2048,23 @@
     "isFeatured": true
   },
   {
+    "id": "radio-shalom-radio-jinja-mp3-ug",
+    "name": "Shalom Radio Jinja (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/rvnov6bmdhsvv",
+    "description": "christian, gospel, religious, talk",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious",
+      "talk"
+    ],
+    "website": "https://shalomradio.co.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-sky-news-ug",
     "name": "Sky News",
     "type": "radio",
@@ -2437,6 +2437,23 @@
       "adult contemporary"
     ],
     "website": "http://www.kyankwanzifm.net/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-way-to-god-radio-mp3-ug",
+    "name": "Way To God Radio (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/g876nxxz8vzuv",
+    "logo": "https://images.zeno.fm/WZoX_AarzsL-ubF-VgFKQu5HZqjWjRlRujPZmVvt53o/rs:fit:240:240/g:ce:0:0/aHR0cHM6Ly9zdHJlYW0tdG9vbHMuemVub21lZGlhLmNvbS9jb250ZW50L3N0YXRpb25zL2FneHpmbnBsYm04dGMzUmhkSE55TWdzU0NrRjFkR2hEYkdsbGJuUVlnSUNRNEthUjdBc01DeElPVTNSaGRHbHZibEJ5YjJacGJHVVlnSUNRa1AyamhRc01vZ0VFZW1WdWJ3L2ltYWdlLz91cGRhdGVkPTE2NTAxODg3MjQwMDA.webp",
+    "description": "christian, gospel, religious",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious"
+    ],
+    "website": "http://www.waytogodradio.co.ug/",
     "isFeatured": true
   },
   {
@@ -3604,6 +3621,23 @@
     "isFeatured": false
   },
   {
+    "id": "radio-zbs-zodiak-fm-mw",
+    "name": "ZBS Zodiak FM",
+    "type": "radio",
+    "streamUrl": "https://ice31.securenetsystems.net/0079",
+    "description": "entertainment, local music, news, sport",
+    "language": "english",
+    "country": "MW",
+    "categories": [
+      "entertainment",
+      "local music",
+      "news",
+      "sport"
+    ],
+    "website": "https://zodiakmalawi.com/live-radio",
+    "isFeatured": false
+  },
+  {
     "id": "radio-trance-athena-gr",
     "name": "Trance Athena",
     "type": "radio",
@@ -3902,6 +3936,21 @@
     "isFeatured": false
   },
   {
+    "id": "radio-1-fm-deep-techno-deep-house-ch",
+    "name": "1.FM - Deep Techno & Deep House",
+    "type": "radio",
+    "streamUrl": "http://strm112.1.fm/deeptech_mobile_mp3",
+    "description": "deep house, techno",
+    "language": "english",
+    "country": "CH",
+    "categories": [
+      "deep house",
+      "techno"
+    ],
+    "website": "http://www.1.fm/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-radio-paradise-mellow-mix-320k-aac-us",
     "name": "Radio Paradise Mellow Mix 320k AAC",
     "type": "radio",
@@ -3920,21 +3969,6 @@
       "non-commercial"
     ],
     "website": "https://radioparadise.com/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-1-fm-deep-techno-deep-house-ch",
-    "name": "1.FM - Deep Techno & Deep House",
-    "type": "radio",
-    "streamUrl": "http://strm112.1.fm/deeptech_mobile_mp3",
-    "description": "deep house, techno",
-    "language": "english",
-    "country": "CH",
-    "categories": [
-      "deep house",
-      "techno"
-    ],
-    "website": "http://www.1.fm/",
     "isFeatured": false
   },
   {
