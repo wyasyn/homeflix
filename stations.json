@@ -14,20 +14,6 @@
     "isFeatured": true
   },
   {
-    "id": "alpha-digital",
-    "name": "Alpha Digital",
-    "type": "tv",
-    "streamUrl": "https://streamfi-alphatvdgtl1.zettawiseroutes.com:8181/hls/stream.m3u8",
-    "description": "religious",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "religious"
-    ],
-    "website": "http://imc.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "ark-tv",
     "name": "Ark TV",
     "type": "tv",
@@ -81,6 +67,20 @@
       "general"
     ],
     "website": "https://www.bukedde.co.ug/",
+    "isFeatured": true
+  },
+  {
+    "id": "dream-tv",
+    "name": "Dream TV",
+    "type": "tv",
+    "streamUrl": "https://streamfi-dreamtv1.zettawiseroutes.com:8181/hls/stream.m3u8",
+    "description": "religious",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "religious"
+    ],
+    "website": "http://www.imc.ug/",
     "isFeatured": true
   },
   {
@@ -1305,21 +1305,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-exodus-comfort-radio-ug",
-    "name": "Exodus Comfort Radio",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/k2zma0qewtjvv",
-    "logo": "https://mynoise.net/apple-touch-icon.png",
-    "description": "christian",
-    "language": "luganda",
-    "country": "UG",
-    "categories": [
-      "christian"
-    ],
-    "website": "https://mynoise.net/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-faith-radio-ug",
     "name": "FAITH RADIO",
     "type": "radio",
@@ -1560,20 +1545,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-joy-hits-ug",
-    "name": "JOY HITS",
-    "type": "radio",
-    "streamUrl": "http://joyhits.online/joyhitshq.mp3",
-    "description": "variety",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "variety"
-    ],
-    "website": "https://joyhits.online/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-jubilee-radio-fort-portal-105-6-fm-mp3-ug",
     "name": "Jubilee Radio - Fort Portal - 105.6 FM (MP3)",
     "type": "radio",
@@ -1663,6 +1634,23 @@
       "urban gospel"
     ],
     "website": "https://econews.digital/home/myradio/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-nakawa-online-radio-kampala-mp3-ug",
+    "name": "Nakawa Online Radio - Kampala (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/6hs5suuvqfhvv",
+    "logo": "https://i.ibb.co/4Knx6nq/image-1.webp",
+    "description": "christian, gospel, talk",
+    "language": "english,luganda,swahili",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "talk"
+    ],
+    "website": "https://www.radio.nakawapentecostal.org/",
     "isFeatured": true
   },
   {
@@ -2045,23 +2033,6 @@
       "variety"
     ],
     "website": "https://sdamissionug.com/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-shalom-radio-jinja-mp3-ug",
-    "name": "Shalom Radio Jinja (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/rvnov6bmdhsvv",
-    "description": "christian, gospel, religious, talk",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious",
-      "talk"
-    ],
-    "website": "https://shalomradio.co.ug/",
     "isFeatured": true
   },
   {
@@ -2608,6 +2579,21 @@
     "isFeatured": false
   },
   {
+    "id": "radio-977-hitz-us",
+    "name": ".977 Hitz",
+    "type": "radio",
+    "streamUrl": "http://18863.live.streamtheworld.com/977_HITS_SC",
+    "description": "hits, top 40",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "hits",
+      "top 40"
+    ],
+    "website": "http://www.977music.com/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-your-classical-relax-us",
     "name": "Your Classical - Relax",
     "type": "radio",
@@ -2621,21 +2607,6 @@
       "relax"
     ],
     "website": "http://www.yourclassical.org/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-977-hitz-us",
-    "name": ".977 Hitz",
-    "type": "radio",
-    "streamUrl": "http://18863.live.streamtheworld.com/977_HITS_SC",
-    "description": "hits, top 40",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "hits",
-      "top 40"
-    ],
-    "website": "http://www.977music.com/",
     "isFeatured": false
   },
   {
@@ -4211,24 +4182,6 @@
     "isFeatured": false
   },
   {
-    "id": "radio-bbc-afrique-radio-gb",
-    "name": "BBC Afrique Radio",
-    "type": "radio",
-    "streamUrl": "http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/sbr_low/ak/bbc_afrique_radio.m3u8",
-    "logo": "https://static.files.bbci.co.uk/ws/simorgh-assets/public/afrique/images/icons/icon-128x128.png",
-    "description": "africa, afrique, news, talk",
-    "language": "english,french",
-    "country": "GB",
-    "categories": [
-      "africa",
-      "afrique",
-      "news",
-      "talk"
-    ],
-    "website": "https://www.bbc.com/afrique/bbc_afrique_radio/liveradio",
-    "isFeatured": false
-  },
-  {
     "id": "radio-jacaranda-fm-za",
     "name": "Jacaranda FM",
     "type": "radio",
@@ -4244,6 +4197,24 @@
       "talk"
     ],
     "website": "https://www.jacarandafm.com/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-bbc-afrique-radio-gb",
+    "name": "BBC Afrique Radio",
+    "type": "radio",
+    "streamUrl": "http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/sbr_low/ak/bbc_afrique_radio.m3u8",
+    "logo": "https://static.files.bbci.co.uk/ws/simorgh-assets/public/afrique/images/icons/icon-128x128.png",
+    "description": "africa, afrique, news, talk",
+    "language": "english,french",
+    "country": "GB",
+    "categories": [
+      "africa",
+      "afrique",
+      "news",
+      "talk"
+    ],
+    "website": "https://www.bbc.com/afrique/bbc_afrique_radio/liveradio",
     "isFeatured": false
   },
   {
