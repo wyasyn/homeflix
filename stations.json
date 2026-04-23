@@ -14,6 +14,20 @@
     "isFeatured": true
   },
   {
+    "id": "alpha-digital",
+    "name": "Alpha Digital",
+    "type": "tv",
+    "streamUrl": "https://streamfi-alphatvdgtl1.zettawiseroutes.com:8181/hls/stream.m3u8",
+    "description": "religious",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "religious"
+    ],
+    "website": "http://imc.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "ark-tv",
     "name": "Ark TV",
     "type": "tv",
@@ -1291,6 +1305,21 @@
     "isFeatured": true
   },
   {
+    "id": "radio-exodus-comfort-radio-ug",
+    "name": "Exodus Comfort Radio",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/k2zma0qewtjvv",
+    "logo": "https://mynoise.net/apple-touch-icon.png",
+    "description": "christian",
+    "language": "luganda",
+    "country": "UG",
+    "categories": [
+      "christian"
+    ],
+    "website": "https://mynoise.net/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-faith-radio-ug",
     "name": "FAITH RADIO",
     "type": "radio",
@@ -1615,6 +1644,42 @@
       "music"
     ],
     "website": "http://www.mellofmjamaica.com/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-my-radio-ug",
+    "name": "My Radio",
+    "type": "radio",
+    "streamUrl": "http://myradioug.duckdns.org:8000/radio.mp3",
+    "logo": "https://econews.digital/wp-content/uploads/2025/11/cropped-WhatsApp-Image-2025-11-14-at-15.21.28_a76b6284.jpg",
+    "description": "christian-gospel, gospel, gospel pop, smoothest songs, urban gospel",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian-gospel",
+      "gospel",
+      "gospel pop",
+      "smoothest songs",
+      "urban gospel"
+    ],
+    "website": "https://econews.digital/home/myradio/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-nakawa-online-radio-kampala-mp3-ug",
+    "name": "Nakawa Online Radio - Kampala (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/6hs5suuvqfhvv",
+    "logo": "https://i.ibb.co/4Knx6nq/image-1.webp",
+    "description": "christian, gospel, talk",
+    "language": "english,luganda,swahili",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "talk"
+    ],
+    "website": "https://www.radio.nakawapentecostal.org/",
     "isFeatured": true
   },
   {
@@ -2372,34 +2437,6 @@
       "adult contemporary"
     ],
     "website": "http://www.kyankwanzifm.net/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-yofochm-ug",
-    "name": "Yofochm",
-    "type": "radio",
-    "streamUrl": "https://c13.radioboss.fm:18053/stream",
-    "description": "Radio station",
-    "language": "luganda",
-    "country": "UG",
-    "categories": [],
-    "website": "https://yofochmradio.com/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-yofochm-radio-uganda-mp3-ug",
-    "name": "Yofochm Radio Uganda (MP3)",
-    "type": "radio",
-    "streamUrl": "http://c13.radioboss.fm:18053/stream",
-    "description": "christian, gospel, talk",
-    "language": "english,luganda",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "talk"
-    ],
-    "website": "https://yofochmradio.com/",
     "isFeatured": true
   },
   {
