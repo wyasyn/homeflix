@@ -1027,6 +1027,23 @@
     "isFeatured": true
   },
   {
+    "id": "radio-christ-radio-lira-mp3-ug",
+    "name": "Christ Radio - Lira (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/zupkzgrj4dauv",
+    "logo": "https://images.zeno.fm/e7wHxzwNw5tapurdmFopRIkL4ygwXvGg38HUqOX8x4g/rs:fit:240:240/g:ce:0:0/aHR0cHM6Ly9zdHJlYW0tdG9vbHMuemVub21lZGlhLmNvbS9jb250ZW50L3N0YXRpb25zLzdiOWQ2ZWQ3LWY1Y2YtNGE3YS04MThkLWU3YWQ3ODY5YzExMy9pbWFnZS8_dXBkYXRlZD0xNjc5OTgyNTY5MDAw.webp",
+    "description": "christian, gospel, religious",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious"
+    ],
+    "website": "http://www.christradio.co.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-christian-fm-ug",
     "name": "Christian fm",
     "type": "radio",
@@ -1070,6 +1087,20 @@
     "isFeatured": true
   },
   {
+    "id": "radio-christian-music-channel-ug",
+    "name": "Christian music channel",
+    "type": "radio",
+    "streamUrl": "http://streaming.live365.com/a08828",
+    "description": "christian",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian"
+    ],
+    "website": "https://docradio.org/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-christmas-choir-ug",
     "name": "Christmas choir",
     "type": "radio",
@@ -1110,21 +1141,6 @@
       "news"
     ],
     "website": "https://tunein.cdnstream1.com/2868_96.mp3",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-country-music-ug",
-    "name": "Country Music",
-    "type": "radio",
-    "streamUrl": "http://ais-sa2.cdnstream1.com/2365_128.mp3",
-    "logo": "https://firebasestorage.googleapis.com/v0/b/radiogalaxy-580f4.appspot.com/o/images%2FIMG_20240317_035102736.jpg?alt=media&token=1413f958-9b3e-4d6d-b611-2a190957ed0d",
-    "description": "country music",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "country music"
-    ],
-    "website": "http://ais-sa2.cdnstream1.com/2365_128.mp3",
     "isFeatured": true
   },
   {
@@ -1602,20 +1618,22 @@
     "isFeatured": true
   },
   {
-    "id": "radio-nakawa-online-radio-kampala-mp3-ug",
-    "name": "Nakawa Online Radio - Kampala (MP3)",
+    "id": "radio-my-radio-ug",
+    "name": "My Radio",
     "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/6hs5suuvqfhvv",
-    "logo": "https://i.ibb.co/4Knx6nq/image-1.webp",
-    "description": "christian, gospel, talk",
-    "language": "english,luganda,swahili",
+    "streamUrl": "http://myradioug.duckdns.org:8000/radio.mp3",
+    "logo": "https://econews.digital/wp-content/uploads/2025/11/cropped-WhatsApp-Image-2025-11-14-at-15.21.28_a76b6284.jpg",
+    "description": "christian-gospel, gospel, gospel pop, smoothest songs, urban gospel",
+    "language": "english",
     "country": "UG",
     "categories": [
-      "christian",
+      "christian-gospel",
       "gospel",
-      "talk"
+      "gospel pop",
+      "smoothest songs",
+      "urban gospel"
     ],
-    "website": "https://www.radio.nakawapentecostal.org/",
+    "website": "https://econews.digital/home/myradio/",
     "isFeatured": true
   },
   {
@@ -1858,6 +1876,43 @@
     "isFeatured": true
   },
   {
+    "id": "radio-radio-sinza-mp3-ug",
+    "name": "Radio Sinza (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/raoopfak6k2vv",
+    "description": "christian, gospel, religious",
+    "language": "english,luganda,swahili",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious"
+    ],
+    "website": "http://www.radiosinza.co.ug/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-radio-yoo-mp3-ug",
+    "name": "Radio Yoo (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/v73tc5gwaphvv",
+    "logo": "https://images.zeno.fm/bm9Qljp5KBGgX-jj3APC401Q1f3LUvLWUJpACYAXseY/rs:fit:240:240/g:ce:0:0/aHR0cHM6Ly9zdHJlYW0tdG9vbHMuemVub21lZGlhLmNvbS9jb250ZW50L3N0YXRpb25zL2FneHpmbnBsYm04dGMzUmhkSE55TWdzU0NrRjFkR2hEYkdsbGJuUVlnSUNJby1MT3hBZ01DeElPVTNSaGRHbHZibEJ5YjJacGJHVVlnSUNJNDh6eGlnb01vZ0VFZW1WdWJ3L2ltYWdlLz91cGRhdGVkPTE2ODk3NjkxNzYwMDA.webp",
+    "description": "christian, entertainment, gospel, hits, news, religious, talk",
+    "language": "english,luganda",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "entertainment",
+      "gospel",
+      "hits",
+      "news",
+      "religious",
+      "talk"
+    ],
+    "website": "http://www.radioyoo.co.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-rfi-kiswahili-ug",
     "name": "RFI Kiswahili",
     "type": "radio",
@@ -1950,6 +2005,37 @@
     "isFeatured": true
   },
   {
+    "id": "radio-sda-missions-radio-ug",
+    "name": "SDA Missions radio",
+    "type": "radio",
+    "streamUrl": "https://stream-57.zeno.fm/mkkr2bcgkf9uv",
+    "description": "variety",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "variety"
+    ],
+    "website": "https://sdamissionug.com/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-shalom-radio-jinja-mp3-ug",
+    "name": "Shalom Radio Jinja (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/rvnov6bmdhsvv",
+    "description": "christian, gospel, religious, talk",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious",
+      "talk"
+    ],
+    "website": "https://shalomradio.co.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-sky-news-ug",
     "name": "Sky News",
     "type": "radio",
@@ -1961,6 +2047,20 @@
       "current affairs"
     ],
     "website": "https://video.news.sky.com/snr/news/snrnews.mp3",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-skynet-fm-ug",
+    "name": "SKYNET FM",
+    "type": "radio",
+    "streamUrl": "https://stream-44.zeno.fm/1uhqawtfk5zuv",
+    "description": "music",
+    "language": "luganda",
+    "country": "UG",
+    "categories": [
+      "music"
+    ],
+    "website": "https://zeno.fm/radio/skynet-radio/",
     "isFeatured": true
   },
   {
@@ -2048,6 +2148,78 @@
       "music"
     ],
     "website": "https://24503.live.streamtheworld.com/977_HITSAAC_SC",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-sport-live-ug",
+    "name": "Sport Live",
+    "type": "radio",
+    "streamUrl": "https://radio.talksport.com/stream",
+    "logo": "https://firebasestorage.googleapis.com/v0/b/radiogalaxy-580f4.appspot.com/o/images%2FIMG_20240501_222002653.jpg?alt=media&token=1d08839c-4f50-4eb6-919d-bbcf2769471c",
+    "description": "talksport",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "talksport"
+    ],
+    "website": "https://radio.talksport.com/stream",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-streamug-radio-ug",
+    "name": "StreamUG Radio",
+    "type": "radio",
+    "streamUrl": "https://c22.radioboss.fm:8814/stream",
+    "logo": "https://play-lh.googleusercontent.com/QCubFoSjKzUtPRKNacVo11rDcgqdsIeG2dNMLdGy5i9ywl4Cr41DuhD50ioMqtxzLPsyjhD4ox7cIybhnBSgWBk=w240-h480-rw",
+    "description": "Radio station",
+    "language": "english",
+    "country": "UG",
+    "categories": [],
+    "website": "https://www.streamugradio.com/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-street-deejays-radio-mbarara-mp3-ug",
+    "name": "Street Deejays Radio - Mbarara (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/nbwdnxz7na0uv",
+    "logo": "https://images.zeno.fm/psoaqXYCmiMezzEGvnQMZ79oLFbyP29TsIyimZh13E8/rs:fit:240:240/g:ce:0:0/aHR0cHM6Ly9zdHJlYW0tdG9vbHMuemVub21lZGlhLmNvbS9jb250ZW50L3N0YXRpb25zL2FneHpmbnBsYm04dGMzUmhkSE55TWdzU0NrRjFkR2hEYkdsbGJuUVlnSURnck92Y2tRa01DeElPVTNSaGRHbHZibEJ5YjJacGJHVVlnSURReUplSnh3b01vZ0VFZW1WdWJ3L2ltYWdlLz91cGRhdGVkPTE2NjE2NzcxNjUwMDA.webp",
+    "description": "music",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "music"
+    ],
+    "website": "http://www.streetdeejaysradio.co.ug/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-talk-radio-ug",
+    "name": "TALK RADIO",
+    "type": "radio",
+    "streamUrl": "https://playerservices.streamtheworld.com/api/livestream-redirect/TALK_RADIO_EUROPE.mp3",
+    "logo": "https://static.flashscore.com/res/_fs/image/4_favicons/_mobi/touch-icon-180x180.png?v=8",
+    "description": "variety",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "variety"
+    ],
+    "website": "https://www.livescore.cz/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-talkradio-ug",
+    "name": "TALKRADIO",
+    "type": "radio",
+    "streamUrl": "https://radio.talkradio.co.uk/stream",
+    "description": "news",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "news"
+    ],
+    "website": "https://www.nrm.ug/",
     "isFeatured": true
   },
   {
@@ -2239,6 +2411,23 @@
     "isFeatured": true
   },
   {
+    "id": "radio-way-to-god-radio-mp3-ug",
+    "name": "Way To God Radio (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/g876nxxz8vzuv",
+    "logo": "https://images.zeno.fm/WZoX_AarzsL-ubF-VgFKQu5HZqjWjRlRujPZmVvt53o/rs:fit:240:240/g:ce:0:0/aHR0cHM6Ly9zdHJlYW0tdG9vbHMuemVub21lZGlhLmNvbS9jb250ZW50L3N0YXRpb25zL2FneHpmbnBsYm04dGMzUmhkSE55TWdzU0NrRjFkR2hEYkdsbGJuUVlnSUNRNEthUjdBc01DeElPVTNSaGRHbHZibEJ5YjJacGJHVVlnSUNRa1AyamhRc01vZ0VFZW1WdWJ3L2ltYWdlLz91cGRhdGVkPTE2NTAxODg3MjQwMDA.webp",
+    "description": "christian, gospel, religious",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious"
+    ],
+    "website": "http://www.waytogodradio.co.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-dance-wave-hu",
     "name": "Dance Wave!",
     "type": "radio",
@@ -2390,6 +2579,21 @@
     "isFeatured": false
   },
   {
+    "id": "radio-977-hitz-us",
+    "name": ".977 Hitz",
+    "type": "radio",
+    "streamUrl": "http://18863.live.streamtheworld.com/977_HITS_SC",
+    "description": "hits, top 40",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "hits",
+      "top 40"
+    ],
+    "website": "http://www.977music.com/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-your-classical-relax-us",
     "name": "Your Classical - Relax",
     "type": "radio",
@@ -2403,21 +2607,6 @@
       "relax"
     ],
     "website": "http://www.yourclassical.org/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-977-hitz-us",
-    "name": ".977 Hitz",
-    "type": "radio",
-    "streamUrl": "http://18863.live.streamtheworld.com/977_HITS_SC",
-    "description": "hits, top 40",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "hits",
-      "top 40"
-    ],
-    "website": "http://www.977music.com/",
     "isFeatured": false
   },
   {
@@ -3237,6 +3426,23 @@
     "isFeatured": false
   },
   {
+    "id": "radio-kantipur-fm-np",
+    "name": "Kantipur FM",
+    "type": "radio",
+    "streamUrl": "https://radio-broadcast.ekantipur.com/stream",
+    "description": "kantipur, kathmandu, nepal, nepali",
+    "language": "english,nepali",
+    "country": "NP",
+    "categories": [
+      "kantipur",
+      "kathmandu",
+      "nepal",
+      "nepali"
+    ],
+    "website": "https://radiokantipur.com/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-hits-of-mohammed-rafi-in",
     "name": "Hits Of Mohammed Rafi",
     "type": "radio",
@@ -3487,6 +3693,22 @@
       "public radio"
     ],
     "website": "http://www.wnyc.org/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-101-smooth-jazz-mellow-mix-us",
+    "name": "101 SMOOTH JAZZ MELLOW MIX",
+    "type": "radio",
+    "streamUrl": "http://streaming.live365.com/b48071_128mp3",
+    "description": "easy listening, mellow, smooth jazz",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "easy listening",
+      "mellow",
+      "smooth jazz"
+    ],
+    "website": "http://www.101smoothjazz.com/mellow.html",
     "isFeatured": false
   },
   {
@@ -4041,6 +4263,22 @@
       "waynesboro"
     ],
     "website": "http://www.181.fm/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-calm-radio-solo-piano-ca",
+    "name": "Calm Radio - Solo Piano",
+    "type": "radio",
+    "streamUrl": "http://streams.calmradio.com:1228/",
+    "logo": "https://calmradio.com/templates/calmradio/favicons/apple-touch-icon.png",
+    "description": "easy listening, piano",
+    "language": "english",
+    "country": "CA",
+    "categories": [
+      "easy listening",
+      "piano"
+    ],
+    "website": "https://www.calmradio.com/",
     "isFeatured": false
   },
   {
