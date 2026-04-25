@@ -56,20 +56,6 @@
     "isFeatured": true
   },
   {
-    "id": "dream-tv",
-    "name": "Dream TV",
-    "type": "tv",
-    "streamUrl": "https://streamfi-dreamtv1.zettawiseroutes.com:8181/hls/stream.m3u8",
-    "description": "religious",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "religious"
-    ],
-    "website": "http://www.imc.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "fort-tv",
     "name": "FORT TV",
     "type": "tv",
@@ -81,20 +67,6 @@
       "entertainment"
     ],
     "website": "https://fort-tv.com/",
-    "isFeatured": true
-  },
-  {
-    "id": "praise-jesus-tower-tv",
-    "name": "Praise Jesus Tower TV",
-    "type": "tv",
-    "streamUrl": "https://vsrv1.az-streamingserver.com:3555/live/dyjoqlgklive.m3u8",
-    "description": "religious",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "religious"
-    ],
-    "website": "https://praisejesustower.org/",
     "isFeatured": true
   },
   {
@@ -1027,23 +999,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-christ-radio-lira-mp3-ug",
-    "name": "Christ Radio - Lira (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/zupkzgrj4dauv",
-    "logo": "https://images.zeno.fm/e7wHxzwNw5tapurdmFopRIkL4ygwXvGg38HUqOX8x4g/rs:fit:240:240/g:ce:0:0/aHR0cHM6Ly9zdHJlYW0tdG9vbHMuemVub21lZGlhLmNvbS9jb250ZW50L3N0YXRpb25zLzdiOWQ2ZWQ3LWY1Y2YtNGE3YS04MThkLWU3YWQ3ODY5YzExMy9pbWFnZS8_dXBkYXRlZD0xNjc5OTgyNTY5MDAw.webp",
-    "description": "christian, gospel, religious",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious"
-    ],
-    "website": "http://www.christradio.co.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-christian-fm-ug",
     "name": "Christian fm",
     "type": "radio",
@@ -1141,6 +1096,21 @@
       "news"
     ],
     "website": "https://tunein.cdnstream1.com/2868_96.mp3",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-country-music-ug",
+    "name": "Country Music",
+    "type": "radio",
+    "streamUrl": "http://ais-sa2.cdnstream1.com/2365_128.mp3",
+    "logo": "https://firebasestorage.googleapis.com/v0/b/radiogalaxy-580f4.appspot.com/o/images%2FIMG_20240317_035102736.jpg?alt=media&token=1413f958-9b3e-4d6d-b611-2a190957ed0d",
+    "description": "country music",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "country music"
+    ],
+    "website": "http://ais-sa2.cdnstream1.com/2365_128.mp3",
     "isFeatured": true
   },
   {
@@ -1350,24 +1320,6 @@
       "dancehall"
     ],
     "website": "https://www.galaxyfm.co.ug/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-glory-fm-maganjo-kampala-mp3-ug",
-    "name": "Glory FM Maganjo - Kampala (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/bn7dbg8w0nhvv",
-    "logo": "https://i.ibb.co/fnTZJLC/image-2.webp",
-    "description": "christian, gospel, religious, talk",
-    "language": "english,luganda,swahili",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious",
-      "talk"
-    ],
-    "website": "http://www.gloryfmmaganjo.co.ug/",
     "isFeatured": true
   },
   {
@@ -2016,23 +1968,6 @@
       "variety"
     ],
     "website": "https://sdamissionug.com/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-shalom-radio-jinja-mp3-ug",
-    "name": "Shalom Radio Jinja (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/rvnov6bmdhsvv",
-    "description": "christian, gospel, religious, talk",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious",
-      "talk"
-    ],
-    "website": "https://shalomradio.co.ug/",
     "isFeatured": true
   },
   {
@@ -3743,6 +3678,23 @@
     "isFeatured": false
   },
   {
+    "id": "radio-181-fm-kickin-country-us",
+    "name": "181.FM - Kickin' Country",
+    "type": "radio",
+    "streamUrl": "http://listen.181fm.com/181-kickincountry_128k.mp3",
+    "description": "country, pop, rock, waynesboro",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "country",
+      "pop",
+      "rock",
+      "waynesboro"
+    ],
+    "website": "http://www.181.fm/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-70s-80s-disco-funk-modernsoul-boogie-us",
     "name": "70s 80s Disco Funk ModernSoul Boogie",
     "type": "radio",
@@ -3765,23 +3717,6 @@
       "funk"
     ],
     "website": "https://funky.radio/discofunk_modernsoul_boogie",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-181-fm-kickin-country-us",
-    "name": "181.FM - Kickin' Country",
-    "type": "radio",
-    "streamUrl": "http://listen.181fm.com/181-kickincountry_128k.mp3",
-    "description": "country, pop, rock, waynesboro",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "country",
-      "pop",
-      "rock",
-      "waynesboro"
-    ],
-    "website": "http://www.181.fm/",
     "isFeatured": false
   },
   {
