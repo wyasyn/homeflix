@@ -28,6 +28,20 @@
     "isFeatured": true
   },
   {
+    "id": "btv",
+    "name": "BTV",
+    "type": "tv",
+    "streamUrl": "https://streamfi-alphadgtl1.zettawiseroutes.com:8181/hls/stream.m3u8",
+    "description": "entertainment",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "entertainment"
+    ],
+    "website": "https://imc.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "bukedde-tv-1",
     "name": "Bukedde TV 1",
     "type": "tv",
@@ -56,6 +70,20 @@
     "isFeatured": true
   },
   {
+    "id": "dream-tv",
+    "name": "Dream TV",
+    "type": "tv",
+    "streamUrl": "https://streamfi-dreamtv1.zettawiseroutes.com:8181/hls/stream.m3u8",
+    "description": "religious",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "religious"
+    ],
+    "website": "http://www.imc.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "fort-tv",
     "name": "FORT TV",
     "type": "tv",
@@ -67,6 +95,20 @@
       "entertainment"
     ],
     "website": "https://fort-tv.com/",
+    "isFeatured": true
+  },
+  {
+    "id": "praise-jesus-tower-tv",
+    "name": "Praise Jesus Tower TV",
+    "type": "tv",
+    "streamUrl": "https://vsrv1.az-streamingserver.com:3555/live/dyjoqlgklive.m3u8",
+    "description": "religious",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "religious"
+    ],
+    "website": "https://praisejesustower.org/",
     "isFeatured": true
   },
   {
@@ -1589,6 +1631,23 @@
     "isFeatured": true
   },
   {
+    "id": "radio-nakawa-online-radio-kampala-mp3-ug",
+    "name": "Nakawa Online Radio - Kampala (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/6hs5suuvqfhvv",
+    "logo": "https://i.ibb.co/4Knx6nq/image-1.webp",
+    "description": "christian, gospel, talk",
+    "language": "english,luganda,swahili",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "talk"
+    ],
+    "website": "https://www.radio.nakawapentecostal.org/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-namaste-radio-ug",
     "name": "Namaste Radio",
     "type": "radio",
@@ -2315,23 +2374,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-voice-of-heaven-kampala-mp3-ug",
-    "name": "Voice Of Heaven - Kampala (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/s961sfesdmntv",
-    "logo": "https://i.ibb.co/Kz9VR9n/119909.jpg",
-    "description": "christian, gospel, religious",
-    "language": "english,luganda,swahili",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious"
-    ],
-    "website": "https://www.voiceofheaven.co.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-voice-of-kyankwanzi-kiboga-89-7-fm-mp3-ug",
     "name": "Voice of Kyankwanzi - Kiboga - 89.7 FM (MP3)",
     "type": "radio",
@@ -2343,23 +2385,6 @@
       "adult contemporary"
     ],
     "website": "http://www.kyankwanzifm.net/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-way-to-god-radio-mp3-ug",
-    "name": "Way To God Radio (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/g876nxxz8vzuv",
-    "logo": "https://images.zeno.fm/WZoX_AarzsL-ubF-VgFKQu5HZqjWjRlRujPZmVvt53o/rs:fit:240:240/g:ce:0:0/aHR0cHM6Ly9zdHJlYW0tdG9vbHMuemVub21lZGlhLmNvbS9jb250ZW50L3N0YXRpb25zL2FneHpmbnBsYm04dGMzUmhkSE55TWdzU0NrRjFkR2hEYkdsbGJuUVlnSUNRNEthUjdBc01DeElPVTNSaGRHbHZibEJ5YjJacGJHVVlnSUNRa1AyamhRc01vZ0VFZW1WdWJ3L2ltYWdlLz91cGRhdGVkPTE2NTAxODg3MjQwMDA.webp",
-    "description": "christian, gospel, religious",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious"
-    ],
-    "website": "http://www.waytogodradio.co.ug/",
     "isFeatured": true
   },
   {
