@@ -1354,6 +1354,24 @@
     "isFeatured": true
   },
   {
+    "id": "radio-glory-fm-maganjo-kampala-mp3-ug",
+    "name": "Glory FM Maganjo - Kampala (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/bn7dbg8w0nhvv",
+    "logo": "https://i.ibb.co/fnTZJLC/image-2.webp",
+    "description": "christian, gospel, religious, talk",
+    "language": "english,luganda,swahili",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious",
+      "talk"
+    ],
+    "website": "http://www.gloryfmmaganjo.co.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-good-news-radio-ug",
     "name": "Good News Radio",
     "type": "radio",
@@ -2016,23 +2034,6 @@
       "variety"
     ],
     "website": "https://sdamissionug.com/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-shalom-radio-jinja-mp3-ug",
-    "name": "Shalom Radio Jinja (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/rvnov6bmdhsvv",
-    "description": "christian, gospel, religious, talk",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious",
-      "talk"
-    ],
-    "website": "https://shalomradio.co.ug/",
     "isFeatured": true
   },
   {
@@ -3606,6 +3607,23 @@
       "top 100"
     ],
     "website": "https://www.radio5.com.tr/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-zbs-zodiak-fm-mw",
+    "name": "ZBS Zodiak FM",
+    "type": "radio",
+    "streamUrl": "https://ice31.securenetsystems.net/0079",
+    "description": "entertainment, local music, news, sport",
+    "language": "english",
+    "country": "MW",
+    "categories": [
+      "entertainment",
+      "local music",
+      "news",
+      "sport"
+    ],
+    "website": "https://zodiakmalawi.com/live-radio",
     "isFeatured": false
   },
   {
