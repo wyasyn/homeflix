@@ -673,6 +673,20 @@
     "isFeatured": true
   },
   {
+    "id": "radio-98-1-isaiah-fm-trinidad-ug",
+    "name": "98.1 Isaiah FM Trinidad",
+    "type": "radio",
+    "streamUrl": "https://ice66.securenetsystems.net/FFBN?playSessionID=8D29A2B7-D966-0B14-AFCD7A340AFA6C15",
+    "description": "gospel",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "gospel"
+    ],
+    "website": "https://ice66.securenetsystems.net/FFBN?playSessionID=8D29A2B7-D966-0B14-AFCD7A340AFA6C15",
+    "isFeatured": true
+  },
+  {
     "id": "radio-98-7-mcf-radio-ug",
     "name": "98.7 MCF Radio",
     "type": "radio",
@@ -699,6 +713,20 @@
       "christian"
     ],
     "website": "http://www.mutundwechristianfellowship.org/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-99-5-global-fm-bahamas-ug",
+    "name": "99.5 Global Fm Bahamas",
+    "type": "radio",
+    "streamUrl": "http://ice64.securenetsystems.net/GLOBALBS",
+    "description": "music",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "music"
+    ],
+    "website": "http://ice64.securenetsystems.net/GLOBALBS",
     "isFeatured": true
   },
   {
@@ -1030,6 +1058,21 @@
     "isFeatured": true
   },
   {
+    "id": "radio-christian-life-radio-ug",
+    "name": "Christian life radio",
+    "type": "radio",
+    "streamUrl": "https://ice64.securenetsystems.net/CLR1MP3",
+    "logo": "https://www.communitynetradio.org/favicon.ico",
+    "description": "christian",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian"
+    ],
+    "website": "https://www.communitynetradio.org/christianliferadio",
+    "isFeatured": true
+  },
+  {
     "id": "radio-christian-music-channel-ug",
     "name": "Christian music channel",
     "type": "radio",
@@ -1141,6 +1184,20 @@
       "gospel music"
     ],
     "website": "https://demagospel.com/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-dove-fm-ug",
+    "name": "Dove Fm",
+    "type": "radio",
+    "streamUrl": "https://ice64.securenetsystems.net/DOVEMAIN",
+    "description": "christian",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian"
+    ],
+    "website": "http://www.dovefm.org/",
     "isFeatured": true
   },
   {
@@ -1294,24 +1351,6 @@
       "dancehall"
     ],
     "website": "https://www.galaxyfm.co.ug/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-glory-fm-maganjo-kampala-mp3-ug",
-    "name": "Glory FM Maganjo - Kampala (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/bn7dbg8w0nhvv",
-    "logo": "https://i.ibb.co/fnTZJLC/image-2.webp",
-    "description": "christian, gospel, religious, talk",
-    "language": "english,luganda,swahili",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious",
-      "talk"
-    ],
-    "website": "http://www.gloryfmmaganjo.co.ug/",
     "isFeatured": true
   },
   {
@@ -1578,6 +1617,23 @@
       "urban gospel"
     ],
     "website": "https://econews.digital/home/myradio/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-nakawa-online-radio-kampala-mp3-ug",
+    "name": "Nakawa Online Radio - Kampala (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/6hs5suuvqfhvv",
+    "logo": "https://i.ibb.co/4Knx6nq/image-1.webp",
+    "description": "christian, gospel, talk",
+    "language": "english,luganda,swahili",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "talk"
+    ],
+    "website": "https://www.radio.nakawapentecostal.org/",
     "isFeatured": true
   },
   {
@@ -3518,6 +3574,20 @@
       "rock"
     ],
     "website": "http://www.radiokiss.gr/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-weow-fm-92-7-us",
+    "name": "WEOW FM 92.7",
+    "type": "radio",
+    "streamUrl": "http://ice42.securenetsystems.net/WEOW",
+    "description": "rock",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "rock"
+    ],
+    "website": "http://www.weow927.com/",
     "isFeatured": false
   },
   {
