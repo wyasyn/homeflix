@@ -1652,6 +1652,23 @@
     "isFeatured": true
   },
   {
+    "id": "radio-nakawa-online-radio-kampala-mp3-ug",
+    "name": "Nakawa Online Radio - Kampala (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/6hs5suuvqfhvv",
+    "logo": "https://i.ibb.co/4Knx6nq/image-1.webp",
+    "description": "christian, gospel, talk",
+    "language": "english,luganda,swahili",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "talk"
+    ],
+    "website": "https://www.radio.nakawapentecostal.org/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-namaste-radio-ug",
     "name": "Namaste Radio",
     "type": "radio",
@@ -2031,6 +2048,23 @@
       "variety"
     ],
     "website": "https://sdamissionug.com/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-shalom-radio-jinja-mp3-ug",
+    "name": "Shalom Radio Jinja (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/rvnov6bmdhsvv",
+    "description": "christian, gospel, religious, talk",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious",
+      "talk"
+    ],
+    "website": "https://shalomradio.co.ug/",
     "isFeatured": true
   },
   {
@@ -4066,20 +4100,6 @@
     "isFeatured": false
   },
   {
-    "id": "radio-hot-108-jamz-us",
-    "name": "Hot 108 JAMZ",
-    "type": "radio",
-    "streamUrl": "http://sc.hot108.com:4000/",
-    "description": "rap hiphop rnb",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "rap hiphop rnb"
-    ],
-    "website": "http://hot108.com/",
-    "isFeatured": false
-  },
-  {
     "id": "radio-181-fm-true-blues-us",
     "name": "181.FM - True Blues",
     "type": "radio",
@@ -4093,6 +4113,20 @@
       "waynesboro"
     ],
     "website": "http://www.181.fm/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-hot-108-jamz-us",
+    "name": "Hot 108 JAMZ",
+    "type": "radio",
+    "streamUrl": "http://sc.hot108.com:4000/",
+    "description": "rap hiphop rnb",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "rap hiphop rnb"
+    ],
+    "website": "http://hot108.com/",
     "isFeatured": false
   },
   {
