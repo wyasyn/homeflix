@@ -14,48 +14,6 @@
     "isFeatured": true
   },
   {
-    "id": "ark-tv",
-    "name": "Ark TV",
-    "type": "tv",
-    "streamUrl": "https://stream.hydeinnovations.com/arktv-international/index.fmp4.m3u8",
-    "description": "religious",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "religious"
-    ],
-    "website": "https://www.holycityentebbe.org/",
-    "isFeatured": true
-  },
-  {
-    "id": "bukedde-tv-1",
-    "name": "Bukedde TV 1",
-    "type": "tv",
-    "streamUrl": "https://stream.hydeinnovations.com/bukedde1flussonic/index.m3u8",
-    "description": "general",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "general"
-    ],
-    "website": "https://www.bukedde.co.ug/",
-    "isFeatured": true
-  },
-  {
-    "id": "bukedde-tv-2",
-    "name": "Bukedde TV 2",
-    "type": "tv",
-    "streamUrl": "https://stream.hydeinnovations.com/bukedde2flussonic/index.m3u8",
-    "description": "general",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "general"
-    ],
-    "website": "https://www.bukedde.co.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "dream-tv",
     "name": "Dream TV",
     "type": "tv",
@@ -95,34 +53,6 @@
       "religious"
     ],
     "website": "https://praisejesustower.org/",
-    "isFeatured": true
-  },
-  {
-    "id": "tv-west",
-    "name": "TV West",
-    "type": "tv",
-    "streamUrl": "https://stream.hydeinnovations.com/tvwest-flussonic/index.m3u8",
-    "description": "general",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "general"
-    ],
-    "website": "https://tvwest.co.ug/",
-    "isFeatured": true
-  },
-  {
-    "id": "wan-luo-tv",
-    "name": "Wan Luo TV",
-    "type": "tv",
-    "streamUrl": "https://stream.hydeinnovations.com/luotv-flussonic/index.m3u8",
-    "description": "general",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "general"
-    ],
-    "website": "https://www.newvision.co.ug/tv/11",
     "isFeatured": true
   },
   {
@@ -613,22 +543,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-94-8-xfm-kampala-ug",
-    "name": "94.8 XFM Kampala",
-    "type": "radio",
-    "streamUrl": "http://stream.hydeinnovations.com:2020/stream/xfm/stream",
-    "logo": "https://i.ibb.co/VBfTj1z/xfm.jpg",
-    "description": "hits, pop",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "hits",
-      "pop"
-    ],
-    "website": "http://xfm.co.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-95-0-fame-fm-jamaica-ug",
     "name": "95.0 Fame fm Jamaica",
     "type": "radio",
@@ -669,6 +583,21 @@
       "current affairs"
     ],
     "website": "http://5230.cloudrad.io:8354/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-97-radio-city-ug",
+    "name": "97 Radio City",
+    "type": "radio",
+    "streamUrl": "http://radioone.loftuganda.tech/stream",
+    "logo": "https://firebasestorage.googleapis.com/v0/b/radiogalaxy-580f4.appspot.com/o/images%2FIMG_20240128_215744727.jpg?alt=media&token=66e3d879-4dc2-47a6-bc41-22d72148f53e",
+    "description": "music",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "music"
+    ],
+    "website": "http://radioone.loftuganda.tech/stream",
     "isFeatured": true
   },
   {
@@ -828,20 +757,6 @@
       "current affairs"
     ],
     "website": "https://stream-174.zeno.fm/jddn0e0z9f0uv?zt",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-buyinza-fm-ug",
-    "name": "Buyinza Fm",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/wcancipcbrevv",
-    "description": "music",
-    "language": "luganda",
-    "country": "UG",
-    "categories": [
-      "music"
-    ],
-    "website": "https://buyinzafm.co.ug/",
     "isFeatured": true
   },
   {
@@ -1009,23 +924,6 @@
       "religious"
     ],
     "website": "https://christloveug.org/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-christ-radio-lira-mp3-ug",
-    "name": "Christ Radio - Lira (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/zupkzgrj4dauv",
-    "logo": "https://images.zeno.fm/e7wHxzwNw5tapurdmFopRIkL4ygwXvGg38HUqOX8x4g/rs:fit:240:240/g:ce:0:0/aHR0cHM6Ly9zdHJlYW0tdG9vbHMuemVub21lZGlhLmNvbS9jb250ZW50L3N0YXRpb25zLzdiOWQ2ZWQ3LWY1Y2YtNGE3YS04MThkLWU3YWQ3ODY5YzExMy9pbWFnZS8_dXBkYXRlZD0xNjc5OTgyNTY5MDAw.webp",
-    "description": "christian, gospel, religious",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious"
-    ],
-    "website": "http://www.christradio.co.ug/",
     "isFeatured": true
   },
   {
@@ -1545,20 +1443,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-jubilee-radio-fort-portal-105-6-fm-mp3-ug",
-    "name": "Jubilee Radio - Fort Portal - 105.6 FM (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/f3y3up2k07zuv",
-    "description": "music",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "music"
-    ],
-    "website": "http://jubileeradiouganda.com/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-kiis-100-9-kampala-100-9-fm-mp3-ug",
     "name": "KIIS 100.9 - Kampala - 100.9 FM (MP3)",
     "type": "radio",
@@ -1634,6 +1518,23 @@
       "urban gospel"
     ],
     "website": "https://econews.digital/home/myradio/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-nakawa-online-radio-kampala-mp3-ug",
+    "name": "Nakawa Online Radio - Kampala (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/6hs5suuvqfhvv",
+    "logo": "https://i.ibb.co/4Knx6nq/image-1.webp",
+    "description": "christian, gospel, talk",
+    "language": "english,luganda,swahili",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "talk"
+    ],
+    "website": "https://www.radio.nakawapentecostal.org/",
     "isFeatured": true
   },
   {
@@ -2019,23 +1920,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-shalom-radio-jinja-mp3-ug",
-    "name": "Shalom Radio Jinja (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/rvnov6bmdhsvv",
-    "description": "christian, gospel, religious, talk",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious",
-      "talk"
-    ],
-    "website": "https://shalomradio.co.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-sky-news-ug",
     "name": "Sky News",
     "type": "radio",
@@ -2411,6 +2295,23 @@
     "isFeatured": true
   },
   {
+    "id": "radio-way-to-god-radio-mp3-ug",
+    "name": "Way To God Radio (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/g876nxxz8vzuv",
+    "logo": "https://images.zeno.fm/WZoX_AarzsL-ubF-VgFKQu5HZqjWjRlRujPZmVvt53o/rs:fit:240:240/g:ce:0:0/aHR0cHM6Ly9zdHJlYW0tdG9vbHMuemVub21lZGlhLmNvbS9jb250ZW50L3N0YXRpb25zL2FneHpmbnBsYm04dGMzUmhkSE55TWdzU0NrRjFkR2hEYkdsbGJuUVlnSUNRNEthUjdBc01DeElPVTNSaGRHbHZibEJ5YjJacGJHVVlnSUNRa1AyamhRc01vZ0VFZW1WdWJ3L2ltYWdlLz91cGRhdGVkPTE2NTAxODg3MjQwMDA.webp",
+    "description": "christian, gospel, religious",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious"
+    ],
+    "website": "http://www.waytogodradio.co.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-dance-wave-hu",
     "name": "Dance Wave!",
     "type": "radio",
@@ -2562,6 +2463,21 @@
     "isFeatured": false
   },
   {
+    "id": "radio-977-hitz-us",
+    "name": ".977 Hitz",
+    "type": "radio",
+    "streamUrl": "http://18863.live.streamtheworld.com/977_HITS_SC",
+    "description": "hits, top 40",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "hits",
+      "top 40"
+    ],
+    "website": "http://www.977music.com/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-your-classical-relax-us",
     "name": "Your Classical - Relax",
     "type": "radio",
@@ -2575,21 +2491,6 @@
       "relax"
     ],
     "website": "http://www.yourclassical.org/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-977-hitz-us",
-    "name": ".977 Hitz",
-    "type": "radio",
-    "streamUrl": "http://18863.live.streamtheworld.com/977_HITS_SC",
-    "description": "hits, top 40",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "hits",
-      "top 40"
-    ],
-    "website": "http://www.977music.com/",
     "isFeatured": false
   },
   {
