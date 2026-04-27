@@ -1368,24 +1368,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-glory-fm-maganjo-kampala-mp3-ug",
-    "name": "Glory FM Maganjo - Kampala (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/bn7dbg8w0nhvv",
-    "logo": "https://i.ibb.co/fnTZJLC/image-2.webp",
-    "description": "christian, gospel, religious, talk",
-    "language": "english,luganda,swahili",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious",
-      "talk"
-    ],
-    "website": "http://www.gloryfmmaganjo.co.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-good-news-radio-ug",
     "name": "Good News Radio",
     "type": "radio",
@@ -2412,23 +2394,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-voice-of-heaven-kampala-mp3-ug",
-    "name": "Voice Of Heaven - Kampala (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/s961sfesdmntv",
-    "logo": "https://i.ibb.co/Kz9VR9n/119909.jpg",
-    "description": "christian, gospel, religious",
-    "language": "english,luganda,swahili",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious"
-    ],
-    "website": "https://www.voiceofheaven.co.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-voice-of-kyankwanzi-kiboga-89-7-fm-mp3-ug",
     "name": "Voice of Kyankwanzi - Kiboga - 89.7 FM (MP3)",
     "type": "radio",
@@ -2440,23 +2405,6 @@
       "adult contemporary"
     ],
     "website": "http://www.kyankwanzifm.net/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-way-to-god-radio-mp3-ug",
-    "name": "Way To God Radio (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/g876nxxz8vzuv",
-    "logo": "https://images.zeno.fm/WZoX_AarzsL-ubF-VgFKQu5HZqjWjRlRujPZmVvt53o/rs:fit:240:240/g:ce:0:0/aHR0cHM6Ly9zdHJlYW0tdG9vbHMuemVub21lZGlhLmNvbS9jb250ZW50L3N0YXRpb25zL2FneHpmbnBsYm04dGMzUmhkSE55TWdzU0NrRjFkR2hEYkdsbGJuUVlnSUNRNEthUjdBc01DeElPVTNSaGRHbHZibEJ5YjJacGJHVVlnSUNRa1AyamhRc01vZ0VFZW1WdWJ3L2ltYWdlLz91cGRhdGVkPTE2NTAxODg3MjQwMDA.webp",
-    "description": "christian, gospel, religious",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious"
-    ],
-    "website": "http://www.waytogodradio.co.ug/",
     "isFeatured": true
   },
   {
@@ -2611,21 +2559,6 @@
     "isFeatured": false
   },
   {
-    "id": "radio-977-hitz-us",
-    "name": ".977 Hitz",
-    "type": "radio",
-    "streamUrl": "http://18863.live.streamtheworld.com/977_HITS_SC",
-    "description": "hits, top 40",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "hits",
-      "top 40"
-    ],
-    "website": "http://www.977music.com/",
-    "isFeatured": false
-  },
-  {
     "id": "radio-your-classical-relax-us",
     "name": "Your Classical - Relax",
     "type": "radio",
@@ -2639,6 +2572,21 @@
       "relax"
     ],
     "website": "http://www.yourclassical.org/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-977-hitz-us",
+    "name": ".977 Hitz",
+    "type": "radio",
+    "streamUrl": "http://18863.live.streamtheworld.com/977_HITS_SC",
+    "description": "hits, top 40",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "hits",
+      "top 40"
+    ],
+    "website": "http://www.977music.com/",
     "isFeatured": false
   },
   {
