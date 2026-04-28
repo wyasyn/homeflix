@@ -14,6 +14,48 @@
     "isFeatured": true
   },
   {
+    "id": "ark-tv",
+    "name": "Ark TV",
+    "type": "tv",
+    "streamUrl": "https://stream.hydeinnovations.com/arktv-international/index.fmp4.m3u8",
+    "description": "religious",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "religious"
+    ],
+    "website": "https://www.holycityentebbe.org/",
+    "isFeatured": true
+  },
+  {
+    "id": "bukedde-tv-1",
+    "name": "Bukedde TV 1",
+    "type": "tv",
+    "streamUrl": "https://stream.hydeinnovations.com/bukedde1flussonic/index.m3u8",
+    "description": "general",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "general"
+    ],
+    "website": "https://www.bukedde.co.ug/",
+    "isFeatured": true
+  },
+  {
+    "id": "bukedde-tv-2",
+    "name": "Bukedde TV 2",
+    "type": "tv",
+    "streamUrl": "https://stream.hydeinnovations.com/bukedde2flussonic/index.m3u8",
+    "description": "general",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "general"
+    ],
+    "website": "https://www.bukedde.co.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "dream-tv",
     "name": "Dream TV",
     "type": "tv",
@@ -53,6 +95,34 @@
       "religious"
     ],
     "website": "https://praisejesustower.org/",
+    "isFeatured": true
+  },
+  {
+    "id": "tv-west",
+    "name": "TV West",
+    "type": "tv",
+    "streamUrl": "https://stream.hydeinnovations.com/tvwest-flussonic/index.m3u8",
+    "description": "general",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "general"
+    ],
+    "website": "https://tvwest.co.ug/",
+    "isFeatured": true
+  },
+  {
+    "id": "wan-luo-tv",
+    "name": "Wan Luo TV",
+    "type": "tv",
+    "streamUrl": "https://stream.hydeinnovations.com/luotv-flussonic/index.m3u8",
+    "description": "general",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "general"
+    ],
+    "website": "https://www.newvision.co.ug/tv/11",
     "isFeatured": true
   },
   {
@@ -601,20 +671,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-98-1-isaiah-fm-trinidad-ug",
-    "name": "98.1 Isaiah FM Trinidad",
-    "type": "radio",
-    "streamUrl": "https://ice66.securenetsystems.net/FFBN?playSessionID=8D29A2B7-D966-0B14-AFCD7A340AFA6C15",
-    "description": "gospel",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "gospel"
-    ],
-    "website": "https://ice66.securenetsystems.net/FFBN?playSessionID=8D29A2B7-D966-0B14-AFCD7A340AFA6C15",
-    "isFeatured": true
-  },
-  {
     "id": "radio-98-7-mcf-radio-ug",
     "name": "98.7 MCF Radio",
     "type": "radio",
@@ -641,20 +697,6 @@
       "christian"
     ],
     "website": "http://www.mutundwechristianfellowship.org/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-99-5-global-fm-bahamas-ug",
-    "name": "99.5 Global Fm Bahamas",
-    "type": "radio",
-    "streamUrl": "http://ice64.securenetsystems.net/GLOBALBS",
-    "description": "music",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "music"
-    ],
-    "website": "http://ice64.securenetsystems.net/GLOBALBS",
     "isFeatured": true
   },
   {
@@ -757,6 +799,20 @@
       "current affairs"
     ],
     "website": "https://stream-174.zeno.fm/jddn0e0z9f0uv?zt",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-buyinza-fm-ug",
+    "name": "Buyinza Fm",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/wcancipcbrevv",
+    "description": "music",
+    "language": "luganda",
+    "country": "UG",
+    "categories": [
+      "music"
+    ],
+    "website": "https://buyinzafm.co.ug/",
     "isFeatured": true
   },
   {
@@ -927,6 +983,23 @@
     "isFeatured": true
   },
   {
+    "id": "radio-christ-radio-lira-mp3-ug",
+    "name": "Christ Radio - Lira (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/zupkzgrj4dauv",
+    "logo": "https://images.zeno.fm/e7wHxzwNw5tapurdmFopRIkL4ygwXvGg38HUqOX8x4g/rs:fit:240:240/g:ce:0:0/aHR0cHM6Ly9zdHJlYW0tdG9vbHMuemVub21lZGlhLmNvbS9jb250ZW50L3N0YXRpb25zLzdiOWQ2ZWQ3LWY1Y2YtNGE3YS04MThkLWU3YWQ3ODY5YzExMy9pbWFnZS8_dXBkYXRlZD0xNjc5OTgyNTY5MDAw.webp",
+    "description": "christian, gospel, religious",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious"
+    ],
+    "website": "http://www.christradio.co.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-christian-fm-ug",
     "name": "Christian fm",
     "type": "radio",
@@ -952,21 +1025,6 @@
       "christian"
     ],
     "website": "https://www.christianhits.net/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-christian-life-radio-ug",
-    "name": "Christian life radio",
-    "type": "radio",
-    "streamUrl": "https://ice64.securenetsystems.net/CLR1MP3",
-    "logo": "https://www.communitynetradio.org/favicon.ico",
-    "description": "christian",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian"
-    ],
-    "website": "https://www.communitynetradio.org/christianliferadio",
     "isFeatured": true
   },
   {
@@ -1027,21 +1085,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-country-music-ug",
-    "name": "Country Music",
-    "type": "radio",
-    "streamUrl": "http://ais-sa2.cdnstream1.com/2365_128.mp3",
-    "logo": "https://firebasestorage.googleapis.com/v0/b/radiogalaxy-580f4.appspot.com/o/images%2FIMG_20240317_035102736.jpg?alt=media&token=1413f958-9b3e-4d6d-b611-2a190957ed0d",
-    "description": "country music",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "country music"
-    ],
-    "website": "http://ais-sa2.cdnstream1.com/2365_128.mp3",
-    "isFeatured": true
-  },
-  {
     "id": "radio-country-music-80-s-ug",
     "name": "Country music (80's)",
     "type": "radio",
@@ -1081,20 +1124,6 @@
       "gospel music"
     ],
     "website": "https://demagospel.com/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-dove-fm-ug",
-    "name": "Dove Fm",
-    "type": "radio",
-    "streamUrl": "https://ice64.securenetsystems.net/DOVEMAIN",
-    "description": "christian",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian"
-    ],
-    "website": "http://www.dovefm.org/",
     "isFeatured": true
   },
   {
@@ -1443,6 +1472,20 @@
     "isFeatured": true
   },
   {
+    "id": "radio-jubilee-radio-fort-portal-105-6-fm-mp3-ug",
+    "name": "Jubilee Radio - Fort Portal - 105.6 FM (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/f3y3up2k07zuv",
+    "description": "music",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "music"
+    ],
+    "website": "http://jubileeradiouganda.com/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-kiis-100-9-kampala-100-9-fm-mp3-ug",
     "name": "KIIS 100.9 - Kampala - 100.9 FM (MP3)",
     "type": "radio",
@@ -1518,23 +1561,6 @@
       "urban gospel"
     ],
     "website": "https://econews.digital/home/myradio/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-nakawa-online-radio-kampala-mp3-ug",
-    "name": "Nakawa Online Radio - Kampala (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/6hs5suuvqfhvv",
-    "logo": "https://i.ibb.co/4Knx6nq/image-1.webp",
-    "description": "christian, gospel, talk",
-    "language": "english,luganda,swahili",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "talk"
-    ],
-    "website": "https://www.radio.nakawapentecostal.org/",
     "isFeatured": true
   },
   {
@@ -1790,27 +1816,6 @@
       "religious"
     ],
     "website": "http://www.radiosinza.co.ug/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-radio-yoo-mp3-ug",
-    "name": "Radio Yoo (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/v73tc5gwaphvv",
-    "logo": "https://images.zeno.fm/bm9Qljp5KBGgX-jj3APC401Q1f3LUvLWUJpACYAXseY/rs:fit:240:240/g:ce:0:0/aHR0cHM6Ly9zdHJlYW0tdG9vbHMuemVub21lZGlhLmNvbS9jb250ZW50L3N0YXRpb25zL2FneHpmbnBsYm04dGMzUmhkSE55TWdzU0NrRjFkR2hEYkdsbGJuUVlnSUNJby1MT3hBZ01DeElPVTNSaGRHbHZibEJ5YjJacGJHVVlnSUNJNDh6eGlnb01vZ0VFZW1WdWJ3L2ltYWdlLz91cGRhdGVkPTE2ODk3NjkxNzYwMDA.webp",
-    "description": "christian, entertainment, gospel, hits, news, religious, talk",
-    "language": "english,luganda",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "entertainment",
-      "gospel",
-      "hits",
-      "news",
-      "religious",
-      "talk"
-    ],
-    "website": "http://www.radioyoo.co.ug/",
     "isFeatured": true
   },
   {
@@ -3461,20 +3466,6 @@
     "isFeatured": false
   },
   {
-    "id": "radio-weow-fm-92-7-us",
-    "name": "WEOW FM 92.7",
-    "type": "radio",
-    "streamUrl": "http://ice42.securenetsystems.net/WEOW",
-    "description": "rock",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "rock"
-    ],
-    "website": "http://www.weow927.com/",
-    "isFeatured": false
-  },
-  {
     "id": "radio-radio-5-turkey-tr",
     "name": "Radio 5 Turkey",
     "type": "radio",
@@ -3490,23 +3481,6 @@
       "top 100"
     ],
     "website": "https://www.radio5.com.tr/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-zbs-zodiak-fm-mw",
-    "name": "ZBS Zodiak FM",
-    "type": "radio",
-    "streamUrl": "https://ice31.securenetsystems.net/0079",
-    "description": "entertainment, local music, news, sport",
-    "language": "english",
-    "country": "MW",
-    "categories": [
-      "entertainment",
-      "local music",
-      "news",
-      "sport"
-    ],
-    "website": "https://zodiakmalawi.com/live-radio",
     "isFeatured": false
   },
   {
