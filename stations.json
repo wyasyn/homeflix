@@ -685,6 +685,20 @@
     "isFeatured": true
   },
   {
+    "id": "radio-98-1-isaiah-fm-trinidad-ug",
+    "name": "98.1 Isaiah FM Trinidad",
+    "type": "radio",
+    "streamUrl": "https://ice66.securenetsystems.net/FFBN?playSessionID=8D29A2B7-D966-0B14-AFCD7A340AFA6C15",
+    "description": "gospel",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "gospel"
+    ],
+    "website": "https://ice66.securenetsystems.net/FFBN?playSessionID=8D29A2B7-D966-0B14-AFCD7A340AFA6C15",
+    "isFeatured": true
+  },
+  {
     "id": "radio-98-7-mcf-radio-ug",
     "name": "98.7 MCF Radio",
     "type": "radio",
@@ -1573,21 +1587,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-kyoga-veritas-radio-soroti-91-5-fm-mp3-ug",
-    "name": "Kyoga Veritas Radio - Soroti - 91.5 FM (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/hyyzuphrsg0uv",
-    "description": "community radio, urban",
-    "language": "ateso,english,kupsabiny,ngakarimojong",
-    "country": "UG",
-    "categories": [
-      "community radio",
-      "urban"
-    ],
-    "website": "https://kvr.ssoccom.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-lbc-news-ug",
     "name": "LBC News",
     "type": "radio",
@@ -2424,6 +2423,23 @@
       "adult contemporary"
     ],
     "website": "http://www.kyankwanzifm.net/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-way-to-god-radio-mp3-ug",
+    "name": "Way To God Radio (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/g876nxxz8vzuv",
+    "logo": "https://images.zeno.fm/WZoX_AarzsL-ubF-VgFKQu5HZqjWjRlRujPZmVvt53o/rs:fit:240:240/g:ce:0:0/aHR0cHM6Ly9zdHJlYW0tdG9vbHMuemVub21lZGlhLmNvbS9jb250ZW50L3N0YXRpb25zL2FneHpmbnBsYm04dGMzUmhkSE55TWdzU0NrRjFkR2hEYkdsbGJuUVlnSUNRNEthUjdBc01DeElPVTNSaGRHbHZibEJ5YjJacGJHVVlnSUNRa1AyamhRc01vZ0VFZW1WdWJ3L2ltYWdlLz91cGRhdGVkPTE2NTAxODg3MjQwMDA.webp",
+    "description": "christian, gospel, religious",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious"
+    ],
+    "website": "http://www.waytogodradio.co.ug/",
     "isFeatured": true
   },
   {
