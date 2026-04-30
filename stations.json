@@ -42,6 +42,20 @@
     "isFeatured": true
   },
   {
+    "id": "btv",
+    "name": "BTV",
+    "type": "tv",
+    "streamUrl": "https://streamfi-alphadgtl1.zettawiseroutes.com:8181/hls/stream.m3u8",
+    "description": "entertainment",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "entertainment"
+    ],
+    "website": "https://imc.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "bukedde-tv-1",
     "name": "Bukedde TV 1",
     "type": "tv",
@@ -1544,6 +1558,20 @@
     "isFeatured": true
   },
   {
+    "id": "radio-joy-hits-ug",
+    "name": "JOY HITS",
+    "type": "radio",
+    "streamUrl": "http://joyhits.online/joyhitshq.mp3",
+    "description": "variety",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "variety"
+    ],
+    "website": "https://joyhits.online/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-jubilee-radio-fort-portal-105-6-fm-mp3-ug",
     "name": "Jubilee Radio - Fort Portal - 105.6 FM (MP3)",
     "type": "radio",
@@ -1633,23 +1661,6 @@
       "urban gospel"
     ],
     "website": "https://econews.digital/home/myradio/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-nakawa-online-radio-kampala-mp3-ug",
-    "name": "Nakawa Online Radio - Kampala (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/6hs5suuvqfhvv",
-    "logo": "https://i.ibb.co/4Knx6nq/image-1.webp",
-    "description": "christian, gospel, talk",
-    "language": "english,luganda,swahili",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "talk"
-    ],
-    "website": "https://www.radio.nakawapentecostal.org/",
     "isFeatured": true
   },
   {
@@ -2376,23 +2387,6 @@
       "rock"
     ],
     "website": "https://theafricanvoiceradio.com/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-voice-of-heaven-kampala-mp3-ug",
-    "name": "Voice Of Heaven - Kampala (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/s961sfesdmntv",
-    "logo": "https://i.ibb.co/Kz9VR9n/119909.jpg",
-    "description": "christian, gospel, religious",
-    "language": "english,luganda,swahili",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious"
-    ],
-    "website": "https://www.voiceofheaven.co.ug/",
     "isFeatured": true
   },
   {
