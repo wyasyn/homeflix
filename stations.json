@@ -1645,6 +1645,42 @@
     "isFeatured": true
   },
   {
+    "id": "radio-my-radio-ug",
+    "name": "My Radio",
+    "type": "radio",
+    "streamUrl": "http://myradioug.duckdns.org:8000/radio.mp3",
+    "logo": "https://econews.digital/wp-content/uploads/2025/11/cropped-WhatsApp-Image-2025-11-14-at-15.21.28_a76b6284.jpg",
+    "description": "christian-gospel, gospel, gospel pop, smoothest songs, urban gospel",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian-gospel",
+      "gospel",
+      "gospel pop",
+      "smoothest songs",
+      "urban gospel"
+    ],
+    "website": "https://econews.digital/home/myradio/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-nakawa-online-radio-kampala-mp3-ug",
+    "name": "Nakawa Online Radio - Kampala (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/6hs5suuvqfhvv",
+    "logo": "https://i.ibb.co/4Knx6nq/image-1.webp",
+    "description": "christian, gospel, talk",
+    "language": "english,luganda,swahili",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "talk"
+    ],
+    "website": "https://www.radio.nakawapentecostal.org/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-namaste-radio-ug",
     "name": "Namaste Radio",
     "type": "radio",
@@ -2027,23 +2063,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-shalom-radio-jinja-mp3-ug",
-    "name": "Shalom Radio Jinja (MP3)",
-    "type": "radio",
-    "streamUrl": "http://stream.zeno.fm/rvnov6bmdhsvv",
-    "description": "christian, gospel, religious, talk",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious",
-      "talk"
-    ],
-    "website": "https://shalomradio.co.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-sky-news-ug",
     "name": "Sky News",
     "type": "radio",
@@ -2385,6 +2404,23 @@
       "rock"
     ],
     "website": "https://theafricanvoiceradio.com/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-voice-of-heaven-kampala-mp3-ug",
+    "name": "Voice Of Heaven - Kampala (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/s961sfesdmntv",
+    "logo": "https://i.ibb.co/Kz9VR9n/119909.jpg",
+    "description": "christian, gospel, religious",
+    "language": "english,luganda,swahili",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious"
+    ],
+    "website": "https://www.voiceofheaven.co.ug/",
     "isFeatured": true
   },
   {
