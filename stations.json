@@ -1619,6 +1619,23 @@
     "isFeatured": true
   },
   {
+    "id": "radio-nakawa-online-radio-kampala-mp3-ug",
+    "name": "Nakawa Online Radio - Kampala (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/6hs5suuvqfhvv",
+    "logo": "https://i.ibb.co/4Knx6nq/image-1.webp",
+    "description": "christian, gospel, talk",
+    "language": "english,luganda,swahili",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "talk"
+    ],
+    "website": "https://www.radio.nakawapentecostal.org/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-namaste-radio-ug",
     "name": "Namaste Radio",
     "type": "radio",
@@ -3030,22 +3047,6 @@
       "left-field dance"
     ],
     "website": "https://www.themusicmachine.co.uk/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-181-fm-highway-181-us",
-    "name": "181.FM - Highway 181",
-    "type": "radio",
-    "streamUrl": "http://listen.181fm.com/181-highway_128k.mp3",
-    "logo": "http://www.181.fm/favicon.ico",
-    "description": "classic country, waynesboro",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "classic country",
-      "waynesboro"
-    ],
-    "website": "http://www.181.fm/",
     "isFeatured": false
   },
   {
