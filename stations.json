@@ -28,20 +28,6 @@
     "isFeatured": true
   },
   {
-    "id": "btv",
-    "name": "BTV",
-    "type": "tv",
-    "streamUrl": "https://streamfi-alphadgtl1.zettawiseroutes.com:8181/hls/stream.m3u8",
-    "description": "entertainment",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "entertainment"
-    ],
-    "website": "https://imc.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "bukedde-tv-1",
     "name": "Bukedde TV 1",
     "type": "tv",
@@ -70,20 +56,6 @@
     "isFeatured": true
   },
   {
-    "id": "dream-tv",
-    "name": "Dream TV",
-    "type": "tv",
-    "streamUrl": "https://streamfi-dreamtv1.zettawiseroutes.com:8181/hls/stream.m3u8",
-    "description": "religious",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "religious"
-    ],
-    "website": "http://www.imc.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "fort-tv",
     "name": "FORT TV",
     "type": "tv",
@@ -95,20 +67,6 @@
       "entertainment"
     ],
     "website": "https://fort-tv.com/",
-    "isFeatured": true
-  },
-  {
-    "id": "praise-jesus-tower-tv",
-    "name": "Praise Jesus Tower TV",
-    "type": "tv",
-    "streamUrl": "https://vsrv1.az-streamingserver.com:3555/live/dyjoqlgklive.m3u8",
-    "description": "religious",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "religious"
-    ],
-    "website": "https://praisejesustower.org/",
     "isFeatured": true
   },
   {
@@ -1025,6 +983,23 @@
     "isFeatured": true
   },
   {
+    "id": "radio-christ-radio-lira-mp3-ug",
+    "name": "Christ Radio - Lira (MP3)",
+    "type": "radio",
+    "streamUrl": "http://stream.zeno.fm/zupkzgrj4dauv",
+    "logo": "https://images.zeno.fm/e7wHxzwNw5tapurdmFopRIkL4ygwXvGg38HUqOX8x4g/rs:fit:240:240/g:ce:0:0/aHR0cHM6Ly9zdHJlYW0tdG9vbHMuemVub21lZGlhLmNvbS9jb250ZW50L3N0YXRpb25zLzdiOWQ2ZWQ3LWY1Y2YtNGE3YS04MThkLWU3YWQ3ODY5YzExMy9pbWFnZS8_dXBkYXRlZD0xNjc5OTgyNTY5MDAw.webp",
+    "description": "christian, gospel, religious",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious"
+    ],
+    "website": "http://www.christradio.co.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-christian-fm-ug",
     "name": "Christian fm",
     "type": "radio",
@@ -1872,19 +1847,6 @@
       "christian",
       "english"
     ],
-    "website": "https://www.radiopacis.org/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-radio-pacis-94-5-ug",
-    "name": "Radio Pacis 94.5",
-    "type": "radio",
-    "streamUrl": "http://136.243.44.41:8182/stream",
-    "logo": "https://www.radiopacis.org/wp-content/uploads/2025/11/logo_ris.jpg",
-    "description": "Radio station",
-    "language": "English",
-    "country": "UG",
-    "categories": [],
     "website": "https://www.radiopacis.org/",
     "isFeatured": true
   },
