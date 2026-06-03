@@ -56,20 +56,6 @@
     "isFeatured": true
   },
   {
-    "id": "fort-tv",
-    "name": "FORT TV",
-    "type": "tv",
-    "streamUrl": "https://fort.co-works.org/memfs/87017643-274a-4bc0-a786-7767a0d159c2.m3u8",
-    "description": "entertainment",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "entertainment"
-    ],
-    "website": "https://fort-tv.com/",
-    "isFeatured": true
-  },
-  {
     "id": "praise-jesus-tower-tv",
     "name": "Praise Jesus Tower TV",
     "type": "tv",
@@ -209,6 +195,23 @@
     "isFeatured": true
   },
   {
+    "id": "radio-104-1-favour-fm-gulu-104-1-fm-ug",
+    "name": "104.1 Favour FM - Gulu - 104.1 FM",
+    "type": "radio",
+    "streamUrl": "http://us5new.listen2myradio.com:2199/listen.php?port=8138&type=ice&mount=stream",
+    "logo": "https://i.ibb.co/P6b03Fx/image.webp",
+    "description": "christian, gospel, religious",
+    "language": "english,luganda,swahili",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious"
+    ],
+    "website": "https://www.favourfm.org/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-95-1-kiss-fm-jakarta-ug",
     "name": "95.1 Kiss FM Jakarta",
     "type": "radio",
@@ -281,6 +284,20 @@
     "isFeatured": true
   },
   {
+    "id": "radio-christian-fm-ug",
+    "name": "Christian fm",
+    "type": "radio",
+    "streamUrl": "http://stream.dar.fm/27203",
+    "description": "christian",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian"
+    ],
+    "website": "https://www.christianhits.net/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-ejazz-xtra-ug",
     "name": "EJAZZ Xtra",
     "type": "radio",
@@ -333,25 +350,6 @@
       "variety"
     ],
     "website": "https://joyhits.online/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-my-radio-ug",
-    "name": "My Radio",
-    "type": "radio",
-    "streamUrl": "http://myradioug.duckdns.org:8000/radio.mp3",
-    "logo": "https://econews.digital/wp-content/uploads/2025/11/cropped-WhatsApp-Image-2025-11-14-at-15.21.28_a76b6284.jpg",
-    "description": "christian-gospel, gospel, gospel pop, smoothest songs, urban gospel",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian-gospel",
-      "gospel",
-      "gospel pop",
-      "smoothest songs",
-      "urban gospel"
-    ],
-    "website": "https://econews.digital/home/myradio/",
     "isFeatured": true
   },
   {
@@ -538,26 +536,6 @@
       "sixties"
     ],
     "website": "https://somafm.com/secretagent/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-npr-24-hour-program-stream-us",
-    "name": "NPR 24 Hour Program Stream",
-    "type": "radio",
-    "streamUrl": "http://npr-ice.streamguys1.com/live.mp3",
-    "logo": "https://static-assets.npr.org/static/images/favicon/favicon-96x96.png",
-    "description": "news, news talk, political talk, politics, public radio, talk",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "news",
-      "news talk",
-      "political talk",
-      "politics",
-      "public radio",
-      "talk"
-    ],
-    "website": "https://www.npr.org/2016/04/05/472557877/npr-program-stream",
     "isFeatured": false
   },
   {
