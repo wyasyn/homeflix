@@ -1,19 +1,5 @@
 [
   {
-    "id": "ark-tv",
-    "name": "Ark TV",
-    "type": "tv",
-    "streamUrl": "https://stream.hydeinnovations.com/arktv-international/index.fmp4.m3u8",
-    "description": "religious",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "religious"
-    ],
-    "website": "https://www.holycityentebbe.org/",
-    "isFeatured": true
-  },
-  {
     "id": "btv",
     "name": "BTV",
     "type": "tv",
@@ -25,20 +11,6 @@
       "entertainment"
     ],
     "website": "https://imc.ug/",
-    "isFeatured": true
-  },
-  {
-    "id": "bukedde-tv-1",
-    "name": "Bukedde TV 1",
-    "type": "tv",
-    "streamUrl": "https://stream.hydeinnovations.com/bukedde1flussonic/index.m3u8",
-    "description": "general",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "general"
-    ],
-    "website": "https://www.bukedde.co.ug/",
     "isFeatured": true
   },
   {
@@ -81,34 +53,6 @@
       "religious"
     ],
     "website": "https://praisejesustower.org/",
-    "isFeatured": true
-  },
-  {
-    "id": "tv-west",
-    "name": "TV West",
-    "type": "tv",
-    "streamUrl": "https://stream.hydeinnovations.com/tvwest-flussonic/index.m3u8",
-    "description": "general",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "general"
-    ],
-    "website": "https://tvwest.co.ug/",
-    "isFeatured": true
-  },
-  {
-    "id": "wan-luo-tv",
-    "name": "Wan Luo TV",
-    "type": "tv",
-    "streamUrl": "https://stream.hydeinnovations.com/luotv-flussonic/index.m3u8",
-    "description": "general",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "general"
-    ],
-    "website": "https://www.newvision.co.ug/tv/11",
     "isFeatured": true
   },
   {
