@@ -126,20 +126,6 @@
     "isFeatured": true
   },
   {
-    "id": "al-jazeera-english",
-    "name": "Al Jazeera English",
-    "type": "tv",
-    "streamUrl": "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8",
-    "description": "International news from Al Jazeera",
-    "language": "English",
-    "country": "QA",
-    "categories": [
-      "news"
-    ],
-    "website": "https://www.aljazeera.com",
-    "isFeatured": true
-  },
-  {
     "id": "france-24-english",
     "name": "France 24 English",
     "type": "tv",
@@ -223,6 +209,23 @@
     "isFeatured": true
   },
   {
+    "id": "radio-104-1-favour-fm-gulu-104-1-fm-ug",
+    "name": "104.1 Favour FM - Gulu - 104.1 FM",
+    "type": "radio",
+    "streamUrl": "http://us5new.listen2myradio.com:2199/listen.php?port=8138&type=ice&mount=stream",
+    "logo": "https://i.ibb.co/P6b03Fx/image.webp",
+    "description": "christian, gospel, religious",
+    "language": "english,luganda,swahili",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious"
+    ],
+    "website": "https://www.favourfm.org/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-95-1-kiss-fm-jakarta-ug",
     "name": "95.1 Kiss FM Jakarta",
     "type": "radio",
@@ -281,20 +284,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-cgtn-radio-ug",
-    "name": "CGTN Radio",
-    "type": "radio",
-    "streamUrl": "http://sk.cri.cn/am846.m3u8",
-    "description": "news",
-    "language": "english uk",
-    "country": "UG",
-    "categories": [
-      "news"
-    ],
-    "website": "http://chinaplus.cri.cn/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-christian-fm-ug",
     "name": "Christian fm",
     "type": "radio",
@@ -347,6 +336,20 @@
       "rock"
     ],
     "website": "https://www.islandsfm.org/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-joy-hits-ug",
+    "name": "JOY HITS",
+    "type": "radio",
+    "streamUrl": "http://joyhits.online/joyhitshq.mp3",
+    "description": "variety",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "variety"
+    ],
+    "website": "https://joyhits.online/",
     "isFeatured": true
   },
   {
@@ -565,6 +568,26 @@
       "sixties"
     ],
     "website": "https://somafm.com/secretagent/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-npr-24-hour-program-stream-us",
+    "name": "NPR 24 Hour Program Stream",
+    "type": "radio",
+    "streamUrl": "http://npr-ice.streamguys1.com/live.mp3",
+    "logo": "https://static-assets.npr.org/static/images/favicon/favicon-96x96.png",
+    "description": "news, news talk, political talk, politics, public radio, talk",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "news",
+      "news talk",
+      "political talk",
+      "politics",
+      "public radio",
+      "talk"
+    ],
+    "website": "https://www.npr.org/2016/04/05/472557877/npr-program-stream",
     "isFeatured": false
   },
   {
