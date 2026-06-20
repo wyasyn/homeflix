@@ -84,20 +84,6 @@
     "isFeatured": true
   },
   {
-    "id": "praise-jesus-tower-tv",
-    "name": "Praise Jesus Tower TV",
-    "type": "tv",
-    "streamUrl": "https://vsrv1.az-streamingserver.com:3555/live/dyjoqlgklive.m3u8",
-    "description": "religious",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "religious"
-    ],
-    "website": "https://praisejesustower.org/",
-    "isFeatured": true
-  },
-  {
     "id": "tv-west",
     "name": "TV West",
     "type": "tv",
@@ -220,6 +206,23 @@
     "country": "UG",
     "categories": [],
     "website": "https://mp3islam.com/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-104-1-favour-fm-gulu-104-1-fm-ug",
+    "name": "104.1 Favour FM - Gulu - 104.1 FM",
+    "type": "radio",
+    "streamUrl": "http://us5new.listen2myradio.com:2199/listen.php?port=8138&type=ice&mount=stream",
+    "logo": "https://i.ibb.co/P6b03Fx/image.webp",
+    "description": "christian, gospel, religious",
+    "language": "english,luganda,swahili",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious"
+    ],
+    "website": "https://www.favourfm.org/",
     "isFeatured": true
   },
   {
@@ -347,6 +350,20 @@
       "rock"
     ],
     "website": "https://www.islandsfm.org/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-joy-hits-ug",
+    "name": "JOY HITS",
+    "type": "radio",
+    "streamUrl": "http://joyhits.online/joyhitshq.mp3",
+    "description": "variety",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "variety"
+    ],
+    "website": "https://joyhits.online/",
     "isFeatured": true
   },
   {
