@@ -1,5 +1,19 @@
 [
   {
+    "id": "alpha-digital",
+    "name": "Alpha Digital",
+    "type": "tv",
+    "streamUrl": "https://streamfi-alphatvdgtl1.zettawiseroutes.com:8181/hls/stream.m3u8",
+    "description": "religious",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "religious"
+    ],
+    "website": "http://imc.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "ark-tv",
     "name": "Ark TV",
     "type": "tv",
@@ -67,6 +81,20 @@
       "religious"
     ],
     "website": "http://www.imc.ug/",
+    "isFeatured": true
+  },
+  {
+    "id": "fort-tv",
+    "name": "FORT TV",
+    "type": "tv",
+    "streamUrl": "https://fort.co-works.org/memfs/87017643-274a-4bc0-a786-7767a0d159c2.m3u8",
+    "description": "entertainment",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "entertainment"
+    ],
+    "website": "https://fort-tv.com/",
     "isFeatured": true
   },
   {
@@ -339,20 +367,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-islands-fm-ug",
-    "name": "ISLANDS FM",
-    "type": "radio",
-    "streamUrl": "http://radio.canstream.co.uk:8040/live.mp3",
-    "description": "rock",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "rock"
-    ],
-    "website": "https://www.islandsfm.org/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-joy-hits-ug",
     "name": "JOY HITS",
     "type": "radio",
@@ -582,6 +596,26 @@
       "sixties"
     ],
     "website": "https://somafm.com/secretagent/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-npr-24-hour-program-stream-us",
+    "name": "NPR 24 Hour Program Stream",
+    "type": "radio",
+    "streamUrl": "http://npr-ice.streamguys1.com/live.mp3",
+    "logo": "https://static-assets.npr.org/static/images/favicon/favicon-96x96.png",
+    "description": "news, news talk, political talk, politics, public radio, talk",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "news",
+      "news talk",
+      "political talk",
+      "politics",
+      "public radio",
+      "talk"
+    ],
+    "website": "https://www.npr.org/2016/04/05/472557877/npr-program-stream",
     "isFeatured": false
   },
   {
