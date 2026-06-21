@@ -98,20 +98,6 @@
     "isFeatured": true
   },
   {
-    "id": "praise-jesus-tower-tv",
-    "name": "Praise Jesus Tower TV",
-    "type": "tv",
-    "streamUrl": "https://vsrv1.az-streamingserver.com:3555/live/dyjoqlgklive.m3u8",
-    "description": "religious",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "religious"
-    ],
-    "website": "https://praisejesustower.org/",
-    "isFeatured": true
-  },
-  {
     "id": "tv-west",
     "name": "TV West",
     "type": "tv",
@@ -364,6 +350,20 @@
       "christian-gospel"
     ],
     "website": "http://www.gospelradioeastafrica.org/index.html",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-islands-fm-ug",
+    "name": "ISLANDS FM",
+    "type": "radio",
+    "streamUrl": "http://radio.canstream.co.uk:8040/live.mp3",
+    "description": "rock",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "rock"
+    ],
+    "website": "https://www.islandsfm.org/",
     "isFeatured": true
   },
   {
