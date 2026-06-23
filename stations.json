@@ -378,25 +378,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-my-radio-ug",
-    "name": "My Radio",
-    "type": "radio",
-    "streamUrl": "http://myradioug.duckdns.org:8000/radio.mp3",
-    "logo": "https://econews.digital/wp-content/uploads/2025/11/cropped-WhatsApp-Image-2025-11-14-at-15.21.28_a76b6284.jpg",
-    "description": "christian-gospel, gospel, gospel pop, smoothest songs, urban gospel",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian-gospel",
-      "gospel",
-      "gospel pop",
-      "smoothest songs",
-      "urban gospel"
-    ],
-    "website": "https://econews.digital/home/myradio/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-sbn-ug",
     "name": "SBN",
     "type": "radio",
@@ -510,6 +491,20 @@
     "isFeatured": false
   },
   {
+    "id": "radio-977-country-us",
+    "name": ".977 Country",
+    "type": "radio",
+    "streamUrl": "http://26343.live.streamtheworld.com/977_COUNTRY_SC",
+    "description": "country",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "country"
+    ],
+    "website": "http://www.977music.com/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-977-hitz-us",
     "name": ".977 Hitz",
     "type": "radio",
@@ -520,20 +515,6 @@
     "categories": [
       "hits",
       "top 40"
-    ],
-    "website": "http://www.977music.com/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-977-country-us",
-    "name": ".977 Country",
-    "type": "radio",
-    "streamUrl": "http://26343.live.streamtheworld.com/977_COUNTRY_SC",
-    "description": "country",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "country"
     ],
     "website": "http://www.977music.com/",
     "isFeatured": false
@@ -593,26 +574,6 @@
       "sixties"
     ],
     "website": "https://somafm.com/secretagent/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-npr-24-hour-program-stream-us",
-    "name": "NPR 24 Hour Program Stream",
-    "type": "radio",
-    "streamUrl": "http://npr-ice.streamguys1.com/live.mp3",
-    "logo": "https://static-assets.npr.org/static/images/favicon/favicon-96x96.png",
-    "description": "news, news talk, political talk, politics, public radio, talk",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "news",
-      "news talk",
-      "political talk",
-      "politics",
-      "public radio",
-      "talk"
-    ],
-    "website": "https://www.npr.org/2016/04/05/472557877/npr-program-stream",
     "isFeatured": false
   },
   {
