@@ -483,20 +483,6 @@
     "isFeatured": false
   },
   {
-    "id": "radio-977-country-us",
-    "name": ".977 Country",
-    "type": "radio",
-    "streamUrl": "http://26343.live.streamtheworld.com/977_COUNTRY_SC",
-    "description": "country",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "country"
-    ],
-    "website": "http://www.977music.com/",
-    "isFeatured": false
-  },
-  {
     "id": "radio-977-hitz-us",
     "name": ".977 Hitz",
     "type": "radio",
@@ -507,6 +493,20 @@
     "categories": [
       "hits",
       "top 40"
+    ],
+    "website": "http://www.977music.com/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-977-country-us",
+    "name": ".977 Country",
+    "type": "radio",
+    "streamUrl": "http://26343.live.streamtheworld.com/977_COUNTRY_SC",
+    "description": "country",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "country"
     ],
     "website": "http://www.977music.com/",
     "isFeatured": false
