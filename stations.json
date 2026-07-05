@@ -456,19 +456,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-victors-radio-ug",
-    "name": "VICTORS RADIO",
-    "type": "radio",
-    "streamUrl": "https://a13.asurahosting.com/listen/victors_radio_/radio.mp3",
-    "logo": "https://www.radio.net/300/victorsradio.png?version=d9521b26aaddfd7e5e35d063c680d69a84802b1b",
-    "description": "Radio station",
-    "language": "English",
-    "country": "UG",
-    "categories": [],
-    "website": "https://www.victorsradio.com/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-977-80s-us",
     "name": ".977 80s",
     "type": "radio",
