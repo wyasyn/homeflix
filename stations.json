@@ -98,6 +98,20 @@
     "isFeatured": true
   },
   {
+    "id": "praise-jesus-tower-tv",
+    "name": "Praise Jesus Tower TV",
+    "type": "tv",
+    "streamUrl": "https://vsrv1.az-streamingserver.com:3555/live/dyjoqlgklive.m3u8",
+    "description": "religious",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "religious"
+    ],
+    "website": "https://praisejesustower.org/",
+    "isFeatured": true
+  },
+  {
     "id": "tayari-west-tv",
     "name": "Tayari West TV",
     "type": "tv",
@@ -390,20 +404,6 @@
       "rock"
     ],
     "website": "https://www.islandsfm.org/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-joy-hits-ug",
-    "name": "JOY HITS",
-    "type": "radio",
-    "streamUrl": "http://joyhits.online/joyhitshq.mp3",
-    "description": "variety",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "variety"
-    ],
-    "website": "https://joyhits.online/",
     "isFeatured": true
   },
   {
