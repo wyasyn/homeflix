@@ -1,5 +1,19 @@
 [
   {
+    "id": "alpha-digital",
+    "name": "Alpha Digital",
+    "type": "tv",
+    "streamUrl": "https://streamfi-alphatvdgtl1.zettawiseroutes.com:8181/hls/stream.m3u8",
+    "description": "religious",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "religious"
+    ],
+    "website": "http://imc.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "ark-tv",
     "name": "Ark TV",
     "type": "tv",
@@ -586,6 +600,26 @@
     "isFeatured": false
   },
   {
+    "id": "radio-somafm-secret-agent-128k-mp3-us",
+    "name": "SomaFM Secret Agent (128k MP3)",
+    "type": "radio",
+    "streamUrl": "https://ice6.somafm.com/secretagent-128-mp3",
+    "logo": "https://somafm.com/img3/secretagent-400.jpg",
+    "description": "ambient, downtempo, jazz, lounge, samba, sixties",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "ambient",
+      "downtempo",
+      "jazz",
+      "lounge",
+      "samba",
+      "sixties"
+    ],
+    "website": "https://somafm.com/secretagent/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-npr-24-hour-program-stream-us",
     "name": "NPR 24 Hour Program Stream",
     "type": "radio",
@@ -603,6 +637,23 @@
       "talk"
     ],
     "website": "https://www.npr.org/2016/04/05/472557877/npr-program-stream",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-somafm-underground-80s-128k-mp3-us",
+    "name": "SomaFM Underground 80s (128k MP3)",
+    "type": "radio",
+    "streamUrl": "https://ice6.somafm.com/u80s-128-mp3",
+    "logo": "https://somafm.com/img3/u80s-400.png",
+    "description": "80s, new wave, uk synthpop",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "80s",
+      "new wave",
+      "uk synthpop"
+    ],
+    "website": "https://somafm.com/u80s/",
     "isFeatured": false
   },
   {
@@ -652,6 +703,23 @@
       "smooth jazz"
     ],
     "website": "http://www.977music.com/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-somafm-indie-pop-rocks-128k-aac-us",
+    "name": "SomaFM Indie Pop Rocks! (128k AAC)",
+    "type": "radio",
+    "streamUrl": "https://ice6.somafm.com/indiepop-128-aac",
+    "logo": "https://somafm.com/img3/indiepop-400.jpg",
+    "description": "indie, indie pop, indie rock",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "indie",
+      "indie pop",
+      "indie rock"
+    ],
+    "website": "https://somafm.com/indiepop/",
     "isFeatured": false
   },
   {
