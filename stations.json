@@ -28,20 +28,6 @@
     "isFeatured": true
   },
   {
-    "id": "btv",
-    "name": "BTV",
-    "type": "tv",
-    "streamUrl": "https://streamfi-alphadgtl1.zettawiseroutes.com:8181/hls/stream.m3u8",
-    "description": "entertainment",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "entertainment"
-    ],
-    "website": "https://imc.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "bukedde-tv-1",
     "name": "Bukedde TV 1",
     "type": "tv",
@@ -67,20 +53,6 @@
       "general"
     ],
     "website": "https://www.bukedde.co.ug/",
-    "isFeatured": true
-  },
-  {
-    "id": "dream-tv",
-    "name": "Dream TV",
-    "type": "tv",
-    "streamUrl": "https://streamfi-dreamtv1.zettawiseroutes.com:8181/hls/stream.m3u8",
-    "description": "religious",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "religious"
-    ],
-    "website": "http://www.imc.ug/",
     "isFeatured": true
   },
   {
@@ -421,6 +393,20 @@
     "isFeatured": true
   },
   {
+    "id": "radio-joy-hits-ug",
+    "name": "JOY HITS",
+    "type": "radio",
+    "streamUrl": "http://joyhits.online/joyhitshq.mp3",
+    "description": "variety",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "variety"
+    ],
+    "website": "https://joyhits.online/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-sbn-ug",
     "name": "SBN",
     "type": "radio",
@@ -600,40 +586,23 @@
     "isFeatured": false
   },
   {
-    "id": "radio-somafm-secret-agent-128k-mp3-us",
-    "name": "SomaFM Secret Agent (128k MP3)",
+    "id": "radio-npr-24-hour-program-stream-us",
+    "name": "NPR 24 Hour Program Stream",
     "type": "radio",
-    "streamUrl": "https://ice6.somafm.com/secretagent-128-mp3",
-    "logo": "https://somafm.com/img3/secretagent-400.jpg",
-    "description": "ambient, downtempo, jazz, lounge, samba, sixties",
+    "streamUrl": "http://npr-ice.streamguys1.com/live.mp3",
+    "logo": "https://static-assets.npr.org/static/images/favicon/favicon-96x96.png",
+    "description": "news, news talk, political talk, politics, public radio, talk",
     "language": "english",
     "country": "US",
     "categories": [
-      "ambient",
-      "downtempo",
-      "jazz",
-      "lounge",
-      "samba",
-      "sixties"
+      "news",
+      "news talk",
+      "political talk",
+      "politics",
+      "public radio",
+      "talk"
     ],
-    "website": "https://somafm.com/secretagent/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-somafm-underground-80s-128k-mp3-us",
-    "name": "SomaFM Underground 80s (128k MP3)",
-    "type": "radio",
-    "streamUrl": "https://ice6.somafm.com/u80s-128-mp3",
-    "logo": "https://somafm.com/img3/u80s-400.png",
-    "description": "80s, new wave, uk synthpop",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "80s",
-      "new wave",
-      "uk synthpop"
-    ],
-    "website": "https://somafm.com/u80s/",
+    "website": "https://www.npr.org/2016/04/05/472557877/npr-program-stream",
     "isFeatured": false
   },
   {
@@ -683,23 +652,6 @@
       "smooth jazz"
     ],
     "website": "http://www.977music.com/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-somafm-indie-pop-rocks-128k-aac-us",
-    "name": "SomaFM Indie Pop Rocks! (128k AAC)",
-    "type": "radio",
-    "streamUrl": "https://ice6.somafm.com/indiepop-128-aac",
-    "logo": "https://somafm.com/img3/indiepop-400.jpg",
-    "description": "indie, indie pop, indie rock",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "indie",
-      "indie pop",
-      "indie rock"
-    ],
-    "website": "https://somafm.com/indiepop/",
     "isFeatured": false
   },
   {
