@@ -1,19 +1,5 @@
 [
   {
-    "id": "alpha-digital",
-    "name": "Alpha Digital",
-    "type": "tv",
-    "streamUrl": "https://streamfi-alphatvdgtl1.zettawiseroutes.com:8181/hls/stream.m3u8",
-    "description": "religious",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "religious"
-    ],
-    "website": "http://imc.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "ark-tv",
     "name": "Ark TV",
     "type": "tv",
@@ -25,20 +11,6 @@
       "religious"
     ],
     "website": "https://www.holycityentebbe.org/",
-    "isFeatured": true
-  },
-  {
-    "id": "bbs-tv",
-    "name": "BBS TV",
-    "type": "tv",
-    "streamUrl": "https://bbstv.ug/hls/ch01/index.m3u8",
-    "description": "general",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "general"
-    ],
-    "website": "https://www.bbstv.ug/",
     "isFeatured": true
   },
   {
