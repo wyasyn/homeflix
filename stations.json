@@ -14,6 +14,20 @@
     "isFeatured": true
   },
   {
+    "id": "bbs-tv",
+    "name": "BBS TV",
+    "type": "tv",
+    "streamUrl": "https://bbstv.ug/hls/ch01/index.m3u8",
+    "description": "general",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "general"
+    ],
+    "website": "https://www.bbstv.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "bukedde-tv-1",
     "name": "Bukedde TV 1",
     "type": "tv",
@@ -622,26 +636,6 @@
       "sixties"
     ],
     "website": "https://somafm.com/secretagent/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-npr-24-hour-program-stream-us",
-    "name": "NPR 24 Hour Program Stream",
-    "type": "radio",
-    "streamUrl": "http://npr-ice.streamguys1.com/live.mp3",
-    "logo": "https://static-assets.npr.org/static/images/favicon/favicon-96x96.png",
-    "description": "news, news talk, political talk, politics, public radio, talk",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "news",
-      "news talk",
-      "political talk",
-      "politics",
-      "public radio",
-      "talk"
-    ],
-    "website": "https://www.npr.org/2016/04/05/472557877/npr-program-stream",
     "isFeatured": false
   },
   {
