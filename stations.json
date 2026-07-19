@@ -28,6 +28,48 @@
     "isFeatured": true
   },
   {
+    "id": "btv",
+    "name": "BTV",
+    "type": "tv",
+    "streamUrl": "https://streamfi-alphadgtl1.zettawiseroutes.com:8181/hls/stream.m3u8",
+    "description": "entertainment",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "entertainment"
+    ],
+    "website": "https://imc.ug/",
+    "isFeatured": true
+  },
+  {
+    "id": "bukedde-tv-1",
+    "name": "Bukedde TV 1",
+    "type": "tv",
+    "streamUrl": "https://stream.hydeinnovations.com/bukedde1flussonic/index.m3u8",
+    "description": "general",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "general"
+    ],
+    "website": "https://www.bukedde.co.ug/",
+    "isFeatured": true
+  },
+  {
+    "id": "bukedde-tv-2",
+    "name": "Bukedde TV 2",
+    "type": "tv",
+    "streamUrl": "https://stream.hydeinnovations.com/bukedde2flussonic/index.m3u8",
+    "description": "general",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "general"
+    ],
+    "website": "https://www.bukedde.co.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "dream-tv",
     "name": "Dream TV",
     "type": "tv",
@@ -84,6 +126,20 @@
     "isFeatured": true
   },
   {
+    "id": "praise-jesus-tower-tv",
+    "name": "Praise Jesus Tower TV",
+    "type": "tv",
+    "streamUrl": "https://vsrv1.az-streamingserver.com:3555/live/dyjoqlgklive.m3u8",
+    "description": "religious",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "religious"
+    ],
+    "website": "https://praisejesustower.org/",
+    "isFeatured": true
+  },
+  {
     "id": "tayari-west-tv",
     "name": "Tayari West TV",
     "type": "tv",
@@ -94,6 +150,34 @@
     "categories": [
       "general"
     ],
+    "isFeatured": true
+  },
+  {
+    "id": "tv-west",
+    "name": "TV West",
+    "type": "tv",
+    "streamUrl": "https://stream.hydeinnovations.com/tvwest-flussonic/index.m3u8",
+    "description": "general",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "general"
+    ],
+    "website": "https://tvwest.co.ug/",
+    "isFeatured": true
+  },
+  {
+    "id": "wan-luo-tv",
+    "name": "Wan Luo TV",
+    "type": "tv",
+    "streamUrl": "https://stream.hydeinnovations.com/luotv-flussonic/index.m3u8",
+    "description": "general",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "general"
+    ],
+    "website": "https://www.newvision.co.ug/tv/11",
     "isFeatured": true
   },
   {
@@ -293,20 +377,6 @@
       "news"
     ],
     "website": "http://chinaplus.cri.cn/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-christian-fm-ug",
-    "name": "Christian fm",
-    "type": "radio",
-    "streamUrl": "http://stream.dar.fm/27203",
-    "description": "christian",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian"
-    ],
-    "website": "https://www.christianhits.net/",
     "isFeatured": true
   },
   {
