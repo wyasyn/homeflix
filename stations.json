@@ -140,19 +140,6 @@
     "isFeatured": true
   },
   {
-    "id": "tayari-west-tv",
-    "name": "Tayari West TV",
-    "type": "tv",
-    "streamUrl": "https://stream.hydeinnovations.com/tarari-west/index.m3u8",
-    "description": "general",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "general"
-    ],
-    "isFeatured": true
-  },
-  {
     "id": "tv-west",
     "name": "TV West",
     "type": "tv",
@@ -377,6 +364,20 @@
       "news"
     ],
     "website": "http://chinaplus.cri.cn/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-christian-fm-ug",
+    "name": "Christian fm",
+    "type": "radio",
+    "streamUrl": "http://stream.dar.fm/27203",
+    "description": "christian",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian"
+    ],
+    "website": "https://www.christianhits.net/",
     "isFeatured": true
   },
   {
