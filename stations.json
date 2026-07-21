@@ -554,20 +554,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-977-80s-us",
-    "name": ".977 80s",
-    "type": "radio",
-    "streamUrl": "http://17573.live.streamtheworld.com/977_80_SC",
-    "description": "80s",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "80s"
-    ],
-    "website": "http://www.977music.com/",
-    "isFeatured": false
-  },
-  {
     "id": "radio-977-country-us",
     "name": ".977 Country",
     "type": "radio",
@@ -577,21 +563,6 @@
     "country": "US",
     "categories": [
       "country"
-    ],
-    "website": "http://www.977music.com/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-977-hitz-us",
-    "name": ".977 Hitz",
-    "type": "radio",
-    "streamUrl": "http://18863.live.streamtheworld.com/977_HITS_SC",
-    "description": "hits, top 40",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "hits",
-      "top 40"
     ],
     "website": "http://www.977music.com/",
     "isFeatured": false
@@ -651,6 +622,26 @@
       "sixties"
     ],
     "website": "https://somafm.com/secretagent/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-npr-24-hour-program-stream-us",
+    "name": "NPR 24 Hour Program Stream",
+    "type": "radio",
+    "streamUrl": "http://npr-ice.streamguys1.com/live.mp3",
+    "logo": "https://static-assets.npr.org/static/images/favicon/favicon-96x96.png",
+    "description": "news, news talk, political talk, politics, public radio, talk",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "news",
+      "news talk",
+      "political talk",
+      "politics",
+      "public radio",
+      "talk"
+    ],
+    "website": "https://www.npr.org/2016/04/05/472557877/npr-program-stream",
     "isFeatured": false
   },
   {
