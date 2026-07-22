@@ -1,5 +1,19 @@
 [
   {
+    "id": "3abn-tv-uganda",
+    "name": "3ABN TV Uganda",
+    "type": "tv",
+    "streamUrl": "https://3abn.bozztv.com/3abn/3abn_uganda_live/index.m3u8",
+    "description": "religious",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "religious"
+    ],
+    "website": "https://avventomedia.org/",
+    "isFeatured": true
+  },
+  {
     "id": "ark-tv",
     "name": "Ark TV",
     "type": "tv",
@@ -481,6 +495,20 @@
       "current affairs"
     ],
     "website": "https://video.news.sky.com/snr/news/snrnews.mp3",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-sonlife-broadcasting-network-ug",
+    "name": "Sonlife Broadcasting Network",
+    "type": "radio",
+    "streamUrl": "https://storage.sardius.media/archives/Ea867F3e1F56B06/events/site_5F46D0A41C/playlist-eng.m3u8",
+    "description": "religious",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "religious"
+    ],
+    "website": "https://storage.sardius.media/archives/Ea867F3e1F56B06/events/site_5F46D0A41C/playlist-eng.m3u8",
     "isFeatured": true
   },
   {
