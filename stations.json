@@ -1,5 +1,19 @@
 [
   {
+    "id": "3abn-tv-uganda",
+    "name": "3ABN TV Uganda",
+    "type": "tv",
+    "streamUrl": "https://3abn.bozztv.com/3abn/3abn_uganda_live/index.m3u8",
+    "description": "religious",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "religious"
+    ],
+    "website": "https://avventomedia.org/",
+    "isFeatured": true
+  },
+  {
     "id": "ark-tv",
     "name": "Ark TV",
     "type": "tv",
@@ -84,20 +98,6 @@
     "isFeatured": true
   },
   {
-    "id": "fort-tv",
-    "name": "FORT TV",
-    "type": "tv",
-    "streamUrl": "https://fort.co-works.org/memfs/87017643-274a-4bc0-a786-7767a0d159c2.m3u8",
-    "description": "entertainment",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "entertainment"
-    ],
-    "website": "https://fort-tv.com/",
-    "isFeatured": true
-  },
-  {
     "id": "krc-tv",
     "name": "KRC TV",
     "type": "tv",
@@ -137,6 +137,19 @@
       "religious"
     ],
     "website": "https://praisejesustower.org/",
+    "isFeatured": true
+  },
+  {
+    "id": "tayari-west-tv",
+    "name": "Tayari West TV",
+    "type": "tv",
+    "streamUrl": "https://stream.hydeinnovations.com/tarari-west/index.m3u8",
+    "description": "general",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "general"
+    ],
     "isFeatured": true
   },
   {
