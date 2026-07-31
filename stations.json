@@ -1,5 +1,19 @@
 [
   {
+    "id": "3abn-tv-uganda",
+    "name": "3ABN TV Uganda",
+    "type": "tv",
+    "streamUrl": "https://3abn.bozztv.com/3abn/3abn_uganda_live/index.m3u8",
+    "description": "religious",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "religious"
+    ],
+    "website": "https://avventomedia.org/",
+    "isFeatured": true
+  },
+  {
     "id": "alpha-digital",
     "name": "Alpha Digital",
     "type": "tv",
@@ -364,6 +378,20 @@
     "isFeatured": true
   },
   {
+    "id": "radio-christian-fm-ug",
+    "name": "Christian fm",
+    "type": "radio",
+    "streamUrl": "http://stream.dar.fm/27203",
+    "description": "christian",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian"
+    ],
+    "website": "https://www.christianhits.net/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-ejazz-xtra-ug",
     "name": "EJAZZ Xtra",
     "type": "radio",
@@ -402,20 +430,6 @@
       "rock"
     ],
     "website": "https://www.islandsfm.org/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-joy-hits-ug",
-    "name": "JOY HITS",
-    "type": "radio",
-    "streamUrl": "http://joyhits.online/joyhitshq.mp3",
-    "description": "variety",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "variety"
-    ],
-    "website": "https://joyhits.online/",
     "isFeatured": true
   },
   {
