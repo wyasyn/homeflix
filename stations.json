@@ -28,6 +28,20 @@
     "isFeatured": true
   },
   {
+    "id": "ark-tv",
+    "name": "Ark TV",
+    "type": "tv",
+    "streamUrl": "https://stream.hydeinnovations.com/arktv-international/index.fmp4.m3u8",
+    "description": "religious",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "religious"
+    ],
+    "website": "https://www.holycityentebbe.org/",
+    "isFeatured": true
+  },
+  {
     "id": "bbs-tv",
     "name": "BBS TV",
     "type": "tv",
@@ -137,20 +151,6 @@
       "religious"
     ],
     "website": "https://www.kstvuganda.com/home.php",
-    "isFeatured": true
-  },
-  {
-    "id": "praise-jesus-tower-tv",
-    "name": "Praise Jesus Tower TV",
-    "type": "tv",
-    "streamUrl": "https://vsrv1.az-streamingserver.com:3555/live/dyjoqlgklive.m3u8",
-    "description": "religious",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "religious"
-    ],
-    "website": "https://praisejesustower.org/",
     "isFeatured": true
   },
   {
@@ -391,20 +391,6 @@
       "news"
     ],
     "website": "http://chinaplus.cri.cn/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-christian-fm-ug",
-    "name": "Christian fm",
-    "type": "radio",
-    "streamUrl": "http://stream.dar.fm/27203",
-    "description": "christian",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian"
-    ],
-    "website": "https://www.christianhits.net/",
     "isFeatured": true
   },
   {
