@@ -349,36 +349,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-cbn-christian-ug",
-    "name": "CBN Christian",
-    "type": "radio",
-    "streamUrl": "http://cbnradio.streamguys1.com/news-128K?app=cbnplayer",
-    "logo": "https://firebasestorage.googleapis.com/v0/b/radiogalaxy-580f4.appspot.com/o/images%2FIMG_20240205_211217900.jpg?alt=media&token=924374ee-399b-4f6a-b8b3-a71b19eddd6f",
-    "description": "religious",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "religious"
-    ],
-    "website": "http://cbnradio.streamguys1.com/news-128K?app=cbnplayer",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-cbn-christmas-channel-ug",
-    "name": "CBN Christmas Channel",
-    "type": "radio",
-    "streamUrl": "https://streams.cbnradio.com/christmas-128K?%20Title1=CBN%20Christmas",
-    "logo": "http://www1.cbn.com/favicon.ico",
-    "description": "christian",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian"
-    ],
-    "website": "http://www1.cbn.com/radio/christmas",
-    "isFeatured": true
-  },
-  {
     "id": "radio-cbs-news-ug",
     "name": "CBS News",
     "type": "radio",
@@ -595,20 +565,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-977-country-us",
-    "name": ".977 Country",
-    "type": "radio",
-    "streamUrl": "http://26343.live.streamtheworld.com/977_COUNTRY_SC",
-    "description": "country",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "country"
-    ],
-    "website": "http://www.977music.com/",
-    "isFeatured": false
-  },
-  {
     "id": "radio-977-80s-us",
     "name": ".977 80s",
     "type": "radio",
@@ -618,6 +574,20 @@
     "country": "US",
     "categories": [
       "80s"
+    ],
+    "website": "http://www.977music.com/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-977-country-us",
+    "name": ".977 Country",
+    "type": "radio",
+    "streamUrl": "http://26343.live.streamtheworld.com/977_COUNTRY_SC",
+    "description": "country",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "country"
     ],
     "website": "http://www.977music.com/",
     "isFeatured": false
