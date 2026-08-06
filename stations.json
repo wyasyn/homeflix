@@ -819,6 +819,20 @@
     "isFeatured": false
   },
   {
+    "id": "radio-977-oldies-us",
+    "name": ".977 Oldies",
+    "type": "radio",
+    "streamUrl": "http://27273.live.streamtheworld.com/977_OLDIES_SC",
+    "description": "oldies",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "oldies"
+    ],
+    "website": "http://www.977music.com/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-miami-beach-radio-us",
     "name": "Miami Beach Radio",
     "type": "radio",
