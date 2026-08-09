@@ -14,6 +14,20 @@
     "isFeatured": true
   },
   {
+    "id": "alpha-digital",
+    "name": "Alpha Digital",
+    "type": "tv",
+    "streamUrl": "https://streamfi-alphatvdgtl1.zettawiseroutes.com:8181/hls/stream.m3u8",
+    "description": "religious",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "religious"
+    ],
+    "website": "http://imc.ug/",
+    "isFeatured": true
+  },
+  {
     "id": "ark-tv",
     "name": "Ark TV",
     "type": "tv",
@@ -109,6 +123,20 @@
       "religious"
     ],
     "website": "https://www.kstvuganda.com/home.php",
+    "isFeatured": true
+  },
+  {
+    "id": "praise-jesus-tower-tv",
+    "name": "Praise Jesus Tower TV",
+    "type": "tv",
+    "streamUrl": "https://vsrv1.az-streamingserver.com:3555/live/dyjoqlgklive.m3u8",
+    "description": "religious",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "religious"
+    ],
+    "website": "https://praisejesustower.org/",
     "isFeatured": true
   },
   {
