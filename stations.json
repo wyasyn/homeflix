@@ -154,20 +154,6 @@
     "isFeatured": true
   },
   {
-    "id": "rwenzori-tv",
-    "name": "Rwenzori TV",
-    "type": "tv",
-    "streamUrl": "https://stream.rwenzoritv.com:3232/live/rwenzoritvlive.m3u8",
-    "description": "general",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "general"
-    ],
-    "website": "https://rwenzoritv.com/",
-    "isFeatured": true
-  },
-  {
     "id": "tayari-west-tv",
     "name": "Tayari West TV",
     "type": "tv",
@@ -303,23 +289,6 @@
     "country": "UG",
     "categories": [],
     "website": "https://mp3islam.com/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-104-1-favour-fm-gulu-104-1-fm-ug",
-    "name": "104.1 Favour FM - Gulu - 104.1 FM",
-    "type": "radio",
-    "streamUrl": "http://us5new.listen2myradio.com:2199/listen.php?port=8138&type=ice&mount=stream",
-    "logo": "https://i.ibb.co/P6b03Fx/image.webp",
-    "description": "christian, gospel, religious",
-    "language": "english,luganda,swahili",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious"
-    ],
-    "website": "https://www.favourfm.org/",
     "isFeatured": true
   },
   {
@@ -566,21 +535,6 @@
     "country": "UG",
     "categories": [],
     "website": "https://www.streamugradio.com/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-talk-radio-ug",
-    "name": "TALK RADIO",
-    "type": "radio",
-    "streamUrl": "https://playerservices.streamtheworld.com/api/livestream-redirect/TALK_RADIO_EUROPE.mp3",
-    "logo": "https://static.flashscore.com/res/_fs/image/4_favicons/_mobi/touch-icon-180x180.png?v=8",
-    "description": "variety",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "variety"
-    ],
-    "website": "https://www.livescore.cz/",
     "isFeatured": true
   },
   {
