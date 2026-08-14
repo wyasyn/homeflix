@@ -306,6 +306,21 @@
     "isFeatured": true
   },
   {
+    "id": "radio-88-1-centenary-fm-ug",
+    "name": "88.1 Centenary Fm",
+    "type": "radio",
+    "streamUrl": "https://c24.radioboss.fm:18185/stream",
+    "logo": "https://mynoise.net/apple-touch-icon.png",
+    "description": "current affairs",
+    "language": "luganda",
+    "country": "UG",
+    "categories": [
+      "current affairs"
+    ],
+    "website": "https://mynoise.net/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-95-1-kiss-fm-jakarta-ug",
     "name": "95.1 Kiss FM Jakarta",
     "type": "radio",
@@ -349,36 +364,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-cbn-christian-ug",
-    "name": "CBN Christian",
-    "type": "radio",
-    "streamUrl": "http://cbnradio.streamguys1.com/news-128K?app=cbnplayer",
-    "logo": "https://firebasestorage.googleapis.com/v0/b/radiogalaxy-580f4.appspot.com/o/images%2FIMG_20240205_211217900.jpg?alt=media&token=924374ee-399b-4f6a-b8b3-a71b19eddd6f",
-    "description": "religious",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "religious"
-    ],
-    "website": "http://cbnradio.streamguys1.com/news-128K?app=cbnplayer",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-cbn-christmas-channel-ug",
-    "name": "CBN Christmas Channel",
-    "type": "radio",
-    "streamUrl": "https://streams.cbnradio.com/christmas-128K?%20Title1=CBN%20Christmas",
-    "logo": "http://www1.cbn.com/favicon.ico",
-    "description": "christian",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian"
-    ],
-    "website": "http://www1.cbn.com/radio/christmas",
-    "isFeatured": true
-  },
-  {
     "id": "radio-cbs-news-ug",
     "name": "CBS News",
     "type": "radio",
@@ -408,6 +393,20 @@
     "isFeatured": true
   },
   {
+    "id": "radio-christian-fm-ug",
+    "name": "Christian fm",
+    "type": "radio",
+    "streamUrl": "http://stream.dar.fm/27203",
+    "description": "christian",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian"
+    ],
+    "website": "https://www.christianhits.net/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-ejazz-xtra-ug",
     "name": "EJAZZ Xtra",
     "type": "radio",
@@ -418,6 +417,24 @@
     "country": "UG",
     "categories": [],
     "website": "https://extra.ejazzug.com/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-emc-radio-kampala-mp3-ug",
+    "name": "EMC Radio - Kampala (MP3)",
+    "type": "radio",
+    "streamUrl": "http://c22.radioboss.fm:18040/stream",
+    "logo": "https://i.ibb.co/Fwv8RNs/emcradio.jpg",
+    "description": "christian, gospel, religious, talk",
+    "language": "english,luganda,swahili",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious",
+      "talk"
+    ],
+    "website": "https://edenmiracleministries.org/",
     "isFeatured": true
   },
   {
@@ -565,19 +582,6 @@
       "religious"
     ],
     "website": "https://c25.radioboss.fm:8130/4rm8tzo7qirtv",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-victors-radio-ug",
-    "name": "VICTORS RADIO",
-    "type": "radio",
-    "streamUrl": "https://a13.asurahosting.com/listen/victors_radio_/radio.mp3",
-    "logo": "https://www.radio.net/300/victorsradio.png?version=d9521b26aaddfd7e5e35d063c680d69a84802b1b",
-    "description": "Radio station",
-    "language": "English",
-    "country": "UG",
-    "categories": [],
-    "website": "https://www.victorsradio.com/",
     "isFeatured": true
   },
   {
