@@ -581,20 +581,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-977-80s-us",
-    "name": ".977 80s",
-    "type": "radio",
-    "streamUrl": "http://17573.live.streamtheworld.com/977_80_SC",
-    "description": "80s",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "80s"
-    ],
-    "website": "http://www.977music.com/",
-    "isFeatured": false
-  },
-  {
     "id": "radio-977-country-us",
     "name": ".977 Country",
     "type": "radio",
@@ -604,6 +590,20 @@
     "country": "US",
     "categories": [
       "country"
+    ],
+    "website": "http://www.977music.com/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-977-80s-us",
+    "name": ".977 80s",
+    "type": "radio",
+    "streamUrl": "http://17573.live.streamtheworld.com/977_80_SC",
+    "description": "80s",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "80s"
     ],
     "website": "http://www.977music.com/",
     "isFeatured": false
