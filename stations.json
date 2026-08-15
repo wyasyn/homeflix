@@ -466,20 +466,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-joy-hits-ug",
-    "name": "JOY HITS",
-    "type": "radio",
-    "streamUrl": "http://joyhits.online/joyhitshq.mp3",
-    "description": "variety",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "variety"
-    ],
-    "website": "https://joyhits.online/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-my-radio-ug",
     "name": "My Radio",
     "type": "radio",
@@ -496,6 +482,23 @@
       "urban gospel"
     ],
     "website": "https://econews.digital/home/myradio/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-rx-radio-ug",
+    "name": "RX Radio",
+    "type": "radio",
+    "streamUrl": "https://c14.radioboss.fm:18223/stream?1615807421100=",
+    "logo": "https://static.wixstatic.com/media/d258bf_9ee2ce20728d4cf48214cf55c12914de~mv2.png/v1/crop/x_0,y_168,w_600,h_278/fill/w_140,h_67,al_c,q_85,usm_0.66_1.00_0.01/reckless%20logo%20black%20clear.webp",
+    "description": "afro-pop, entertainment, pop",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "afro-pop",
+      "entertainment",
+      "pop"
+    ],
+    "website": "https://www.rxradio.ug/",
     "isFeatured": true
   },
   {
