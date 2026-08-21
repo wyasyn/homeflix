@@ -409,20 +409,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-christian-fm-ug",
-    "name": "Christian fm",
-    "type": "radio",
-    "streamUrl": "http://stream.dar.fm/27203",
-    "description": "christian",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian"
-    ],
-    "website": "https://www.christianhits.net/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-ejazz-xtra-ug",
     "name": "EJAZZ Xtra",
     "type": "radio",
@@ -482,20 +468,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-joy-hits-ug",
-    "name": "JOY HITS",
-    "type": "radio",
-    "streamUrl": "http://joyhits.online/joyhitshq.mp3",
-    "description": "variety",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "variety"
-    ],
-    "website": "https://joyhits.online/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-my-radio-ug",
     "name": "My Radio",
     "type": "radio",
@@ -512,20 +484,6 @@
       "urban gospel"
     ],
     "website": "https://econews.digital/home/myradio/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-rfi-kiswahili-ug",
-    "name": "RFI Kiswahili",
-    "type": "radio",
-    "streamUrl": "https://rfienswahili64k.ice.infomaniak.ch/rfienswahili-64.mp3",
-    "description": "rock",
-    "language": "british english",
-    "country": "UG",
-    "categories": [
-      "rock"
-    ],
-    "website": "https://rfienswahili64k.ice.infomaniak.ch/rfienswahili-64.mp3",
     "isFeatured": true
   },
   {
