@@ -350,21 +350,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-cbn-christian-ug",
-    "name": "CBN Christian",
-    "type": "radio",
-    "streamUrl": "http://cbnradio.streamguys1.com/news-128K?app=cbnplayer",
-    "logo": "https://firebasestorage.googleapis.com/v0/b/radiogalaxy-580f4.appspot.com/o/images%2FIMG_20240205_211217900.jpg?alt=media&token=924374ee-399b-4f6a-b8b3-a71b19eddd6f",
-    "description": "religious",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "religious"
-    ],
-    "website": "http://cbnradio.streamguys1.com/news-128K?app=cbnplayer",
-    "isFeatured": true
-  },
-  {
     "id": "radio-cbn-christmas-channel-ug",
     "name": "CBN Christmas Channel",
     "type": "radio",
@@ -406,6 +391,20 @@
       "news"
     ],
     "website": "http://chinaplus.cri.cn/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-christian-fm-ug",
+    "name": "Christian fm",
+    "type": "radio",
+    "streamUrl": "http://stream.dar.fm/27203",
+    "description": "christian",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian"
+    ],
+    "website": "https://www.christianhits.net/",
     "isFeatured": true
   },
   {
@@ -465,6 +464,20 @@
       "rock"
     ],
     "website": "https://www.islandsfm.org/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-joy-hits-ug",
+    "name": "JOY HITS",
+    "type": "radio",
+    "streamUrl": "http://joyhits.online/joyhitshq.mp3",
+    "description": "variety",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "variety"
+    ],
+    "website": "https://joyhits.online/",
     "isFeatured": true
   },
   {
@@ -649,7 +662,7 @@
     "id": "radio-somafm-groove-salad-128k-mp3-us",
     "name": "SomaFM Groove Salad (128k MP3)",
     "type": "radio",
-    "streamUrl": "https://ice5.somafm.com/groovesalad-128-mp3",
+    "streamUrl": "https://ice2.somafm.com/groovesalad-128-mp3",
     "logo": "https://somafm.com/img3/groovesalad-400.jpg",
     "description": "ambient, chillout, downtempo, groove, lounge, sleep",
     "language": "english",
@@ -706,7 +719,7 @@
     "id": "radio-somafm-underground-80s-128k-mp3-us",
     "name": "SomaFM Underground 80s (128k MP3)",
     "type": "radio",
-    "streamUrl": "https://ice6.somafm.com/u80s-128-mp3",
+    "streamUrl": "https://ice2.somafm.com/u80s-128-mp3",
     "logo": "https://somafm.com/img3/u80s-400.png",
     "description": "80s, new wave, uk synthpop",
     "language": "english",
@@ -858,6 +871,22 @@
     "isFeatured": false
   },
   {
+    "id": "radio-radio-plus-mauritius-mu",
+    "name": "Radio Plus Mauritius",
+    "type": "radio",
+    "streamUrl": "https://stream.radioplus.mu:8000/radio.mp3",
+    "logo": "https://live.radioplus.mu/wp-content/uploads/elementor/thumbs/radioplus-qohb3n7nfwchk09bu0c6dm1hvtjgr7523yeok8btoq.jpg",
+    "description": "news, music",
+    "language": "english,french,macedonian",
+    "country": "MU",
+    "categories": [
+      "news",
+      "music"
+    ],
+    "website": "https://live.radioplus.mu/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-generation-dance-radio-lu",
     "name": "Generation Dance Radio",
     "type": "radio",
@@ -882,7 +911,7 @@
     "id": "radio-somafm-metal-detector-128k-aac-us",
     "name": "SomaFM Metal Detector (128k AAC)",
     "type": "radio",
-    "streamUrl": "https://ice4.somafm.com/metal-128-aac",
+    "streamUrl": "https://ice6.somafm.com/metal-128-aac",
     "logo": "https://somafm.com/img3/metal-400.png",
     "description": "black metal, doom metal, post-punk, progressive rock, sludge, stoner rock, trash",
     "language": "english",
@@ -927,24 +956,6 @@
       "learn language"
     ],
     "website": "http://www.voanews.com/t/60.html",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-bbc-radio-4-128k-gb",
-    "name": "BBC Radio 4 (128k)",
-    "type": "radio",
-    "streamUrl": "http://as-hls-ww-live.akamaized.net/pool_55057080/live/ww/bbc_radio_fourfm/bbc_radio_fourfm.isml/bbc_radio_fourfm-audio%3d128000.norewind.m3u8",
-    "logo": "https://cdn-radiotime-logos.tunein.com/s25419q.png",
-    "description": "comedy, drama, news, talk",
-    "language": "english",
-    "country": "GB",
-    "categories": [
-      "comedy",
-      "drama",
-      "news",
-      "talk"
-    ],
-    "website": "https://www.bbc.co.uk/radio4",
     "isFeatured": false
   }
 ]
