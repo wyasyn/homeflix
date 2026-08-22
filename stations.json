@@ -350,21 +350,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-cbn-christmas-channel-ug",
-    "name": "CBN Christmas Channel",
-    "type": "radio",
-    "streamUrl": "https://streams.cbnradio.com/christmas-128K?%20Title1=CBN%20Christmas",
-    "logo": "http://www1.cbn.com/favicon.ico",
-    "description": "christian",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian"
-    ],
-    "website": "http://www1.cbn.com/radio/christmas",
-    "isFeatured": true
-  },
-  {
     "id": "radio-cbs-news-ug",
     "name": "CBS News",
     "type": "radio",
@@ -464,20 +449,6 @@
       "rock"
     ],
     "website": "https://www.islandsfm.org/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-joy-hits-ug",
-    "name": "JOY HITS",
-    "type": "radio",
-    "streamUrl": "http://joyhits.online/joyhitshq.mp3",
-    "description": "variety",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "variety"
-    ],
-    "website": "https://joyhits.online/",
     "isFeatured": true
   },
   {
@@ -682,7 +653,7 @@
     "id": "radio-977-the-mix-us",
     "name": ".977 The Mix",
     "type": "radio",
-    "streamUrl": "http://26343.live.streamtheworld.com:3690/977_MIX_SC",
+    "streamUrl": "http://15113.live.streamtheworld.com:3690/977_MIX_SC",
     "description": "80s, 90s, hits, today",
     "language": "english",
     "country": "US",
@@ -716,6 +687,26 @@
     "isFeatured": false
   },
   {
+    "id": "radio-npr-24-hour-program-stream-us",
+    "name": "NPR 24 Hour Program Stream",
+    "type": "radio",
+    "streamUrl": "http://npr-ice.streamguys1.com/live.mp3",
+    "logo": "https://static-assets.npr.org/static/images/favicon/favicon-96x96.png",
+    "description": "news, news talk, political talk, politics, public radio, talk",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "news",
+      "news talk",
+      "political talk",
+      "politics",
+      "public radio",
+      "talk"
+    ],
+    "website": "https://www.npr.org/2016/04/05/472557877/npr-program-stream",
+    "isFeatured": false
+  },
+  {
     "id": "radio-somafm-underground-80s-128k-mp3-us",
     "name": "SomaFM Underground 80s (128k MP3)",
     "type": "radio",
@@ -736,7 +727,7 @@
     "id": "radio-somafm-space-station-soma-128k-aac-us",
     "name": "SomaFM Space Station Soma (128k AAC)",
     "type": "radio",
-    "streamUrl": "https://ice5.somafm.com/spacestation-128-aac",
+    "streamUrl": "https://ice6.somafm.com/spacestation-128-aac",
     "logo": "https://somafm.com/img3/spacestation-400.png",
     "description": "ambient, electronica, mid-tempo",
     "language": "english",
@@ -785,7 +776,7 @@
     "id": "radio-somafm-indie-pop-rocks-128k-aac-us",
     "name": "SomaFM Indie Pop Rocks! (128k AAC)",
     "type": "radio",
-    "streamUrl": "https://ice6.somafm.com/indiepop-128-aac",
+    "streamUrl": "https://ice5.somafm.com/indiepop-128-aac",
     "logo": "https://somafm.com/img3/indiepop-400.jpg",
     "description": "indie, indie pop, indie rock",
     "language": "english",
@@ -814,6 +805,20 @@
       "yacht rock"
     ],
     "website": "https://somafm.com/seventies/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-977-oldies-us",
+    "name": ".977 Oldies",
+    "type": "radio",
+    "streamUrl": "http://17573.live.streamtheworld.com/977_OLDIES_SC",
+    "description": "oldies",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "oldies"
+    ],
+    "website": "http://www.977music.com/",
     "isFeatured": false
   },
   {
@@ -855,7 +860,7 @@
     "id": "radio-somafm-lush-128k-mp3-us",
     "name": "SomaFM Lush (128k MP3)",
     "type": "radio",
-    "streamUrl": "https://ice2.somafm.com/lush-128-mp3",
+    "streamUrl": "https://ice6.somafm.com/lush-128-mp3",
     "logo": "https://somafm.com/img3/lush-400.jpg",
     "description": "electronic, femalevocals, lounge, mellow, vocal",
     "language": "english",
@@ -956,6 +961,24 @@
       "learn language"
     ],
     "website": "http://www.voanews.com/t/60.html",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-bbc-radio-4-128k-gb",
+    "name": "BBC Radio 4 (128k)",
+    "type": "radio",
+    "streamUrl": "http://as-hls-ww-live.akamaized.net/pool_55057080/live/ww/bbc_radio_fourfm/bbc_radio_fourfm.isml/bbc_radio_fourfm-audio%3d128000.norewind.m3u8",
+    "logo": "https://cdn-radiotime-logos.tunein.com/s25419q.png",
+    "description": "comedy, drama, news, talk",
+    "language": "english",
+    "country": "GB",
+    "categories": [
+      "comedy",
+      "drama",
+      "news",
+      "talk"
+    ],
+    "website": "https://www.bbc.co.uk/radio4",
     "isFeatured": false
   }
 ]
