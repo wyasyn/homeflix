@@ -350,6 +350,36 @@
     "isFeatured": true
   },
   {
+    "id": "radio-cbn-christian-ug",
+    "name": "CBN Christian",
+    "type": "radio",
+    "streamUrl": "http://cbnradio.streamguys1.com/news-128K?app=cbnplayer",
+    "logo": "https://firebasestorage.googleapis.com/v0/b/radiogalaxy-580f4.appspot.com/o/images%2FIMG_20240205_211217900.jpg?alt=media&token=924374ee-399b-4f6a-b8b3-a71b19eddd6f",
+    "description": "religious",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "religious"
+    ],
+    "website": "http://cbnradio.streamguys1.com/news-128K?app=cbnplayer",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-cbn-christmas-channel-ug",
+    "name": "CBN Christmas Channel",
+    "type": "radio",
+    "streamUrl": "https://streams.cbnradio.com/christmas-128K?%20Title1=CBN%20Christmas",
+    "logo": "http://www1.cbn.com/favicon.ico",
+    "description": "christian",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian"
+    ],
+    "website": "http://www1.cbn.com/radio/christmas",
+    "isFeatured": true
+  },
+  {
     "id": "radio-cbs-news-ug",
     "name": "CBS News",
     "type": "radio",
@@ -376,20 +406,6 @@
       "news"
     ],
     "website": "http://chinaplus.cri.cn/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-christian-fm-ug",
-    "name": "Christian fm",
-    "type": "radio",
-    "streamUrl": "http://stream.dar.fm/27203",
-    "description": "christian",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian"
-    ],
-    "website": "https://www.christianhits.net/",
     "isFeatured": true
   },
   {
@@ -590,7 +606,7 @@
     "id": "radio-977-country-us",
     "name": ".977 Country",
     "type": "radio",
-    "streamUrl": "http://26343.live.streamtheworld.com/977_COUNTRY_SC",
+    "streamUrl": "http://15113.live.streamtheworld.com/977_COUNTRY_SC",
     "description": "country",
     "language": "english",
     "country": "US",
@@ -618,7 +634,7 @@
     "id": "radio-977-hitz-us",
     "name": ".977 Hitz",
     "type": "radio",
-    "streamUrl": "http://18863.live.streamtheworld.com/977_HITS_SC",
+    "streamUrl": "http://18853.live.streamtheworld.com:3690/977_HITS_SC",
     "description": "hits, top 40",
     "language": "english",
     "country": "US",
@@ -741,6 +757,31 @@
     "isFeatured": false
   },
   {
+    "id": "radio-radio-armisa-it",
+    "name": "Radio Armisa",
+    "type": "radio",
+    "streamUrl": "https://onair.armisa.it/listen/armisa/radio.mp3",
+    "logo": "https://armisa.it/assets/favicon/android-chrome-512x512.png",
+    "description": "anni 80, anni 90, balera, dance, folk, italiana, liscio, oldies, pop, popolare, tradizione",
+    "language": "english,italian",
+    "country": "IT",
+    "categories": [
+      "anni 80",
+      "anni 90",
+      "balera",
+      "dance",
+      "folk",
+      "italiana",
+      "liscio",
+      "oldies",
+      "pop",
+      "popolare",
+      "tradizione"
+    ],
+    "website": "https://armisa.it/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-somafm-poptron-128k-mp3-us",
     "name": "SomaFM PopTron (128k MP3)",
     "type": "radio",
@@ -761,7 +802,7 @@
     "id": "radio-977-smooth-jazz-us",
     "name": ".977 Smooth Jazz",
     "type": "radio",
-    "streamUrl": "http://14543.live.streamtheworld.com/977_SMOOJAZZ_SC",
+    "streamUrl": "http://14543.live.streamtheworld.com:3690/977_SMOOJAZZ_SC",
     "description": "jazz, smooth jazz",
     "language": "english",
     "country": "US",
@@ -793,7 +834,7 @@
     "id": "radio-somafm-left-coast-70s-320k-mp3-us",
     "name": "SomaFM Left Coast 70s (320k MP3)",
     "type": "radio",
-    "streamUrl": "https://ice5.somafm.com/seventies-320-mp3",
+    "streamUrl": "https://ice2.somafm.com/seventies-320-mp3",
     "logo": "https://somafm.com/img3/seventies400.jpg",
     "description": "easy listening, mellow album rock, rock, yacht rock",
     "language": "english",
@@ -937,7 +978,7 @@
     "id": "radio-977-comedy-us",
     "name": ".977 Comedy",
     "type": "radio",
-    "streamUrl": "http://26433.live.streamtheworld.com/977_COMEDY_SC",
+    "streamUrl": "http://17633.live.streamtheworld.com:3690/977_COMEDY_SC",
     "description": "comedy",
     "language": "english",
     "country": "US",
