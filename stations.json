@@ -422,24 +422,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-emc-radio-kampala-mp3-ug",
-    "name": "EMC Radio - Kampala (MP3)",
-    "type": "radio",
-    "streamUrl": "http://c22.radioboss.fm:18040/stream",
-    "logo": "https://i.ibb.co/Fwv8RNs/emcradio.jpg",
-    "description": "christian, gospel, religious, talk",
-    "language": "english,luganda,swahili",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious",
-      "talk"
-    ],
-    "website": "https://edenmiracleministries.org/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-gospel-radio-east-africa-ug",
     "name": "Gospel Radio East Africa",
     "type": "radio",
@@ -768,6 +750,31 @@
       "mid-tempo"
     ],
     "website": "https://somafm.com/spacestation/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-radio-armisa-it",
+    "name": "Radio Armisa",
+    "type": "radio",
+    "streamUrl": "https://onair.armisa.it/listen/armisa/radio.mp3",
+    "logo": "https://armisa.it/assets/favicon/android-chrome-512x512.png",
+    "description": "anni 80, anni 90, balera, dance, folk, italiana, liscio, oldies, pop, popolare, tradizione",
+    "language": "english,italian",
+    "country": "IT",
+    "categories": [
+      "anni 80",
+      "anni 90",
+      "balera",
+      "dance",
+      "folk",
+      "italiana",
+      "liscio",
+      "oldies",
+      "pop",
+      "popolare",
+      "tradizione"
+    ],
+    "website": "https://armisa.it/",
     "isFeatured": false
   },
   {
