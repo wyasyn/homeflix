@@ -740,21 +740,6 @@
     "isFeatured": false
   },
   {
-    "id": "radio-977-smooth-jazz-us",
-    "name": ".977 Smooth Jazz",
-    "type": "radio",
-    "streamUrl": "http://14543.live.streamtheworld.com:3690/977_SMOOJAZZ_SC",
-    "description": "jazz, smooth jazz",
-    "language": "english",
-    "country": "US",
-    "categories": [
-      "jazz",
-      "smooth jazz"
-    ],
-    "website": "http://www.977music.com/",
-    "isFeatured": false
-  },
-  {
     "id": "radio-somafm-indie-pop-rocks-128k-aac-us",
     "name": "SomaFM Indie Pop Rocks! (128k AAC)",
     "type": "radio",
