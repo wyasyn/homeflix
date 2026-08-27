@@ -98,6 +98,20 @@
     "isFeatured": true
   },
   {
+    "id": "fort-tv",
+    "name": "FORT TV",
+    "type": "tv",
+    "streamUrl": "https://fort.co-works.org/memfs/87017643-274a-4bc0-a786-7767a0d159c2.m3u8",
+    "description": "entertainment",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "entertainment"
+    ],
+    "website": "https://fort-tv.com/",
+    "isFeatured": true
+  },
+  {
     "id": "krc-tv",
     "name": "KRC TV",
     "type": "tv",
@@ -123,6 +137,20 @@
       "religious"
     ],
     "website": "https://www.kstvuganda.com/home.php",
+    "isFeatured": true
+  },
+  {
+    "id": "rwenzori-tv",
+    "name": "Rwenzori TV",
+    "type": "tv",
+    "streamUrl": "https://stream.rwenzoritv.com:3232/live/rwenzoritvlive.m3u8",
+    "description": "general",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "general"
+    ],
+    "website": "https://rwenzoritv.com/",
     "isFeatured": true
   },
   {
@@ -547,7 +575,7 @@
     "id": "radio-977-country-us",
     "name": ".977 Country",
     "type": "radio",
-    "streamUrl": "http://15113.live.streamtheworld.com/977_COUNTRY_SC",
+    "streamUrl": "http://26343.live.streamtheworld.com/977_COUNTRY_SC",
     "description": "country",
     "language": "english",
     "country": "US",
@@ -575,7 +603,7 @@
     "id": "radio-977-hitz-us",
     "name": ".977 Hitz",
     "type": "radio",
-    "streamUrl": "http://18853.live.streamtheworld.com:3690/977_HITS_SC",
+    "streamUrl": "http://27243.live.streamtheworld.com/977_HITS_SC",
     "description": "hits, top 40",
     "language": "english",
     "country": "US",
@@ -684,7 +712,7 @@
     "id": "radio-somafm-space-station-soma-128k-aac-us",
     "name": "SomaFM Space Station Soma (128k AAC)",
     "type": "radio",
-    "streamUrl": "https://ice6.somafm.com/spacestation-128-aac",
+    "streamUrl": "https://ice2.somafm.com/spacestation-128-aac",
     "logo": "https://somafm.com/img3/spacestation-400.png",
     "description": "ambient, electronica, mid-tempo",
     "language": "english",
@@ -726,7 +754,7 @@
     "id": "radio-somafm-poptron-128k-mp3-us",
     "name": "SomaFM PopTron (128k MP3)",
     "type": "radio",
-    "streamUrl": "https://ice2.somafm.com/poptron-128-mp3",
+    "streamUrl": "https://ice5.somafm.com/poptron-128-mp3",
     "logo": "https://somafm.com/img3/poptron-400.png",
     "description": "electropop, indie, synthpop",
     "language": "english",
@@ -743,7 +771,7 @@
     "id": "radio-977-smooth-jazz-us",
     "name": ".977 Smooth Jazz",
     "type": "radio",
-    "streamUrl": "http://14543.live.streamtheworld.com:3690/977_SMOOJAZZ_SC",
+    "streamUrl": "http://15693.live.streamtheworld.com:3690/977_SMOOJAZZ_SC",
     "description": "jazz, smooth jazz",
     "language": "english",
     "country": "US",
@@ -758,7 +786,7 @@
     "id": "radio-somafm-indie-pop-rocks-128k-aac-us",
     "name": "SomaFM Indie Pop Rocks! (128k AAC)",
     "type": "radio",
-    "streamUrl": "https://ice5.somafm.com/indiepop-128-aac",
+    "streamUrl": "https://ice6.somafm.com/indiepop-128-aac",
     "logo": "https://somafm.com/img3/indiepop-400.jpg",
     "description": "indie, indie pop, indie rock",
     "language": "english",
@@ -775,7 +803,7 @@
     "id": "radio-somafm-left-coast-70s-320k-mp3-us",
     "name": "SomaFM Left Coast 70s (320k MP3)",
     "type": "radio",
-    "streamUrl": "https://ice2.somafm.com/seventies-320-mp3",
+    "streamUrl": "https://ice6.somafm.com/seventies-320-mp3",
     "logo": "https://somafm.com/img3/seventies400.jpg",
     "description": "easy listening, mellow album rock, rock, yacht rock",
     "language": "english",
@@ -874,6 +902,27 @@
     "isFeatured": false
   },
   {
+    "id": "radio-generation-dance-radio-lu",
+    "name": "Generation Dance Radio",
+    "type": "radio",
+    "streamUrl": "http://generationdance.lu/radio/8030/hd",
+    "logo": "https://generation.dance/logo_500x500.png",
+    "description": "dance, dj, edm, eurodance, handsup, house, trance",
+    "language": "english,french",
+    "country": "LU",
+    "categories": [
+      "dance",
+      "dj",
+      "edm",
+      "eurodance",
+      "handsup",
+      "house",
+      "trance"
+    ],
+    "website": "https://generation.dance/",
+    "isFeatured": false
+  },
+  {
     "id": "radio-somafm-metal-detector-128k-aac-us",
     "name": "SomaFM Metal Detector (128k AAC)",
     "type": "radio",
@@ -898,7 +947,7 @@
     "id": "radio-977-comedy-us",
     "name": ".977 Comedy",
     "type": "radio",
-    "streamUrl": "http://17633.live.streamtheworld.com:3690/977_COMEDY_SC",
+    "streamUrl": "http://17573.live.streamtheworld.com:3690/977_COMEDY_SC",
     "description": "comedy",
     "language": "english",
     "country": "US",
