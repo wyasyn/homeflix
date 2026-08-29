@@ -98,6 +98,20 @@
     "isFeatured": true
   },
   {
+    "id": "fort-tv",
+    "name": "FORT TV",
+    "type": "tv",
+    "streamUrl": "https://fort.co-works.org/memfs/87017643-274a-4bc0-a786-7767a0d159c2.m3u8",
+    "description": "entertainment",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "entertainment"
+    ],
+    "website": "https://fort-tv.com/",
+    "isFeatured": true
+  },
+  {
     "id": "krc-tv",
     "name": "KRC TV",
     "type": "tv",
@@ -123,6 +137,20 @@
       "religious"
     ],
     "website": "https://www.kstvuganda.com/home.php",
+    "isFeatured": true
+  },
+  {
+    "id": "rwenzori-tv",
+    "name": "Rwenzori TV",
+    "type": "tv",
+    "streamUrl": "https://stream.rwenzoritv.com:3232/live/rwenzoritvlive.m3u8",
+    "description": "general",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "general"
+    ],
+    "website": "https://rwenzoritv.com/",
     "isFeatured": true
   },
   {
@@ -351,6 +379,34 @@
     "isFeatured": true
   },
   {
+    "id": "radio-christian-fm-ug",
+    "name": "Christian fm",
+    "type": "radio",
+    "streamUrl": "http://stream.dar.fm/27203",
+    "description": "christian",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian"
+    ],
+    "website": "https://www.christianhits.net/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-gospel-radio-east-africa-ug",
+    "name": "Gospel Radio East Africa",
+    "type": "radio",
+    "streamUrl": "https://c32.radioboss.fm:18451/stream?1641237600584",
+    "description": "christian-gospel",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian-gospel"
+    ],
+    "website": "http://www.gospelradioeastafrica.org/index.html",
+    "isFeatured": true
+  },
+  {
     "id": "radio-islands-fm-ug",
     "name": "ISLANDS FM",
     "type": "radio",
@@ -362,6 +418,20 @@
       "rock"
     ],
     "website": "https://www.islandsfm.org/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-joy-hits-ug",
+    "name": "JOY HITS",
+    "type": "radio",
+    "streamUrl": "http://joyhits.online/joyhitshq.mp3",
+    "description": "variety",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "variety"
+    ],
+    "website": "https://joyhits.online/",
     "isFeatured": true
   },
   {
@@ -584,6 +654,26 @@
       "sixties"
     ],
     "website": "https://somafm.com/secretagent/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-npr-24-hour-program-stream-us",
+    "name": "NPR 24 Hour Program Stream",
+    "type": "radio",
+    "streamUrl": "http://npr-ice.streamguys1.com/live.mp3",
+    "logo": "https://static-assets.npr.org/static/images/favicon/favicon-96x96.png",
+    "description": "news, news talk, political talk, politics, public radio, talk",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "news",
+      "news talk",
+      "political talk",
+      "politics",
+      "public radio",
+      "talk"
+    ],
+    "website": "https://www.npr.org/2016/04/05/472557877/npr-program-stream",
     "isFeatured": false
   },
   {
