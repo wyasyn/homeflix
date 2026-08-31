@@ -140,6 +140,20 @@
     "isFeatured": true
   },
   {
+    "id": "rwenzori-tv",
+    "name": "Rwenzori TV",
+    "type": "tv",
+    "streamUrl": "https://stream.rwenzoritv.com:3232/live/rwenzoritvlive.m3u8",
+    "description": "general",
+    "language": "English",
+    "country": "UG",
+    "categories": [
+      "general"
+    ],
+    "website": "https://rwenzoritv.com/",
+    "isFeatured": true
+  },
+  {
     "id": "tayari-west-tv",
     "name": "Tayari West TV",
     "type": "tv",
@@ -278,6 +292,23 @@
     "isFeatured": true
   },
   {
+    "id": "radio-104-1-favour-fm-gulu-104-1-fm-ug",
+    "name": "104.1 Favour FM - Gulu - 104.1 FM",
+    "type": "radio",
+    "streamUrl": "http://us5new.listen2myradio.com:2199/listen.php?port=8138&type=ice&mount=stream",
+    "logo": "https://i.ibb.co/P6b03Fx/image.webp",
+    "description": "christian, gospel, religious",
+    "language": "english,luganda,swahili",
+    "country": "UG",
+    "categories": [
+      "christian",
+      "gospel",
+      "religious"
+    ],
+    "website": "https://www.favourfm.org/",
+    "isFeatured": true
+  },
+  {
     "id": "radio-88-1-centenary-fm-ug",
     "name": "88.1 Centenary Fm",
     "type": "radio",
@@ -362,6 +393,33 @@
       "news"
     ],
     "website": "http://chinaplus.cri.cn/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-christian-fm-ug",
+    "name": "Christian fm",
+    "type": "radio",
+    "streamUrl": "http://stream.dar.fm/27203",
+    "description": "christian",
+    "language": "english",
+    "country": "UG",
+    "categories": [
+      "christian"
+    ],
+    "website": "https://www.christianhits.net/",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-ejazz-xtra-ug",
+    "name": "EJAZZ Xtra",
+    "type": "radio",
+    "streamUrl": "https://c32.radioboss.fm:18320/stream",
+    "logo": "https://extra.ejazzug.com/favicon.ico",
+    "description": "Radio station",
+    "language": "english,luganda",
+    "country": "UG",
+    "categories": [],
+    "website": "https://extra.ejazzug.com/",
     "isFeatured": true
   },
   {
@@ -561,7 +619,7 @@
     "id": "radio-somafm-groove-salad-128k-mp3-us",
     "name": "SomaFM Groove Salad (128k MP3)",
     "type": "radio",
-    "streamUrl": "https://ice6.somafm.com/groovesalad-128-mp3",
+    "streamUrl": "https://ice5.somafm.com/groovesalad-128-mp3",
     "logo": "https://somafm.com/img3/groovesalad-400.jpg",
     "description": "ambient, chillout, downtempo, groove, lounge, sleep",
     "language": "english",
@@ -598,7 +656,7 @@
     "id": "radio-somafm-secret-agent-128k-mp3-us",
     "name": "SomaFM Secret Agent (128k MP3)",
     "type": "radio",
-    "streamUrl": "https://ice6.somafm.com/secretagent-128-mp3",
+    "streamUrl": "https://ice2.somafm.com/secretagent-128-mp3",
     "logo": "https://somafm.com/img3/secretagent-400.jpg",
     "description": "ambient, downtempo, jazz, lounge, samba, sixties",
     "language": "english",
@@ -638,7 +696,7 @@
     "id": "radio-somafm-underground-80s-128k-mp3-us",
     "name": "SomaFM Underground 80s (128k MP3)",
     "type": "radio",
-    "streamUrl": "https://ice6.somafm.com/u80s-128-mp3",
+    "streamUrl": "https://ice5.somafm.com/u80s-128-mp3",
     "logo": "https://somafm.com/img3/u80s-400.png",
     "description": "80s, new wave, uk synthpop",
     "language": "english",
@@ -813,7 +871,7 @@
     "id": "radio-somafm-lush-128k-mp3-us",
     "name": "SomaFM Lush (128k MP3)",
     "type": "radio",
-    "streamUrl": "https://ice6.somafm.com/lush-128-mp3",
+    "streamUrl": "https://ice2.somafm.com/lush-128-mp3",
     "logo": "https://somafm.com/img3/lush-400.jpg",
     "description": "electronic, femalevocals, lounge, mellow, vocal",
     "language": "english",
@@ -869,7 +927,7 @@
     "id": "radio-somafm-metal-detector-128k-aac-us",
     "name": "SomaFM Metal Detector (128k AAC)",
     "type": "radio",
-    "streamUrl": "https://ice6.somafm.com/metal-128-aac",
+    "streamUrl": "https://ice2.somafm.com/metal-128-aac",
     "logo": "https://somafm.com/img3/metal-400.png",
     "description": "black metal, doom metal, post-punk, progressive rock, sludge, stoner rock, trash",
     "language": "english",
