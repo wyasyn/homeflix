@@ -292,23 +292,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-104-1-favour-fm-gulu-104-1-fm-ug",
-    "name": "104.1 Favour FM - Gulu - 104.1 FM",
-    "type": "radio",
-    "streamUrl": "http://us5new.listen2myradio.com:2199/listen.php?port=8138&type=ice&mount=stream",
-    "logo": "https://i.ibb.co/P6b03Fx/image.webp",
-    "description": "christian, gospel, religious",
-    "language": "english,luganda,swahili",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious"
-    ],
-    "website": "https://www.favourfm.org/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-88-1-centenary-fm-ug",
     "name": "88.1 Centenary Fm",
     "type": "radio",
@@ -435,20 +418,6 @@
       "rock"
     ],
     "website": "https://www.islandsfm.org/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-joy-hits-ug",
-    "name": "JOY HITS",
-    "type": "radio",
-    "streamUrl": "http://joyhits.online/joyhitshq.mp3",
-    "description": "variety",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "variety"
-    ],
-    "website": "https://joyhits.online/",
     "isFeatured": true
   },
   {
@@ -674,6 +643,26 @@
     "isFeatured": false
   },
   {
+    "id": "radio-npr-24-hour-program-stream-us",
+    "name": "NPR 24 Hour Program Stream",
+    "type": "radio",
+    "streamUrl": "http://npr-ice.streamguys1.com/live.mp3",
+    "logo": "https://static-assets.npr.org/static/images/favicon/favicon-96x96.png",
+    "description": "news, news talk, political talk, politics, public radio, talk",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "news",
+      "news talk",
+      "political talk",
+      "politics",
+      "public radio",
+      "talk"
+    ],
+    "website": "https://www.npr.org/2016/04/05/472557877/npr-program-stream",
+    "isFeatured": false
+  },
+  {
     "id": "radio-somafm-underground-80s-128k-mp3-us",
     "name": "SomaFM Underground 80s (128k MP3)",
     "type": "radio",
@@ -705,31 +694,6 @@
       "mid-tempo"
     ],
     "website": "https://somafm.com/spacestation/",
-    "isFeatured": false
-  },
-  {
-    "id": "radio-radio-armisa-it",
-    "name": "Radio Armisa",
-    "type": "radio",
-    "streamUrl": "https://onair.armisa.it/listen/armisa/radio.mp3",
-    "logo": "https://armisa.it/assets/favicon/android-chrome-512x512.png",
-    "description": "anni 80, anni 90, balera, dance, folk, italiana, liscio, oldies, pop, popolare, tradizione",
-    "language": "english,italian",
-    "country": "IT",
-    "categories": [
-      "anni 80",
-      "anni 90",
-      "balera",
-      "dance",
-      "folk",
-      "italiana",
-      "liscio",
-      "oldies",
-      "pop",
-      "popolare",
-      "tradizione"
-    ],
-    "website": "https://armisa.it/",
     "isFeatured": false
   },
   {
