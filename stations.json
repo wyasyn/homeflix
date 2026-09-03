@@ -1,19 +1,5 @@
 [
   {
-    "id": "alpha-digital",
-    "name": "Alpha Digital",
-    "type": "tv",
-    "streamUrl": "https://streamfi-alphatvdgtl1.zettawiseroutes.com:8181/hls/stream.m3u8",
-    "description": "religious",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "religious"
-    ],
-    "website": "http://imc.ug/",
-    "isFeatured": true
-  },
-  {
     "id": "ark-tv",
     "name": "Ark TV",
     "type": "tv",
@@ -137,20 +123,6 @@
       "religious"
     ],
     "website": "https://www.kstvuganda.com/home.php",
-    "isFeatured": true
-  },
-  {
-    "id": "rwenzori-tv",
-    "name": "Rwenzori TV",
-    "type": "tv",
-    "streamUrl": "https://stream.rwenzoritv.com:3232/live/rwenzoritvlive.m3u8",
-    "description": "general",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "general"
-    ],
-    "website": "https://rwenzoritv.com/",
     "isFeatured": true
   },
   {
@@ -379,20 +351,6 @@
     "isFeatured": true
   },
   {
-    "id": "radio-christian-fm-ug",
-    "name": "Christian fm",
-    "type": "radio",
-    "streamUrl": "http://stream.dar.fm/27203",
-    "description": "christian",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "christian"
-    ],
-    "website": "https://www.christianhits.net/",
-    "isFeatured": true
-  },
-  {
     "id": "radio-ejazz-xtra-ug",
     "name": "EJAZZ Xtra",
     "type": "radio",
@@ -510,6 +468,19 @@
       "religious"
     ],
     "website": "https://storage.sardius.media/archives/Ea867F3e1F56B06/events/site_5F46D0A41C/playlist-eng.m3u8",
+    "isFeatured": true
+  },
+  {
+    "id": "radio-streamug-radio-ug",
+    "name": "StreamUG Radio",
+    "type": "radio",
+    "streamUrl": "https://c22.radioboss.fm:8814/stream",
+    "logo": "https://play-lh.googleusercontent.com/QCubFoSjKzUtPRKNacVo11rDcgqdsIeG2dNMLdGy5i9ywl4Cr41DuhD50ioMqtxzLPsyjhD4ox7cIybhnBSgWBk=w240-h480-rw",
+    "description": "Radio station",
+    "language": "english",
+    "country": "UG",
+    "categories": [],
+    "website": "https://www.streamugradio.com/",
     "isFeatured": true
   },
   {
@@ -904,6 +875,41 @@
       "trance"
     ],
     "website": "https://generation.dance/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-somafm-metal-detector-128k-aac-us",
+    "name": "SomaFM Metal Detector (128k AAC)",
+    "type": "radio",
+    "streamUrl": "https://ice2.somafm.com/metal-128-aac",
+    "logo": "https://somafm.com/img3/metal-400.png",
+    "description": "black metal, doom metal, post-punk, progressive rock, sludge, stoner rock, trash",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "black metal",
+      "doom metal",
+      "post-punk",
+      "progressive rock",
+      "sludge",
+      "stoner rock",
+      "trash"
+    ],
+    "website": "https://somafm.com/metal/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-977-comedy-us",
+    "name": ".977 Comedy",
+    "type": "radio",
+    "streamUrl": "http://26433.live.streamtheworld.com/977_COMEDY_SC",
+    "description": "comedy",
+    "language": "english",
+    "country": "US",
+    "categories": [
+      "comedy"
+    ],
+    "website": "http://www.977music.com/",
     "isFeatured": false
   },
   {
