@@ -14,20 +14,6 @@
     "isFeatured": true
   },
   {
-    "id": "ark-tv",
-    "name": "Ark TV",
-    "type": "tv",
-    "streamUrl": "https://stream.hydeinnovations.com/arktv-international/index.fmp4.m3u8",
-    "description": "religious",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "religious"
-    ],
-    "website": "https://www.holycityentebbe.org/",
-    "isFeatured": true
-  },
-  {
     "id": "bbs-tv",
     "name": "BBS TV",
     "type": "tv",
