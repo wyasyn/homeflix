@@ -140,20 +140,6 @@
     "isFeatured": true
   },
   {
-    "id": "rwenzori-tv",
-    "name": "Rwenzori TV",
-    "type": "tv",
-    "streamUrl": "https://stream.rwenzoritv.com:3232/live/rwenzoritvlive.m3u8",
-    "description": "general",
-    "language": "English",
-    "country": "UG",
-    "categories": [
-      "general"
-    ],
-    "website": "https://rwenzoritv.com/",
-    "isFeatured": true
-  },
-  {
     "id": "tayari-west-tv",
     "name": "Tayari West TV",
     "type": "tv",
@@ -289,23 +275,6 @@
     "country": "UG",
     "categories": [],
     "website": "https://mp3islam.com/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-104-1-favour-fm-gulu-104-1-fm-ug",
-    "name": "104.1 Favour FM - Gulu - 104.1 FM",
-    "type": "radio",
-    "streamUrl": "http://us5new.listen2myradio.com:2199/listen.php?port=8138&type=ice&mount=stream",
-    "logo": "https://i.ibb.co/P6b03Fx/image.webp",
-    "description": "christian, gospel, religious",
-    "language": "english,luganda,swahili",
-    "country": "UG",
-    "categories": [
-      "christian",
-      "gospel",
-      "religious"
-    ],
-    "website": "https://www.favourfm.org/",
     "isFeatured": true
   },
   {
@@ -448,20 +417,6 @@
       "rock"
     ],
     "website": "https://www.islandsfm.org/",
-    "isFeatured": true
-  },
-  {
-    "id": "radio-joy-hits-ug",
-    "name": "JOY HITS",
-    "type": "radio",
-    "streamUrl": "http://joyhits.online/joyhitshq.mp3",
-    "description": "variety",
-    "language": "english",
-    "country": "UG",
-    "categories": [
-      "variety"
-    ],
-    "website": "https://joyhits.online/",
     "isFeatured": true
   },
   {
@@ -927,6 +882,27 @@
       "music"
     ],
     "website": "https://live.radioplus.mu/",
+    "isFeatured": false
+  },
+  {
+    "id": "radio-generation-dance-radio-lu",
+    "name": "Generation Dance Radio",
+    "type": "radio",
+    "streamUrl": "http://generationdance.lu/radio/8030/hd",
+    "logo": "https://generation.dance/logo_500x500.png",
+    "description": "dance, dj, edm, eurodance, handsup, house, trance",
+    "language": "english,french",
+    "country": "LU",
+    "categories": [
+      "dance",
+      "dj",
+      "edm",
+      "eurodance",
+      "handsup",
+      "house",
+      "trance"
+    ],
+    "website": "https://generation.dance/",
     "isFeatured": false
   },
   {
